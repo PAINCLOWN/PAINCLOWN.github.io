@@ -56,6 +56,6 @@ echo 同化完成！
 echo;
 
 =======
-git status
+
 
 pause
