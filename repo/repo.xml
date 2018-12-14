@@ -1,0 +1,19 @@
+<repo>
+	<footerlinks>
+		<link>
+			<name>在推特上联系我</name>
+			<url>https://twitter.com/Pa1ncl0wn</url>
+			<iconclass>fa fa-twitter</iconclass>
+		</link>
+		<link>
+			<name>给我发邮件</name>
+			<url>mailto:pozz@vip.qq.com</url>
+			<iconclass>fa fa-envelope-open</iconclass>
+		</link>
+		<link>
+	    <name>给源主买泡面</name>
+	    <url>https://qr.alipay.com/tsx06936chkivwaljc8bb41</url>
+			<iconclass>fa fa-paypal</iconclass>
+	  </link>
+	</footerlinks>
+</repo>
