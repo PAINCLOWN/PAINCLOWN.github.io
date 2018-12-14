@@ -1,5 +1,5 @@
 @echo off
-@title bat 交互执行git命令
+@title 同步PAINCLOWN.github.io项目到github
 
 cd  %~d0
 cd  %cd%
