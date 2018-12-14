@@ -1,0 +1,52 @@
+这是ngrok-php客户端
+
+由dosgo作者开发
+
+一个php的ngrok客户端,不需要依赖啥扩展。。
+php5.2以上都可以跑，支持cgi模式，跟cli模式，意味着你在nginx/apache里面跑,特方便，代码很简单只有500行。
+貌似性能比C语言版本还好。。
+
+不过推荐在php7运行,部分php需在php.ini开启openssl支持
+
+运行模式：
+
+cgi模式：把php文件放到www根目录然后直接访问就运行了,地址+php文件
+例如：
+http://192.168.1.1/ngrokclient.php
+
+cli模式：命令行运行
+例如：
+php.exe D:\xampp\php\htdocs\ngrokclient.php
+/usr/bin/php5 /var/www/html/ngrokclient.php
+
+不管是在路由上，服务器上，只要能运行php程序基本都可以使用
+
+配置修改：
+
+$seraddr = 'tunnel.qydev.com'; //ngrok地址
+
+$port = 4443; //ngrok端口
+
+    array(
+
+        'protocol' => 'http',
+
+        'hostname' => 'www.xxx.com',
+
+        'subdomain' => '',
+
+        'rport' => 0,
+
+        'lhost' => '127.0.0.1',
+
+        'lport' => 80
+
+    ),
+
+protocol是映射模式,分别是http,https,tcp
+hostname是自定义域名
+subdomain是子域名
+rport映射外网端口 tcp使用
+
+lhost映射本地ip
+lport映射本地ip端口
