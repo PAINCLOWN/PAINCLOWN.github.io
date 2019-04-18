@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
+<url>
+ <loc>http://pozz.xyz</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://painclown.github.io/blog</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://painclown.github.io/code</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://twitter.com/pa1ncl0wn/</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://painclown.github.io/aria2/</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>http://abc.8848dsw.cn/</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>http://pozz.xyz/repo/</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>https://twitter.com/pa1ncl0wn</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+<url>
+ <loc>http://abc.8848dsw.cn/</loc>
+ <mobile:mobile type="pc,mobile" />
+ <priority>0.5</priority>
+ <lastmod>2019-04-18</lastmod>
+ <changefreq>monthly</changefreq>
+</url>
+</urlset>
