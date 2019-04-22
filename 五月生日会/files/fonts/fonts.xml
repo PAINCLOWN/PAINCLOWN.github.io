@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <fonts>
+    <font name="Droid Sans" className="FskyFont_droidsans" url="./files/fonts/font-0-0-2019422183057617.swf" ttfurl="./files/fonts/font-0-0-2019422183057617.ttf"/>
+    <font name="FontAwesome" className="" url="./files/fonts/font-1-0-2019422183057653.swf" ttfurl="./files/fonts/font-1-0-2019422183057653.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht" url="./files/fonts/font-2-0-2019422183057685.swf" ttfurl="./files/fonts/font-2-0-2019422183057685.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Bold" url="./files/fonts/font-2-1-2019422183058265.swf" ttfurl="./files/fonts/font-2-1-2019422183058265.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Italic" url="./files/fonts/font-2-2-2019422183058663.swf" ttfurl="./files/fonts/font-2-2-2019422183058663.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Bold_Italic" url="./files/fonts/font-2-3-2019422183059102.swf" ttfurl="./files/fonts/font-2-3-2019422183059102.ttf"/>
+  </fonts>
+</data>

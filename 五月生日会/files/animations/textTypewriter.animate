@@ -1,0 +1,16 @@
+/* 
+  Name:			TextTypewriter
+  Type:			Entrance
+  Description:	Text Typewriter Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"文字打印", "en-US":"Text Typewriter"}
+  Class:        TextTypewriter
+  LimitType:    MText
+ */
+ 
+@keyframes textTypewriter {
+	
+}
+.textTypewriter{
+	animation-duration: 3s;
+}
