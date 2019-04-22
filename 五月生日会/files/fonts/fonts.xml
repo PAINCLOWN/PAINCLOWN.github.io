@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <data>
   <fonts>
-    <font name="Droid Sans" className="FskyFont_droidsans" url="./files/fonts/font-0-0-2019422183057617.swf" ttfurl="./files/fonts/font-0-0-2019422183057617.ttf"/>
-    <font name="FontAwesome" className="" url="./files/fonts/font-1-0-2019422183057653.swf" ttfurl="./files/fonts/font-1-0-2019422183057653.ttf"/>
-    <font name="思源黑体" className="FskyFont_syht" url="./files/fonts/font-2-0-2019422183057685.swf" ttfurl="./files/fonts/font-2-0-2019422183057685.ttf"/>
-    <font name="思源黑体" className="FskyFont_syht_Bold" url="./files/fonts/font-2-1-2019422183058265.swf" ttfurl="./files/fonts/font-2-1-2019422183058265.ttf"/>
-    <font name="思源黑体" className="FskyFont_syht_Italic" url="./files/fonts/font-2-2-2019422183058663.swf" ttfurl="./files/fonts/font-2-2-2019422183058663.ttf"/>
-    <font name="思源黑体" className="FskyFont_syht_Bold_Italic" url="./files/fonts/font-2-3-2019422183059102.swf" ttfurl="./files/fonts/font-2-3-2019422183059102.ttf"/>
+    <font name="FontAwesome" className="" url="./files/fonts/font-0-0-2019422203246733.swf" ttfurl="./files/fonts/font-0-0-2019422203246733.ttf"/>
+    <font name="Droid Sans" className="FskyFont_droidsans" url="./files/fonts/font-1-0-2019422203246777.swf" ttfurl="./files/fonts/font-1-0-2019422203246777.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht" url="./files/fonts/font-2-0-2019422203246845.swf" ttfurl="./files/fonts/font-2-0-2019422203246845.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Bold" url="./files/fonts/font-2-1-2019422203247258.swf" ttfurl="./files/fonts/font-2-1-2019422203247258.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Italic" url="./files/fonts/font-2-2-2019422203247678.swf" ttfurl="./files/fonts/font-2-2-2019422203247678.ttf"/>
+    <font name="思源黑体" className="FskyFont_syht_Bold_Italic" url="./files/fonts/font-2-3-2019422203248125.swf" ttfurl="./files/fonts/font-2-3-2019422203248125.ttf"/>
+    <font name="Webding" className="" url="./files/fonts/font-3-0-2019422203248567.swf" ttfurl="./files/fonts/font-3-0-2019422203248567.ttf"/>
   </fonts>
 </data>
