@@ -1,0 +1,16 @@
+/* 
+  Name:			ExplosionInto
+  Type:			Entrance
+  Description:	ExplosionInto Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"爆炸烟雾", "en-US":"Explosive Smoke"}
+  Class:        ExplosionInto
+ */
+ 
+@keyframes explosionInto{
+	
+}
+
+.explosionInto{
+	animation-duration: 0.5s;
+}

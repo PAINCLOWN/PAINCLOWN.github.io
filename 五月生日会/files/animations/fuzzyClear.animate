@@ -1,0 +1,16 @@
+/* 
+  Name:			FuzzyClear
+  Type:			Entrance
+  Description:	FuzzyClear Effect
+  Version:		2.0	
+  locale:		{"zh-Hans":"模糊到清晰", "en-US":"Fuzzy Clear"}
+  Class:        FuzzyClear
+ */
+ 
+@keyframes fuzzyClear{
+	
+}
+
+.fuzzyClear{
+	animation-duration: 2s;
+}
