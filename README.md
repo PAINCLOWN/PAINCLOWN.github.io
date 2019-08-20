@@ -1,10 +1,10 @@
-<p align="center">
+﻿<p align="center">
   <a harf = "PAINCLOWN.github.io"><img src="https://raw.githubusercontent.com/PAINCLOWN/PAINCLOWN.github.io/master/images/logo.gif" width="160"/></a><br />
 </p>
 
 # PAINCLOWN.github.io
 
-访问顶级域名 POZZ.XYZ 也是可以的。
+访问顶级域名 POZZ.CF 也是可以的。
 
 ## 1·直接访问域名是首页
 

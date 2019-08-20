@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
 <url>
- <loc>http://pozz.xyz</loc>
+ <loc>http://pozz.cf</loc>
  <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
  <lastmod>2019-07-05</lastmod>
@@ -30,7 +30,7 @@ xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
  <changefreq>yearly</changefreq>
 </url>
 <url>
- <loc>http://pozz.xyz/repo</loc>
+ <loc>http://pozz.cf/repo</loc>
  <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
  <lastmod>2019-07-05</lastmod>
