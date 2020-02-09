@@ -67,9 +67,9 @@ $(document).ready(function () {
 
     var dPackage = getParameterByName("p");
     if (!dPackage) {
-        $(".package-error").text("这个插件似乎不存在嗷~").css("display", "block");
+        $(".package-error").text("似乎没有找到你要的插件，或者我懒得写描述了~").css("display", "block");
         $(".package-info").css("display", "none");
-        $(".package-name").text("不存在");
+        $(".package-name").text("没有找到哦~");
         return;
     }
 
@@ -80,11 +80,11 @@ $(document).ready(function () {
         var currentVersion = iOSVersion();
         if (typeof currentVersion === 'undefined' &&
             (typeof data.minOSVersion !== 'undefined' || typeof(data.maxOSVersion) !== 'undefined')) {
-            var result = "<strong>Compatible with iOS ";
+            var result = "<strong>支持的iOS版本： ";
 
             if (typeof data.minOSVersion != 'undefined') {
                 result += data.minOSVersion;
-                result += (typeof data.maxOSVersion != 'undefined') ? " to " + data.maxOSVersion : "";
+                result += (typeof data.maxOSVersion != 'undefined') ? " ~ " + data.maxOSVersion : "";
             } else if (typeof data.maxOSVersion != 'undefined') {
                 result += data.maxOSVersion;
             }
@@ -97,11 +97,11 @@ $(document).ready(function () {
             var result = "";
             var supported = isCurrentVersionSupported(currentVersion, data.minOSVersion, data.maxOSVersion);
             if (supported) {
-                result += "Your iOS version (" + currentVersion + ") is <strong>compatible</strong> &#x1f607;";
+                result += "你的 iOS 系统版本 (" + currentVersion + ") is <strong>兼容</strong> &#x1f607;";
                 // $(".version-check").css("color", "green");
                 $(".panel-body.version-check").css("background-color", "#a6d841");
             } else{
-                result += "<strong>Not confirmed</strong> to work on your iOS version";
+                result += "<strong>不兼容</strong> 你的iOS系统版本";
                 result += (typeof currentVersion != 'undefined') ? " (" + currentVersion + ")" : "";
                 result += " &#x1F914;";
                 $(".panel-body.version-check").css("background-color", "#ffcc00");
@@ -166,9 +166,9 @@ $(document).ready(function () {
 
         var links = data.links;
         var extra = {
-            "<img class=\"icon\" src=\"icons/twitter.png\"><span>Find me on Twitter (@ev_ynw)</span>": "https://twitter.com/ev_ynw",
-            "<img class=\"icon\" src=\"icons/email.png\"><span>Send me an email</span>": "mailto:ev.ynam.w@gmail.com",
-            "<img class=\"icon\" src=\"icons/like.png\"><span>Buy me a &#x1F37A; via <span style=\"font-style:italic;font-weight:bold;\"><span style=\"color:#253b80;\">Pay</span><span style=\"color:#419bd7;\">Pal</strong></span></span>": "https://paypal.me/evynw"
+            "<img class=\"icon\" src=\"icons/twitter.png\"><span>推特上找我</span>": "https://twitter.com/Pa1ncl0wn",
+            "<img class=\"icon\" src=\"icons/email.png\"><span>古老的邮箱联系</span>": "mailto:pozz@vip.qq.com",
+            "<img class=\"icon\" src=\"icons/like.png\"><span>给我整一杯牛 &#x1F37A; 致富饱 <span style=\"font-style:italic;font-weight:bold;\"><span style=\"color:#253b80;\">支付</span><span style=\"color:#419bd7;\">宝</strong></span></span>": "https://qr.alipay.com/tsx06936chkivwaljc8bb41"
         };
         $.extend(links, extra);
         var lKeys = Object.keys(links);
@@ -181,9 +181,9 @@ $(document).ready(function () {
     })
 
     .fail(function () {
-        $(".package-error").text("查看插件信息错误！").css("display", "block");
+        $(".package-error").text("插件信息出错！").css("display", "block");
         $(".package-info").css("display", "none");
-        $(".package-name").text("源出现错误");
+        $(".package-name").text("源出现问题！报告管理员吧");
         return;
     });
 
