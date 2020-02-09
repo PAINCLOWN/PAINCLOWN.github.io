@@ -1,8 +1,8 @@
   {
-	"name": "oldpackage",
-	"package": "com.supermamon.oldpackage_1.0.0-1_iphoneos-arm",
+	"name": "newpackage",
+	"package": "com.supermamon.newpackage",
 	"author": "painclown",
-	"version": "1.0",
+	"version": "2.0",
 	"dependency": "N/A",
 	"minOSVersion": "9.0",
 	"maxOSVersion": "13.3",
@@ -10,7 +10,10 @@
 	"description": "<div>测试包~请勿下载<br><br>~~~~~~~<br><br><strong>Need help?</strong> Link to tutorials in my pinned tweet</div>",
   	"changelog": {
 	    "1.0": [
-	      "直接发布1.0"
+	      "无"
+	    ],
+	 "2.0": [
+	      "直接发布2.0"
 	    ]
   	},
 	"screenshots": {
