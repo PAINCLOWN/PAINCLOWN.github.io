@@ -67,9 +67,9 @@ $(document).ready(function () {
 
     var dPackage = getParameterByName("p");
     if (!dPackage) {
-        $(".package-error").text("This package doesn't seem to exist :(").css("display", "block");
+        $(".package-error").text("这个插件似乎不存在嗷~").css("display", "block");
         $(".package-info").css("display", "none");
-        $(".package-name").text("Not Found");
+        $(".package-name").text("不存在");
         return;
     }
 
@@ -181,9 +181,9 @@ $(document).ready(function () {
     })
 
     .fail(function () {
-        $(".package-error").text("An error occurred while retrieving package info!").css("display", "block");
+        $(".package-error").text("查看插件信息错误！").css("display", "block");
         $(".package-info").css("display", "none");
-        $(".package-name").text("Repository Error");
+        $(".package-name").text("源出现错误");
         return;
     });
 
