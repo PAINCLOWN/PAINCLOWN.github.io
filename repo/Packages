@@ -3,14 +3,14 @@ Version: 1.0
 Architecture: iphoneos-arm
 Maintainer: PAINCLOWN <pozz@vip.qq.com>
 Filename: debs/com.painclown.repoicons_1.0_iphoneos-arm.deb
-Size: 24858
-MD5sum: 8c511f18fe082e5a459e2de25abfa55d
-SHA1: be24967a90d5be8ded06793895b5180b20d10f96
-SHA256: 533f022035ef1cda1653de6a4c0a58102a8bcf53ab93de4ad8872e07269a9ea1
+Size: 8726
+MD5sum: ded7bd73c0f06129e2747a4250d1cc12
+SHA1: 413cbc20919553d2ca63c1ce1a8ffcd3d8361a8e
+SHA256: 1925ea3818178e5d215728c7a8eb877f126c37de47c9cd5d5230b445c0e7ff39
 Section: System
 Description: 源图标美化必装
 Author: PAINCLOWN
-Depiction: https://paicnlown.github.io/depictions/?p=com.painclown.repoicons
+Depiction: https://paicnlown.github.io/repo/depictions/?p=com.painclown.repoicons
 Name: 鐺鐺鐺™源图标
-SileoDepiction: https://paicnlown.github.io/sileo/repoicons.json
+SileoDepiction: https://paicnlown.github.io/repo/sileo/repoicons.json
 
