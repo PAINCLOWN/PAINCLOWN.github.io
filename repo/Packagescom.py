@@ -1,11 +1,11 @@
-encode:"utf-8"
+# encoding:utf-8
 '''
 PAINCLOWN-script
 '''
 import bz2
 import lzma
 
-file = open('Packages',"r")
+file = open('Packages',"r",encoding='utf-8')
 Packages = file.read().encode('utf-8')
 file.close()
 print(Packages)

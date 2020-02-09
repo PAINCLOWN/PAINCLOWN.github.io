@@ -1,32 +1,16 @@
-Package: com.supermamon.newpackage
-Version: 2.0.0-1
+Package: com.painclown.repoicons
+Version: 1.0
 Architecture: iphoneos-arm
-Maintainer: Reposi3 <reposithree@gmail.com>
-Depends: firmware (>7.0), mobilesubstrate
-Filename: debs/com.supermamon.newpackage_2.0.0-1_iphoneos-arm.deb
-Size: 854
-MD5sum: 85a01c41aaaa72b48b08d9d0a67f3016
-SHA1: 46bbcd314f5bcb29e05e287f08fe50e6547ea401
-SHA256: b01c426f4e262c901fd0a9dce060d89327af05bdbd203ce7527c133c1bc8cafd
-Section: Tweaks
-Description: This is a sample new package. Firmware should be greater than 7.0
-Author: Reposi3 <reposithree@gmail.com>
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.newpackage
-Name: New Package
-
-Package: com.supermamon.oldpackage
-Version: 1.0.0-1
-Architecture: iphoneos-arm
-Maintainer: Reposi3 <reposithree@gmail.com>
-Depends: firmware (<7.0)
-Filename: debs/com.supermamon.oldpackage_1.0.0-1_iphoneos-arm.deb
-Size: 860
-MD5sum: 8c606f0c05217aa2a20949091fe516f0
-SHA1: 44f945218a8f72e24ad69191bfee4a89bb7e9bc0
-SHA256: 2d0cf4ea9ddc1d1be3968c869ddd29bd850eae37ccd9b35d100f72b7aca62f8e
-Section: Tweaks
-Description: This is a sample old package. Firmware should be lower than 7.0
-Author: Reposi3 <reposithree@gmail.com>
-Depiction: https://supermamon.github.io/Reposi3/depictions/?p=com.supermamon.oldpackage
-Name: Old Package
+Maintainer: PAINCLOWN <pozz@vip.qq.com>
+Filename: debs/com.painclown.repoicons_1.0_iphoneos-arm.deb
+Size: 24858
+MD5sum: 8c511f18fe082e5a459e2de25abfa55d
+SHA1: be24967a90d5be8ded06793895b5180b20d10f96
+SHA256: 533f022035ef1cda1653de6a4c0a58102a8bcf53ab93de4ad8872e07269a9ea1
+Section: System
+Description: 源图标美化必装
+Author: PAINCLOWN
+Depiction: https://paicnlown.github.io/depictions/?p=com.painclown.repoicons
+Name: 鐺鐺鐺™源图标
+SileoDepiction: https://paicnlown.github.io/sileo/repoicons.json
 
