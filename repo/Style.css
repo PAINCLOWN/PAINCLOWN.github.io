@@ -11,7 +11,7 @@ header {
 
 header .intromsg {
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 header img {
@@ -71,7 +71,40 @@ header .btn{
     transition: all 0.3s ease-in-out;
     margin-top: 15px;
 }
+.btn-outline-cydia {
+    color:	#F4A83A;
+    font-size: 1.2em;
+    border: solid 1.5px 	#F4A83A;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
+.btn-outline-sileo {
+    color:	#29B7CB;
+    font-size: 1.2em;
+    border: solid 1.5px 	#29B7CB;
+    background: transparent;
+    transition: all 0.3s ease-in-out;
+    margin-top: 15px;
+}
 
+
+.btn-outline-cydia:hover,
+.btn-outline-cydia:focus,
+.btn-outline-cydia:active,
+.btn-outline-cydia.active {
+    color: white;
+    background:	#F4A83A;
+    border: solid 1.5px white;
+}
+.btn-outline-sileo:hover,
+.btn-outline-sileo:focus,
+.btn-outline-sileo:active,
+.btn-outline-sileo.active {
+    color: white;
+    background:	#29B7CB;
+    border: solid 1.5px white;
+}
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active,
@@ -80,8 +113,6 @@ header .btn{
     background:	#EE0000;
     border: solid 1.5px white;
 }
-
-
 footer{
     padding-top: 50px;
     background-color: none;
