@@ -1,0 +1,20 @@
+  {
+	"name": "com.painclown.beatsaudioeqe",
+	"package": "com.painclown.beatsaudioeqe",
+	"author": "painclown",
+	"version": "1.0",
+	"dependency": "N/A",
+	"minOSVersion": "9.0",
+	"maxOSVersion": "13.3",
+	"otheriOS": "untested",
+	"description": "<div>测试包~请勿下载<br><br>~~~~~~~<br><br><strong>需要帮助？</strong> 暂不提供帮助嗷</div>",
+  	"changelog": {
+	    "1.0": [
+	      "无"
+	    ]
+  	},
+	"screenshots": {
+		"test.png": ""
+	},
+	"links": {}
+}
