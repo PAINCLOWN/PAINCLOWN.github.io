@@ -8,7 +8,7 @@ Size:1158
 MD5sum:a9ff476292438b06a0b52bd5bf31f4c8
 SHA1:40b86971bc3ec9265fed758eb0653084d5d9a01f
 SHA256:089154d2338d4640b5e0dcf073acc3e225215eabd8f6ec9655f51ec3968f57ba
-Section:D™-Tweaks
+Section:D-Tweaks
 Description:用EQ调出失传的HTCBeatsAudio音效
 Author:PAINCLOWN
 Depiction:https://pozz.cf/repo/depictions/?p=com.painclown.beatsaudioeqe
@@ -16,15 +16,15 @@ Name:BeatsAudio™EQE
 Pre-Depends:com.r333d.eqe,firmware(>=7)
 
 Package:com.painclown.repoicons
-Version:1.0
+Version:1.1
 Architecture:iphoneos-arm
 Maintainer:PAINCLOWN<pozz@vip.qq.com>
-Filename:debs/com.painclown.repoicons_1.0_iphoneos-arm.deb
+Filename:debs/com.painclown.repoicons_1.1_iphoneos-arm.deb
 Size:8824
-MD5sum:ed743de854eade1f0c09fe145b41c0c0
-SHA1:bf42fa1e445b7a612caaeae77832c3ee4081edac
-SHA256:9f9d572105e6b72de447cc1066e326ff40612e69af370a0a15d3fee109a67258
-Section:D™-Tweaks
+MD5sum:bd8059eb13f26700aeacc9935c9ac4df
+SHA1:a4683b022ac4ffad5821e74b6591a5f4891189ef
+SHA256:a7bddb594aa5745bffce6a7cd92f483a549c5caa4586bc56226b82f7eaa04cdd
+Section:D-Tweaks
 Description:源图标美化必装
 Author:PAINCLOWN
 Depiction:https://pozz.cf/repo/depictions/?p=com.painclown.repoicons

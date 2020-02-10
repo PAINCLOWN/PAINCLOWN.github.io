@@ -145,10 +145,9 @@ def PackagesCustomSection():
     packages = openPackage(packagesFile)
     packagesDictList = packageToDict(packages)
 
-    Section = 'https://pozz.cf/repo/depictions/?p='
     newPackages = []
     for packagesDict in packagesDictList:
-        packagesDict['Section'] = 'D™-Tweaks'
+        packagesDict['Section'] = 'D-Tweaks'
         for packagesKey in packagesDict:
             print(packagesKey)
             print(packagesDict[packagesKey])
