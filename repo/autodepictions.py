@@ -51,12 +51,14 @@ import json
 import re
 packagesFile = 'Packages'
 
+#打开packages文件
 def openPackage(fileName):
     file = open(fileName,'r',encoding='utf-8')
     packages = file.readlines()
     file.close()
     return packages
 
+#packages文件转字典
 def packageToDict(packages):
     newPackagesList = []
     tempNewPackages = []
@@ -69,22 +71,24 @@ def packageToDict(packages):
             tempNewPackages.clear()
         else:
             temppack = pack.replace("\n", "").replace(" ", "").split(":")
-            #多：矫正
+            #多冒号只用第一个冒号分隔列表，其他列表恢复冒号合并成一个字符串
             if len(temppack) > 2:
-                i = 0
                 a = temppack[0]
                 tempStr = ''
                 for b in temppack:
-                    i = i + 1
                     if b == a:
                         continue
                     else:
-                        tempStr = tempStr +':'+ b
-                temppack = [a,tempStr]     
+                        if tempStr == '':
+                            tempStr = b
+                        else:
+                            tempStr = tempStr +':'+ b
+                temppack = [a,tempStr]
             tempNewPackages.append(temppack)
     print(newPackagesList)
     return newPackagesList
-        
+
+#字典转json
 def packagesDictListToJson(packagesDictList):
     for packagesDict in packagesDictList:
         try:
@@ -111,16 +115,56 @@ def packagesDictListToJson(packagesDictList):
         },
         "links": {}
         }
-        packageJson = json.dumps(packageJsonBase,ensure_ascii=False)
-        print(packageJson)
+        packagesJson = json.dumps(packageJsonBase,ensure_ascii=False)
+        print(packagesJson)
         file = open("depictions\packages\\"+packagesDict['Package']+".json",'w',encoding='utf-8')
-        file.writelines(packageJson)
+        file.writelines(packagesJson)
         file.close
+
+def PackagesCustomDepiction():
+    #初始化字典
+    packages = openPackage(packagesFile)
+    packagesDictList = packageToDict(packages)
+
+    urlHeard = 'https://pozz.cf/repo/depictions/?p='
+    newPackages = []
+    for packagesDict in packagesDictList:
+        packagesDict['Depiction'] = urlHeard + packagesDict['Package']
+        for packagesKey in packagesDict:
+            print(packagesKey)
+            print(packagesDict[packagesKey])
+            lineStr = packagesKey + ':' + packagesDict[packagesKey]+  '\n'
+            newPackages.append(lineStr)
+        newPackages.append('\n')
+    file = open(packagesFile,'w',encoding='utf-8')
+    file.writelines(newPackages)
+    file.close()
+
+def PackagesCustomSection():
+    #初始化字典
+    packages = openPackage(packagesFile)
+    packagesDictList = packageToDict(packages)
+
+    Section = 'https://pozz.cf/repo/depictions/?p='
+    newPackages = []
+    for packagesDict in packagesDictList:
+        packagesDict['Section'] = 'D™-Tweaks'
+        for packagesKey in packagesDict:
+            print(packagesKey)
+            print(packagesDict[packagesKey])
+            lineStr = packagesKey + ':' + packagesDict[packagesKey]+  '\n'
+            newPackages.append(lineStr)
+        newPackages.append('\n')
+    file = open(packagesFile,'w',encoding='utf-8')
+    file.writelines(newPackages)
+    file.close()
 
 def main():
     packages = openPackage(packagesFile)
     packagesDictList = packageToDict(packages)
     packagesDictListToJson(packagesDictList)
+    PackagesCustomDepiction()
+    PackagesCustomSection()
 
 if __name__ == "__main__":
     main()

@@ -1,32 +1,32 @@
-Package: com.painclown.beatsaudioeqe
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: PAINCLOWN <pozz@vip.qq.com>
-Depends: com.r333d.eqe
-Filename: debs/com.painclown.beatsaudioeqe_1.0_iphoneos-arm.deb
-Size: 1158
-MD5sum: a9ff476292438b06a0b52bd5bf31f4c8
-SHA1: 40b86971bc3ec9265fed758eb0653084d5d9a01f
-SHA256: 089154d2338d4640b5e0dcf073acc3e225215eabd8f6ec9655f51ec3968f57ba
-Section: Tweaks
-Description: 用EQ调出失传的HTC BeatsAudio音效
-Author: PAINCLOWN
-Depiction: https://pozz.cf/repo/depictions/?p=com.painclown.beatsaudioeqe
-Name: BeatsAudio™ EQE
-Pre-Depends: com.r333d.eqe, firmware (>= 7)
+Package:com.painclown.beatsaudioeqe
+Version:1.0
+Architecture:iphoneos-arm
+Maintainer:PAINCLOWN<pozz@vip.qq.com>
+Depends:com.r333d.eqe
+Filename:debs/com.painclown.beatsaudioeqe_1.0_iphoneos-arm.deb
+Size:1158
+MD5sum:a9ff476292438b06a0b52bd5bf31f4c8
+SHA1:40b86971bc3ec9265fed758eb0653084d5d9a01f
+SHA256:089154d2338d4640b5e0dcf073acc3e225215eabd8f6ec9655f51ec3968f57ba
+Section:D™-Tweaks
+Description:用EQ调出失传的HTCBeatsAudio音效
+Author:PAINCLOWN
+Depiction:https://pozz.cf/repo/depictions/?p=com.painclown.beatsaudioeqe
+Name:BeatsAudio™EQE
+Pre-Depends:com.r333d.eqe,firmware(>=7)
 
-Package: com.painclown.repoicons
-Version: 1.0
-Architecture: iphoneos-arm
-Maintainer: PAINCLOWN <pozz@vip.qq.com>
-Filename: debs/com.painclown.repoicons_1.0_iphoneos-arm.deb
-Size: 8704
-MD5sum: 8603902c9039b1c3f33c0cdd21640f78
-SHA1: 4a56e01087c974c85d7eef70017a6f76ec7c0d25
-SHA256: 56e5d5d6e2ca78eb28bcca96358958fbc7d0150e02905cbe6b22efd440abb00e
-Section: System
-Description: 源图标美化必装
-Author: PAINCLOWN
-Depiction: https://pozz.cf/repo/depictions/?p=com.painclown.repoicons
-Name: 鐺鐺鐺™源图标
+Package:com.painclown.repoicons
+Version:1.0
+Architecture:iphoneos-arm
+Maintainer:PAINCLOWN<pozz@vip.qq.com>
+Filename:debs/com.painclown.repoicons_1.0_iphoneos-arm.deb
+Size:8824
+MD5sum:ed743de854eade1f0c09fe145b41c0c0
+SHA1:bf42fa1e445b7a612caaeae77832c3ee4081edac
+SHA256:9f9d572105e6b72de447cc1066e326ff40612e69af370a0a15d3fee109a67258
+Section:D™-Tweaks
+Description:源图标美化必装
+Author:PAINCLOWN
+Depiction:https://pozz.cf/repo/depictions/?p=com.painclown.repoicons
+Name:鐺鐺鐺™源图标
 
