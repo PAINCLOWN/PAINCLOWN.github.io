@@ -1,0 +1,1 @@
+{"name": " unrar", "package": " unrar", "author": "PAINCLOWN", "version": " 5.6.4-1", "dependency": " dpkg (>= 1.14.25-8)", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": " de-compresses files in rar format", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

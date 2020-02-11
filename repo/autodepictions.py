@@ -58,6 +58,18 @@ def openPackage(fileName):
     file.close()
     return packages
 
+def packagesRe(fileName):
+    file = open(fileName,'r',encoding='utf-8')
+    packages = file.read()
+    file.close()
+    #print(packages)
+    temp = packages.replace('\n\t','').replace('\n ','')
+    file = open(packagesFile,'w',encoding='utf-8')
+    file.write(temp)
+    file.close()
+    
+
+
 #packages文件转字典
 def packageToDict(packages):
     newPackagesList = []
@@ -70,7 +82,7 @@ def packageToDict(packages):
             newPackagesList.append(tempNewPackagesDict)
             tempNewPackages.clear()
         else:
-            temppack = pack.replace("\n", "").replace(" ", "").split(":")
+            temppack = pack.replace("\n", "").split(":")
             #多冒号只用第一个冒号分隔列表，其他列表恢复冒号合并成一个字符串
             if len(temppack) > 2:
                 a = temppack[0]
@@ -95,16 +107,33 @@ def packagesDictListToJson(packagesDictList):
             Depends = packagesDict['Pre-Depends']
         except:
             Depends = "无"
+        try:
+            Author = packagesDict['Author']
+        except:
+            Author = "PAINCLOWN"
+        try:
+            Version = packagesDict['Version']
+        except:
+            Version = "1.0"
+        try:
+            Description = packagesDict['Description']
+        except:
+            Description = packagesDict['Package'] + "\t暂时没有像样的描述哦~"
+        try:
+            Name = packagesDict['Name']
+        except:
+            Name = packagesDict['Package']
+
         packageJsonBase ={
-        "name": packagesDict['Name'],
+        "name": Name,
         "package": packagesDict['Package'],
-        "author": packagesDict['Author'],
-        "version": packagesDict['Version'],
+        "author": Author,
+        "version": Version,
         "dependency": Depends,
         "minOSVersion": "9.0",
         "maxOSVersion": "13.3.1",
         "otheriOS": "untested",
-        "description": packagesDict['Description'],
+        "description": Description,
         "changelog": {
             "1.0": [
             "暂无"
@@ -158,12 +187,22 @@ def PackagesCustomSection():
     file.writelines(newPackages)
     file.close()
 
-def main():
+def run():
+    packagesRe(packagesFile)
     packages = openPackage(packagesFile)
     packagesDictList = packageToDict(packages)
     packagesDictListToJson(packagesDictList)
     PackagesCustomDepiction()
     PackagesCustomSection()
+
+def test():
+    packages = openPackage(packagesFile)
+    packagesRe(packages)
+
+def main():
+    run()
+    #test()
+
 
 if __name__ == "__main__":
     main()
