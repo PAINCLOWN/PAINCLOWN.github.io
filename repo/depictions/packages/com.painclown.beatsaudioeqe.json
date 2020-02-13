@@ -1,1 +1,0 @@
-{"name": "BeatsAudio™EQE", "package": "com.painclown.beatsaudioeqe", "author": "PAINCLOWN", "version": "1.0", "dependency": "com.r333d.eqe,firmware(>=7)", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "用EQ调出失传的HTCBeatsAudio音效", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

@@ -124,11 +124,11 @@ def packagesDictListToJson(packagesDictList):
         try:
             Name = packagesDict['Name']
         except:
-            Name = packagesDict['Package']
+            Name = packagesDict['Package'].replace(' ','')
 
         packageJsonBase ={
         "name": Name,
-        "package": packagesDict['Package'].replace(' ' ,''),
+        "package": packagesDict['Package'].replace(' ',''),
         "author": Author,
         "version": Version,
         "dependency": Depends,
@@ -351,8 +351,8 @@ def PackagesCustomDepiction():
     sileoUrlHeard = 'https://pozz.cf/repo/sileo/'
     newPackages = []
     for packagesDict in packagesDictList:
-        packagesDictDepiction = urlHeard + packagesDict['Package'].replace(' ','')
-        packagesDictSileodepiction = sileoUrlHeard + packagesDict['Package'].replace(' ','') + '.json'
+        packagesDictDepiction = urlHeard + packagesDict['Package']
+        packagesDictSileodepiction = sileoUrlHeard + packagesDict['Package'] + '.json'
         packagesDict.update({'Depiction':packagesDictDepiction,'Sileodepiction':packagesDictSileodepiction})
         #重新组成多行
         for packagesKey in packagesDict:
