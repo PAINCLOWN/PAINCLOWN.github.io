@@ -1059,18 +1059,20 @@ Name: BeatsAudio™ EQE
 Pre-Depends: com.r333d.eqe, firmware (>= 7)
 
 Package: com.painclown.repoicons
-Version: 1.1
+Version: 1.2
 Architecture: iphoneos-arm
 Maintainer: PAINCLOWN <pozz@vip.qq.com>
-Filename: debs/com.painclown.repoicons_1.1_iphoneos-arm.deb
-Size: 8824
-MD5sum: bd8059eb13f26700aeacc9935c9ac4df
-SHA1: a4683b022ac4ffad5821e74b6591a5f4891189ef
-SHA256: a7bddb594aa5745bffce6a7cd92f483a549c5caa4586bc56226b82f7eaa04cdd
+Filename: debs/com.painclown.repoicons_1.2_iphoneos-arm.deb
+Size: 575950
+MD5sum: 4ef26963ccf0c29975ffee8bf92636e8
+SHA1: e93c37a20219ec1d58967c9159f4312ee10de001
+SHA256: 87d408524067fc384524b190e03c112d0fc6ef2b0c5100e278870d1bf36fe63b
 Section:D-Tweaks
-Description: 源图标美化必装
+Description: 鐺鐺鐺™源图标 源图标 Cydia Repo Packages Icon
 Author: PAINCLOWN
 Depiction:https://pozz.cf/repo/depictions/?p= com.painclown.repoicons
+Essential: yes
+Icon: file:///Applications/Cydia.app/Sections/D-System.png
 Name: 鐺鐺鐺™源图标
 
 Package: com.pixelomer.obsidian

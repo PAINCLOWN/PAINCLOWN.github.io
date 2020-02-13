@@ -173,10 +173,13 @@ def PackagesCustomSection():
     #初始化字典
     packages = openPackage(packagesFile)
     packagesDictList = packageToDict(packages)
-
+    packagesSystemList= ['com.painclown.repoicons']
     newPackages = []
     for packagesDict in packagesDictList:
-        packagesDict['Section'] = 'D-Tweaks'
+        if packagesDict['Package'] in [packagesSystemList]:
+            packagesDict['Section'] = 'D-System'
+        else:
+            packagesDict['Section'] = 'D-Tweaks'
         for packagesKey in packagesDict:
             print(packagesKey)
             print(packagesDict[packagesKey])
