@@ -152,15 +152,209 @@ def packagesDictListToJson(packagesDictList):
         file.writelines(packagesJson)
         file.close
 
+def packagesDictListToSileoJson(packagesDictList):
+    print('dict to Sileo json ···')
+    for packagesDict in packagesDictList:
+        try:
+            Depends = packagesDict['Pre-Depends']
+        except:
+            Depends = "无"
+        try:
+            Author = packagesDict['Author']
+        except:
+            Author = "PAINCLOWN"
+        try:
+            Version = packagesDict['Version']
+        except:
+            Version = "1.0"
+        try:
+            Description = packagesDict['Description']
+        except:
+            Description = packagesDict['Package'] + "\t暂时没有像样的描述哦~"
+        try:
+            Name = packagesDict['Name']
+        except:
+            Name = packagesDict['Package']
+
+        packageJsonBase ={
+  "class": "DepictionTabView",
+  "headerImage": "https://pozz.cf/repo/sileo/src/header.png",
+  "minVersion": "0.3",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "tintColor": "#a2b9c9",
+      "views": [
+        {
+          "class": "DepictionSubheaderView",
+          "title": "描述",
+          "useBoldText": True,
+          "useBottomMargin": False
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": Description,
+          "useRawFormat": True
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "截图",
+          "useBoldText": True,
+          "useBottomMargin": False
+        },
+        {
+          "class": "DepictionScreenshotsView",
+          "itemCornerRadius": 8,
+          "itemSize": "{330, 596.385543}",
+          "screenshots": [
+            {
+              "accessibilityText": "Screenshot",
+              "url": ""
+            }
+          ]
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "详情",
+          "useBoldText": True,
+          "useBottomMargin": False
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 8
+        },
+        {
+          "class": "DepictionTableTextView",
+          "text": Author,
+          "title": "作者"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "text": Version,
+          "title": "版本"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "text": "iOS9 - 13.3.0",
+          "title": "兼容性"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "text": Depends,
+          "title": "依赖"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        },
+        {
+          "action": "https://twitter.com/Pa1ncl0wn",
+          "class": "DepictionTableButtonView",
+          "title": "推特上找我",
+          "openExternal": True
+        },
+        {
+          "action": "mailto:vip.qq.com",
+          "class": "DepictionTableButtonView",
+          "title": "古老的邮箱联系"
+        },
+        {
+          "action": "https://qr.alipay.com/tsx06936chkivwaljc8bb41",
+          "class": "DepictionTableButtonView", 
+          "title": "给我整一杯牛🍺 致富饱"
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 40
+        },
+        {
+          "URL": "https://pozz.cf/repo/CydiaIcon.png",
+          "alignment": 1,
+          "class": "DepictionImageView",
+          "cornerRadius": 0,
+          "height": 45,
+          "width": 45
+        },
+        {
+          "class": "DepictionSpacerView",
+          "spacing": 16
+        }
+      ]
+    },
+    {
+      "class": "DepictionStackView",
+      "tabname": "Changelog",
+      "tintColor": "#a2b9c9",
+      "views": [
+        {
+          "class": "DepictionSubheaderView",
+          "title": "1.0-1",
+          "useBoldText": True,
+          "useBottomMargin": False
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "<ul>\n<li>Fixed something</li>\n<li>Fixed another something</li>\n</ul>",
+          "useRawFormat": True
+        },
+        {
+          "class": "DepictionSubheaderView",
+          "title": "1.0",
+          "useBoldText": True,
+          "useBottomMargin": False
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "<ul>\n<li>Initial release</li>\n</ul>",
+          "useRawFormat": True
+        }
+      ]
+    }
+  ],
+  "tintColor": "#a2b9c9"
+}
+        packagesJson = json.dumps(packageJsonBase,ensure_ascii=False)
+        #print(packagesJson)
+        file = open("sileo\\"+packagesDict['Package']+".json",'w',encoding='utf-8')
+        file.writelines(packagesJson)
+        file.close
+
 def PackagesCustomDepiction():
     #初始化字典
     packages = openPackage(packagesFile)
     packagesDictList = packageToDict(packages)
-    print('正在生成插件描述页 ···')
+
+    print('正在生成插件描述页和sileo描述 ···')
     urlHeard = 'https://pozz.cf/repo/depictions/?p='
+    sileoUrlHeard = 'https://pozz.cf/repo/sileo/'
     newPackages = []
     for packagesDict in packagesDictList:
-        packagesDict['Depiction'] = urlHeard + packagesDict['Package']
+        packagesDictDepiction = urlHeard + packagesDict['Package'].replace(' ','')
+        packagesDictSileodepiction = sileoUrlHeard + packagesDict['Package'].replace(' ','') + '.json'
+        packagesDict.update({'Depiction':packagesDictDepiction,'Sileodepiction':packagesDictSileodepiction})
+        #重新组成多行
         for packagesKey in packagesDict:
             #print(packagesKey)
             #print(packagesDict[packagesKey])
@@ -200,6 +394,7 @@ def run():
     packages = openPackage(packagesFile)
     packagesDictList = packageToDict(packages)
     packagesDictListToJson(packagesDictList)
+    packagesDictListToSileoJson(packagesDictList)
     PackagesCustomDepiction()
     PackagesCustomSection()
     print('所有操作完成。')

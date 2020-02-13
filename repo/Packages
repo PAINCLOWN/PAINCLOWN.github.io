@@ -14,7 +14,8 @@ Author: Smoking & Acreson
 Icon: file:///Applications/Cydia.app/Sections/Acreson-游戏(Games).png
 Name: Honor of Kings Stadia 4X(Official + Best)「外挂」
 Sponsor: Acreson <342080124@qq.com>
-Depiction:https://pozz.cf/repo/depictions/?p= acreson.game.chaojishiju4
+Depiction:https://pozz.cf/repo/depictions/?p=acreson.game.chaojishiju4
+Sileodepiction:https://pozz.cf/repo/sileo/acreson.game.chaojishiju4.json
 
 Package: applist
 Version: 1.5.15~beta1
@@ -30,11 +31,12 @@ SHA256: 55cb9b74d2201d58f3dcde5765c103d305180222fe61a18baa644d84153fa0aa
 Section:D-Tweaks
 Description: Allow extensions to read the list of installed apps
 Author: Ryan Petrich <rpetrich@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= applist
+Depiction:https://pozz.cf/repo/depictions/?p=applist
 Installed-Size: 780
 Name: AppList
 Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
 dev: rpetrich
+Sileodepiction:https://pozz.cf/repo/sileo/applist.json
 
 Package: apt7
 Version: 1:0-2
@@ -51,7 +53,8 @@ Description: the advanced packaging tool from Debian
 Name: APT 0.7 Transitional
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: standard
-Depiction:https://pozz.cf/repo/depictions/?p= apt7
+Depiction:https://pozz.cf/repo/depictions/?p=apt7
+Sileodepiction:https://pozz.cf/repo/sileo/apt7.json
 
 Package: bz.jed.tweakcompatible
 Version: 0.1.5
@@ -66,7 +69,7 @@ SHA256: d10cb06e4da3281ed89906ac84656996b98f52c98c743a22f303fcdad3297b7e
 Section:D-Tweaks
 Description: Adds a way to check tweak compatibility in cydia
 Author: treAson <treasonftg@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= bz.jed.tweakcompatible
+Depiction:https://pozz.cf/repo/depictions/?p=bz.jed.tweakcompatible
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=tweakcompatibleDp
 Icon: file:///Library/PreferenceBundles/tweakCompatible_prefs.bundle/icon@2x.png
 Installed-Size: 292
@@ -74,6 +77,7 @@ Name: tweakCompatible
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12
 dev: jed
+Sileodepiction:https://pozz.cf/repo/sileo/bz.jed.tweakcompatible.json
 
 Package: cn.tinyapps.xgpspro
 Version: 4.0.9
@@ -90,7 +94,7 @@ SHA256: 8d5e9d128769ca02fde6ddc5584f169f92b7cc0749401fc48ff348b736c21b4e
 Section:D-Tweaks
 Description: iOS 5.1.1~13.2.3 CHANGE your iPhone's location as you wish.A perfect match for Facebook, Twitter, WeChat, Pokemon GO, Uber and other location-based apps. 经典的iPhone定位修改伪装插件，适合微信、口袋妖怪、微博、QQ、陌陌、美团、钉钉、口袋助理等地理位置应用。support all iOS versions(5.1.1~13.2.3)  and all iOS devices(iPhone 4/4S/5/5S/5C/6/6+/6S/6S+/7/7+/SE/8/8+/X/XS/XR/XS Max/11/11Pro)。支持所有iOS系统(5.1.1~13.2.3)版本及设备(包括iPhone 4/4S/5/5S/5C/6/6+/6S/6S+/7/7+/SE/8/8+/X/XS/XR/XS Max/11/11Pro), iPad, iPod Touch. 完美兼容最新13.2.3越狱。
 Author: Sheng Wen <tinyapps@foxmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= cn.tinyapps.xgpspro
+Depiction:https://pozz.cf/repo/depictions/?p=cn.tinyapps.xgpspro
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=xgpsproDp
 Icon: file:///Applications/XGPSPro.app/Icon.png
 Installed-Size: 7321
@@ -98,6 +102,7 @@ Name: Fake GPS Pro(定位修改器)-FAKE your iPhone's location as you wish
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, role::enduser, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
 dev: shengwen
+Sileodepiction:https://pozz.cf/repo/sileo/cn.tinyapps.xgpspro.json
 
 Package: com.25mao.DouTu
 Version: 2.0-6
@@ -113,7 +118,8 @@ Section:D-Tweaks
 Author: Mao
 Name: 微信斗图助手
 Priority: optional
-Depiction:https://pozz.cf/repo/depictions/?p= com.25mao.DouTu
+Depiction:https://pozz.cf/repo/depictions/?p=com.25mao.DouTu
+Sileodepiction:https://pozz.cf/repo/sileo/com.25mao.DouTu.json
 
 Package: com.25mao.WeChatHookPro
 Version: 0.3-5
@@ -129,7 +135,8 @@ Section:D-Tweaks
 Author: Mao
 Name: WeChatHookPro
 Priority: optional
-Depiction:https://pozz.cf/repo/depictions/?p= com.25mao.WeChatHookPro
+Depiction:https://pozz.cf/repo/depictions/?p=com.25mao.WeChatHookPro
+Sileodepiction:https://pozz.cf/repo/sileo/com.25mao.WeChatHookPro.json
 
 Package: com.a3tweaks.flipswitch
 Version: 1.0.16~beta5
@@ -146,7 +153,7 @@ SHA256: bf3f620e98d390ce5ed3ddf6a27168ba466089a529a2ba2c8f39717131bd4335
 Section:D-Tweaks
 Description: Centralized toggle system for iOS
 Author: rpetrich <rpetrich+flipswitch@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.a3tweaks.flipswitch
+Depiction:https://pozz.cf/repo/depictions/?p=com.a3tweaks.flipswitch
 Homepage: https://rpetri.ch/cydia/flipswitch/beta/
 Icon: file:///Applications/Preferences.app/icon-table.png
 Installed-Size: 2396
@@ -154,6 +161,7 @@ Name: Flipswitch
 Provides: com.jerryen.rotationlockflipswitch, tw.garynil.ccfixer93, tw.hiraku.nightshift
 Tag: purpose::extension, role::developer
 dev: flipswitch
+Sileodepiction:https://pozz.cf/repo/sileo/com.a3tweaks.flipswitch.json
 
 Package: com.ball.settingscillapse.cn
 Version: 1.1
@@ -167,7 +175,8 @@ Section:D-Tweaks
 Author: Ball <434479917@qq.com>
 Icon: file:///Library/PreferenceBundles/SettingsCollapsePreferences.bundle/icon@2x.png
 Name: SettingsCollapse 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.ball.settingscillapse.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.ball.settingscillapse.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.ball.settingscillapse.cn.json
 
 Package: com.cannathea.afc2d-arm64
 Version: 1.1
@@ -184,7 +193,7 @@ SHA256: ed5c840759c4bcc9b7b014dacf3cf8dcf23e5e97fe8eab03f97b1a8ab47cbf03
 Section:D-Tweaks
 Description: Allow full file-system access over USB for arm64 devices, especially for those using a KPPLess jailbreak.
 Author: saurik, Cannathea <csupport@cannathea.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.cannathea.afc2d-arm64
+Depiction:https://pozz.cf/repo/depictions/?p=com.cannathea.afc2d-arm64
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=afc2kpplessDp
 Installed-Size: 672
 Name: Apple File Conduit "2" (iOS 11+, arm64)
@@ -193,6 +202,7 @@ Provides: com.saurik.afc2d, net.angelxwind.afc2d-arm64, com.mrmadtw.afc2forios11
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::daemon, compatible::ios10, compatible::ios11, compatible::ios12
 dev: cannathea
+Sileodepiction:https://pozz.cf/repo/sileo/com.cannathea.afc2d-arm64.json
 
 Package: com.crack.cocoatop64
 Version: 2.0.2-1
@@ -206,7 +216,8 @@ SHA256: 74f081c7b4f9d3b316bd9875ba8af33bb3dd2407329c06ec37f67aee000ae4be
 Section:D-Tweaks
 Author: Domo
 Name: CocoaTop 查看进程
-Depiction:https://pozz.cf/repo/depictions/?p= com.crack.cocoatop64
+Depiction:https://pozz.cf/repo/depictions/?p=com.crack.cocoatop64
+Sileodepiction:https://pozz.cf/repo/sileo/com.crack.cocoatop64.json
 
 Package: com.crack.cydown.cn
 Version: 7.0.3
@@ -221,7 +232,8 @@ SHA256: c6aba181a550b4d54441c2bcd0b44f68616d1f544719d89174892308c15ddfd1
 Section:D-Tweaks
 Author: Sandy0
 Name: CyDown 简体中文修正包
-Depiction:https://pozz.cf/repo/depictions/?p= com.crack.cydown.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.crack.cydown.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.crack.cydown.cn.json
 
 Package: com.crack.kietha.sleepanywhere
 Version: 1.0.1-1
@@ -236,7 +248,8 @@ SHA256: 0083244cbfb761574c3e109c7f5a21a458b41fda6994159a70ab39d5c2009091
 Section:D-Tweaks
 Author: Kiet Ha
 Name: SleepAnywhere 双击锁屏
-Depiction:https://pozz.cf/repo/depictions/?p= com.crack.kietha.sleepanywhere
+Depiction:https://pozz.cf/repo/depictions/?p=com.crack.kietha.sleepanywhere
+Sileodepiction:https://pozz.cf/repo/sileo/com.crack.kietha.sleepanywhere.json
 
 Package: com.creaturecoding.crux
 Version: 1.0.0
@@ -253,13 +266,14 @@ SHA256: e08f8043f2e67df8a1e0bd1fb0ed7e052e40d29179859688aefec76412add126
 Section:D-Tweaks
 Description: run any command as root. `crux /usr/bin/dpkg install com.creaturcoding.crux`
 Author: CreatureSurvive <support@creaturecoding.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.creaturecoding.crux
+Depiction:https://pozz.cf/repo/depictions/?p=com.creaturecoding.crux
 Homepage: https://creaturecoding.com/
 Icon: 
 Installed-Size: 68
 Name: crux
 Priority: optional
 dev: CreatureSurvive
+Sileodepiction:https://pozz.cf/repo/sileo/com.creaturecoding.crux.json
 
 Package: com.creaturesurvive.libcscolorpicker
 Version: 1.0
@@ -274,13 +288,14 @@ SHA256: 199ced0792b798a8402b382863ea899faf8872fb9fadf99fc6610c633fde93f4
 Section:D-Tweaks
 Description: A minimal color picker library for developers
 Author: CreatureSurvive <support@creaturecoding.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.creaturesurvive.libcscolorpicker
+Depiction:https://pozz.cf/repo/depictions/?p=com.creaturesurvive.libcscolorpicker
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcscolorpickerDp
 Installed-Size: 502
 Name: libCSColorPicker
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::library, cydia::obsolete, compatible::ios10, compatible::ios11, compatible::ios12
 dev: creaturecoding
+Sileodepiction:https://pozz.cf/repo/sileo/com.creaturesurvive.libcscolorpicker.json
 
 Package: com.cydiabc.nrbdzyw1001
 Version: 2.0
@@ -300,7 +315,8 @@ Icon: file:///Applications/Cydia.app/Sections/Fonts.png
 Icon2: 3.png
 Name: 牛肉布丁中英文100%
 Sponsor: Ai-小苹果
-Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.nrbdzyw1001
+Depiction:https://pozz.cf/repo/depictions/?p=com.cydiabc.nrbdzyw1001
+Sileodepiction:https://pozz.cf/repo/sileo/com.cydiabc.nrbdzyw1001.json
 
 Package: com.cydiabc.vartaman
 Version: 1.2.2
@@ -321,7 +337,8 @@ Icon2: 12.png
 Installed-Size: 588
 Name: Vartaman随机壁纸
 Sponsor: Ai-小苹果™
-Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.vartaman
+Depiction:https://pozz.cf/repo/depictions/?p=com.cydiabc.vartaman
+Sileodepiction:https://pozz.cf/repo/sileo/com.cydiabc.vartaman.json
 
 Package: com.cydiageek.carrierizer
 Version: 1.0.5
@@ -336,7 +353,7 @@ SHA256: 368784f26375aea6a0c1e33986fd54ba03069b9a68b70a23118f822130ee4e62
 Section:D-Tweaks
 Description: Custom Text for your Carrier!
 Author: CydiaGeek <lucaluca86@aol.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.cydiageek.carrierizer
+Depiction:https://pozz.cf/repo/depictions/?p=com.cydiageek.carrierizer
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=carrierizerDp
 Icon: file:///Library/PreferenceBundles/Carrierizer.bundle/Carrierizer@2x.png
 Installed-Size: 575
@@ -345,6 +362,7 @@ Priority: optional
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
 dev: lucaluca86
+Sileodepiction:https://pozz.cf/repo/sileo/com.cydiageek.carrierizer.json
 
 Package: com.exile90.icleanerpro
 Version: 7.8.0
@@ -361,10 +379,11 @@ SHA256: 5e11c3c904c78315a10b8e0636849f5881428b390767d44da8b8a8574b048cf2
 Section:D-Tweaks
 Description: The first real iOS system cleaner & optimizer
 Author: Ivano Bilenchi <support@ib-soft.net>
-Depiction:https://pozz.cf/repo/depictions/?p= com.exile90.icleanerpro
+Depiction:https://pozz.cf/repo/depictions/?p=com.exile90.icleanerpro
 Homepage: http://ib-soft.net/icleaner
 Icon: file:///Applications/iCleaner.app/Icon.png
 Name: iCleaner Pro
+Sileodepiction:https://pozz.cf/repo/sileo/com.exile90.icleanerpro.json
 
 Package: com.hackyouriphone.alizz
 Version: 1.2.2
@@ -379,10 +398,11 @@ SHA256: b0481d85a81944449d1db8115be55624b632a9ce1ecac6c88d96fdc9be4ce746
 Section:D-Tweaks
 Description: The ultimate custom StatusBar Theme Pack.
 Author: JannikCrack <repo@hackyouriphone.org>
-Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.alizz
+Depiction:https://pozz.cf/repo/depictions/?p=com.hackyouriphone.alizz
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=alizz
 Name: Alizz Statusbar
 SileoDepiction: https://depiction.hackyouriphone.org/sileoDepiction.php?filename=alizz
+Sileodepiction:https://pozz.cf/repo/sileo/com.hackyouriphone.alizz.json
 
 Package: com.hackyouriphone.autotouch
 Version: 6.0.0k
@@ -398,10 +418,11 @@ SHA256: ed7604b2990f0d20a0d1310b4c31fffbb2257b495f365a73ca908ef066b36ebc
 Section:D-Tweaks
 Description: Record and playback touch operations, play macro scripts automatically.
 Author: Kent Krantz <repo@hackyouriphone.org>
-Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.autotouch
+Depiction:https://pozz.cf/repo/depictions/?p=com.hackyouriphone.autotouch
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=autotouch
 Name: AutoTouch 
 SileoDepiction: https://depiction.hackyouriphone.org/sileoDepiction.php?filename=autotouch
+Sileodepiction:https://pozz.cf/repo/sileo/com.hackyouriphone.autotouch.json
 
 Package: com.hackyouriphone.carbonite
 Version: 1.0.3
@@ -416,10 +437,11 @@ SHA256: 3762967ddcbd05ae762fe0b1f771619597c35ba0734f88d66c49432da5948e12
 Section:D-Tweaks
 Description: Functionality added to the currently pointless Reachability window.
 Author: Antique <repo@hackyouriphone.org>
-Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.carbonite
+Depiction:https://pozz.cf/repo/depictions/?p=com.hackyouriphone.carbonite
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=carbonite
 Name: Carbonite
 SileoDepiction: https://depiction.hackyouriphone.org/sileoDepiction.php?filename=carbonite
+Sileodepiction:https://pozz.cf/repo/sileo/com.hackyouriphone.carbonite.json
 
 Package: com.hackyouriphone.comanonymousxdlgmemorinjected
 Version: 1.2.1
@@ -434,9 +456,10 @@ SHA256: aa35e6464169d5bbbbeecada8ff5c4c9eab145dd15b318c5a09c8a328a362698
 Section:D-Tweaks
 Description: Injection library that allows you to alter memory in app. Once installed go into settings go to DLGMemorInjected and select the app you want to hack the memory in. Great alternative to gameplayer, Gamegem and iGameGuardian.  This was uploaded by @MODZ4FUN420 Please send donations to cloverdeth420@yahoo.com I accept PayPal and Amazon GiftRewards. Buy me a a coffee or something if you want me to help get these goodies. Have a few screenshots in the screenshots section that should help with use of this.To get this updated first add my repo to Cydia and install from there first. Add this source modz4fun420.yourepo.com/
 Author: AnonymousxiosdeV <repo@hackyouriphone.org>
-Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.comanonymousxdlgmemorinjected
+Depiction:https://pozz.cf/repo/depictions/?p=com.hackyouriphone.comanonymousxdlgmemorinjected
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=comanonymousxdlgmemorinjected
 Name: DLGMemor Injected
+Sileodepiction:https://pozz.cf/repo/sileo/com.hackyouriphone.comanonymousxdlgmemorinjected.json
 
 Package: com.hackyouriphone.goodwifi
 Version: 0.0~beta4
@@ -451,9 +474,10 @@ SHA256: 6248b57b7f37eca8780639ca5acdd56d387f6b4f2c8aa44e6ce7f2991c2c636a
 Section:D-Tweaks
 Description: Better WiFi Preferences
 Author: julioverne <repo@hackyouriphone.org>
-Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.goodwifi
+Depiction:https://pozz.cf/repo/depictions/?p=com.hackyouriphone.goodwifi
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=goodwifi
 Name: GoodWiFi
+Sileodepiction:https://pozz.cf/repo/sileo/com.hackyouriphone.goodwifi.json
 
 Package: com.hackyouriphone.localiapstore13
 Version: 0.0.2
@@ -468,10 +492,11 @@ SHA256: fb9a09fd2f260b0d1098895944737fcd0b41a512001299ca9703199ec7567a8a
 Section:D-Tweaks
 Description: Free In-App Purchases include app IOS 13 bypass Lock iCloud (bypass verify Passcode, Touch ID or Face ID). No options to configure! 
 Author: pxcex <repo@hackyouriphone.org>
-Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.localiapstore13
+Depiction:https://pozz.cf/repo/depictions/?p=com.hackyouriphone.localiapstore13
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=localiapstore13
 Name: LocalIAPStore13
 SileoDepiction: https://depiction.hackyouriphone.org/sileoDepiction.php?filename=localiapstore13
+Sileodepiction:https://pozz.cf/repo/sileo/com.hackyouriphone.localiapstore13.json
 
 Package: com.hackyouriphone.ntspeed
 Version: 0.2~beta6a
@@ -486,9 +511,10 @@ SHA256: 02b5437a6f79765c96ad45c7aefd02bf39d429de288665cfcf988e1f21408750
 Section:D-Tweaks
 Description: See Active Traffic Network Speed
 Author: julioverne <repo@hackyouriphone.org>
-Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.ntspeed
+Depiction:https://pozz.cf/repo/depictions/?p=com.hackyouriphone.ntspeed
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=ntspeed
 Name: NtSpeed
+Sileodepiction:https://pozz.cf/repo/sileo/com.hackyouriphone.ntspeed.json
 
 Package: com.hackyouriphone.smoothcursorios13
 Version: 0.0.1
@@ -504,10 +530,11 @@ SHA256: 50d9ead63c7681f7df3b6e3d08f55abefb9b71e1936a9ae5efad07a6109695ec
 Section:D-Tweaks
 Description: Office 2013-styled cursor animation.
 Author: PoomSmart <repo@hackyouriphone.org>
-Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.smoothcursorios13
+Depiction:https://pozz.cf/repo/depictions/?p=com.hackyouriphone.smoothcursorios13
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=smoothcursorios13
 Name: SmoothCursor iOS 13
 SileoDepiction: https://depiction.hackyouriphone.org/sileoDepiction.php?filename=smoothcursorios13
+Sileodepiction:https://pozz.cf/repo/sileo/com.hackyouriphone.smoothcursorios13.json
 
 Package: com.hk.3dbadgeclear
 Version: 1.4.0
@@ -522,7 +549,8 @@ SHA256: 6aa395a3ca4393b483b4f42e36d6ddc6b8326aae22b962b38fc480a516e0b9aa
 Section:D-Tweaks
 Author: John Sklikas <isklikas@msn.com>
 Name: 3DBadgeClear(清角标)
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.3dbadgeclear
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.3dbadgeclear
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.3dbadgeclear.json
 
 Package: com.hk.alipaybforest
 Version: 0.3.3
@@ -537,7 +565,8 @@ SHA256: 41205e9388f1394036b8d7dad8d8f8d585d9aa24af7b9c464f61938a70141a99
 Section:D-Tweaks
 Author: 支付宝B
 Name: Alipay-增强
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.alipaybforest
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.alipaybforest
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.alipaybforest.json
 
 Package: com.hk.aperturize.cn
 Version: 1.0.5
@@ -552,7 +581,8 @@ SHA256: 90fddb416b3d5d7f72f29c5386be96e842f39bf10b2cd18ac329ea9dbbbfa1be
 Section:D-Tweaks
 Author: Sandy0
 Name: Aperturize 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.aperturize.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.aperturize.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.aperturize.cn.json
 
 Package: com.hk.appstoreplusplus
 Version: 0.9.7
@@ -569,7 +599,8 @@ Section:D-Tweaks
 Author: CokePokes
 Name: AppStore++ 降级
 Priority: optional
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.appstoreplusplus
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.appstoreplusplus
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.appstoreplusplus.json
 
 Package: com.hk.ball.lightline
 Version: 1.1
@@ -583,7 +614,8 @@ SHA256: b1e7a7ff6a6616146cd283d89fedcf98f2ba49fd5fb997268f274f0534279587
 Section:D-Tweaks
 Author: Ryu
 Name: Light Line 注销动画
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.ball.lightline
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.ball.lightline
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.ball.lightline.json
 
 Package: com.hk.callbarxs12.cn
 Version: 2.3-76
@@ -598,7 +630,8 @@ SHA256: e01c71061ba3c6ae16ea724105e960d7840e98e2aa5d5709958b0ff28bf783e8
 Section:D-Tweaks
 Author: Sandy0、妖刀
 Name: CallBar XS 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.callbarxs12.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.callbarxs12.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.callbarxs12.cn.json
 
 Package: com.hk.choicy.cn
 Version: 1.1
@@ -612,7 +645,8 @@ SHA256: fd5d240af34fa0ff8bbed41be7a93542aea81db0f02d52d6ebd7c9b81e517374
 Section:D-Tweaks
 Author: 妖刀
 Name: Choicy 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.choicy.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.choicy.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.choicy.cn.json
 
 Package: com.hk.cozybadges.cn
 Version: 1.0.0
@@ -627,7 +661,8 @@ Section:D-Tweaks
 Description: CozyBadges 简体中文包。
 Author: 妖刀
 Name: CozyBadges 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.cozybadges.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.cozybadges.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.cozybadges.cn.json
 
 Package: com.hk.flow.cn
 Version: 1.0.3
@@ -642,7 +677,8 @@ Section:D-Tweaks
 Description: Flow 简体中文包。
 Author: 妖刀
 Name: Flow 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.flow.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.flow.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.flow.cn.json
 
 Package: com.hk.flyjb.cn
 Version: 0.2~beta48
@@ -656,7 +692,8 @@ SHA256: 0a6693cd45c816703452d56c54fb3250733269e053d0b428af05e743f1ec25e3
 Section:D-Tweaks
 Author: 妖刀
 Name: FlyJB 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.flyjb.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.flyjb.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.flyjb.cn.json
 
 Package: com.hk.otadisabler
 Version: 0.1-7
@@ -672,7 +709,8 @@ Section:D-Tweaks
 Author: ichitaso
 Installed-Size: 200
 Name: OTADisabler(屏蔽更新)
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.otadisabler
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.otadisabler
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.otadisabler.json
 
 Package: com.hk.powerloghelperdfix
 Version: 1.0
@@ -688,7 +726,8 @@ Section:D-Tweaks
 Author: opa334
 Installed-Size: 152
 Name: powerlogHelperdFix (修复iOS13电量)
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.powerloghelperdfix
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.powerloghelperdfix
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.powerloghelperdfix.json
 
 Package: com.hk.qqprocrack
 Version: 2.0
@@ -703,7 +742,8 @@ SHA256: 8dceca72aeb7ddfd2aa9aae7bfec0a1c307f5c7cf0bf70aef4b54e2eff1d2404
 Section:D-Tweaks
 Author: 7Loopy
 Name: QQ增强v2
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.qqprocrack
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.qqprocrack
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.qqprocrack.json
 
 Package: com.hk.rose.cn
 Version: 3.1
@@ -717,7 +757,8 @@ SHA256: 818d4845184ddb409efd33eabf892fe7e8672dc0203dab00b5e38340f515614b
 Section:D-Tweaks
 Author: 妖刀
 Name: Rose 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.rose.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.rose.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.rose.cn.json
 
 Package: com.hk.rose
 Version: 3.1
@@ -733,7 +774,8 @@ Section:D-Tweaks
 Description: 各个场景操作时振动反馈。3.0版本开始需要libpackageinfo(spark)这个依赖，依赖源https://revulate.dev/。如果重新越狱激活不了，可尝试卸载Rose。
 Author: ShyMemoriees <shymemoriees@yahoo.com>
 Name: Rose
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.rose
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.rose
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.rose.json
 
 Package: com.hk.shortlockp.cn
 Version: 1.0.17
@@ -748,7 +790,8 @@ SHA256: ac3d76f826bce22c5a2624f16f2f8b10f98c2778c86d373291b19aee5c0ceb31
 Section:D-Tweaks
 Author: Sandy0
 Name: ShortLook P佬版汉化包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.shortlockp.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.shortlockp.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.shortlockp.cn.json
 
 Package: com.hk.snowboard.cn
 Version: 1.2.85~Beta2
@@ -762,7 +805,8 @@ SHA256: 0c4de633355d4c31fe9d2abc8ee0ff3885dafab4767ab2e7aad8621674a7f375
 Section:D-Tweaks
 Author: 妖刀
 Name: Snowboard 中文修正包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.snowboard.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.snowboard.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.snowboard.cn.json
 
 Package: com.hk.systeminfo
 Version: 2.3.2-6+debug
@@ -778,7 +822,8 @@ Section:D-Tweaks
 Description: 系统信息查看增强，设置-通用-关于，会看到更多系统信息，英文，无法汉化。
 Author: ARX8x
 Name: System Info 系统信息
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.systeminfo
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.systeminfo
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.systeminfo.json
 
 Package: com.hk.tinybanners2.cn
 Version: 1.0.4-1
@@ -792,7 +837,8 @@ SHA256: 0093b5a0d3c141b0b8e371a34a2b4104d7fb8ac8d55999f7d6cca4dec8ab52cd
 Section:D-Tweaks
 Author: 妖刀&Ball
 Name: TinyBanners 2 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.tinybanners2.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.tinybanners2.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.tinybanners2.cn.json
 
 Package: com.hk.yaodao.jellyfish.cn
 Version: 1.2.1
@@ -807,7 +853,8 @@ SHA256: a641708a78d31e328a64ba6a146714f67f2150c6685b9720d57b3a971cb19e0d
 Section:D-Tweaks
 Author: 妖刀
 Name: Jellyfish 简体中文包
-Depiction:https://pozz.cf/repo/depictions/?p= com.hk.yaodao.jellyfish.cn
+Depiction:https://pozz.cf/repo/depictions/?p=com.hk.yaodao.jellyfish.cn
+Sileodepiction:https://pozz.cf/repo/sileo/com.hk.yaodao.jellyfish.cn.json
 
 Package: com.iosnjb.cydiaxistyle2
 Version: 2.0.6
@@ -824,7 +871,8 @@ Section:D-Tweaks
 Description: iOS 11 and 12 style cydia home page
 Author: iOSNJB <iosnjbsorteos@gmail.com>
 Name: CydiaXIStyle 2.0
-Depiction:https://pozz.cf/repo/depictions/?p= com.iosnjb.cydiaxistyle2
+Depiction:https://pozz.cf/repo/depictions/?p=com.iosnjb.cydiaxistyle2
+Sileodepiction:https://pozz.cf/repo/sileo/com.iosnjb.cydiaxistyle2.json
 
 Package: com.ivanobilenchi.icleanerdarktheme
 Version: 1.0.2
@@ -841,7 +889,8 @@ Author: Ivano Bilenchi <support@ib-soft.net>
 Homepage: http://ib-soft.net/icleaner
 Name: iCleaner Dark Theme
 Pre-Depends: winterboard
-Depiction:https://pozz.cf/repo/depictions/?p= com.ivanobilenchi.icleanerdarktheme
+Depiction:https://pozz.cf/repo/depictions/?p=com.ivanobilenchi.icleanerdarktheme
+Sileodepiction:https://pozz.cf/repo/sileo/com.ivanobilenchi.icleanerdarktheme.json
 
 Package: com.jailbreak365.safeccmodules
 Version: 1.5-1
@@ -856,12 +905,13 @@ SHA256: e32c31dd327daf2466119cdceafab191f7fc9aa931b506bbcee43a27b8df15ba
 Section:D-Tweaks
 Description: More control center modules for iOS 11/12/13
 Author: jailbreak365 <jailbreak365@mail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.jailbreak365.safeccmodules
+Depiction:https://pozz.cf/repo/depictions/?p=com.jailbreak365.safeccmodules
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccmodulesDp
 Installed-Size: 5131
 Name: CCModules
 Tag: purpose::extension, compatible::ios11, compatible::ios12
 dev: jailbreak365
+Sileodepiction:https://pozz.cf/repo/sileo/com.jailbreak365.safeccmodules.json
 
 Package: com.jakeashacks.realcc
 Version: 1.0.2
@@ -876,13 +926,14 @@ SHA256: 20bfa5de12cbf0ef2014b29a3f16f6aeb96ec1f7f5bae13988c5d7c89043b886
 Section:D-Tweaks
 Description: Actually disable Wi-Fi from the iOS 11 CC
 Author: Jake James <jakeashacks@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.jakeashacks.realcc
+Depiction:https://pozz.cf/repo/depictions/?p=com.jakeashacks.realcc
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=realccDp
 Installed-Size: 102
 Name: RealCC
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, compatible::ios11, compatible::ios12
 dev: jakeashacks
+Sileodepiction:https://pozz.cf/repo/sileo/com.jakeashacks.realcc.json
 
 Package: com.kingpuffdaddi.control-center.ccvpn
 Version: 1.0.4
@@ -897,13 +948,14 @@ SHA256: 9d704411c98a963abf1f1f1f486cd3eaba05150bc387f0f2a78c37fc1faeda5d
 Section:D-Tweaks
 Description: A Control Center Module to connect/disconnect VPN
 Author: KingPuffdaddi <kingpuffdaddi@icloud.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.kingpuffdaddi.control-center.ccvpn
+Depiction:https://pozz.cf/repo/depictions/?p=com.kingpuffdaddi.control-center.ccvpn
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccvpnDp
 Icon: file:///Library/ControlCenter/Bundles/CCVPN.bundle/Icon@2x.png
 Installed-Size: 114
 Name: CCVPN
 Tag: purpose::extension, compatible::ios11, compatible::ios12, compatible::ios13
 dev: kingpuffdaddi
+Sileodepiction:https://pozz.cf/repo/sileo/com.kingpuffdaddi.control-center.ccvpn.json
 
 Package: com.kingpuffdaddi.wifiqr
 Version: 1.0
@@ -918,12 +970,13 @@ SHA256: f63016956a2ef41c2ef3b844b8c348c9cab76ebec8768b3b2bb419677f7aaf7b
 Section:D-Tweaks
 Description: Generate a QR code for WiFi networks directly from the settings
 Author: KingPuffdaddi <kingpuffdaddi@icloud.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.kingpuffdaddi.wifiqr
+Depiction:https://pozz.cf/repo/depictions/?p=com.kingpuffdaddi.wifiqr
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=wifiqrDp
 Installed-Size: 179
 Name: WiFiQR
 Tag: purpose::extension, compatible::ios11, compatible::ios12, compatible::ios13
 dev: kingpuffdaddi
+Sileodepiction:https://pozz.cf/repo/sileo/com.kingpuffdaddi.wifiqr.json
 
 Package: com.laughingquoll.prefixui
 Version: 1.2.6
@@ -941,7 +994,8 @@ Author: LaughingQuoll
 Installed-Size: 172
 Name: PrefixUI
 Tag: role::developer
-Depiction:https://pozz.cf/repo/depictions/?p= com.laughingquoll.prefixui
+Depiction:https://pozz.cf/repo/depictions/?p=com.laughingquoll.prefixui
+Sileodepiction:https://pozz.cf/repo/sileo/com.laughingquoll.prefixui.json
 
 Package: com.lenglengyu.hookant
 Version: 0.0.1-4
@@ -956,10 +1010,10 @@ SHA256: 6f68b6e974327a6dce54e7d32e5ff0b3e0c3bcd7d5441e160c0937bb4aad85cc
 Section:D-Tweaks
 Description: 解锁无限流量。
 Author: lenglengyu
-Depiction:https://pozz.cf/repo/depictions/?p= com.lenglengyu.hookant
+Depiction:https://pozz.cf/repo/depictions/?p=com.lenglengyu.hookant
 Installed-Size: 548
 Name: 蚂蚁加速器Pro
-Sileodepiction: https://repo.lenglengyu.top/packageInfo/hookantsileo
+Sileodepiction:https://pozz.cf/repo/sileo/com.lenglengyu.hookant.json
 
 Package: com.michael.appleturboboost
 Version: 0.4.1
@@ -976,7 +1030,8 @@ Section:D-Tweaks
 Description: Turbo Boost Your Apple!
 Author: Halo_Michael <yc992147156@me.com>
 Name: Apple Turbo Boost
-Depiction:https://pozz.cf/repo/depictions/?p= com.michael.appleturboboost
+Depiction:https://pozz.cf/repo/depictions/?p=com.michael.appleturboboost
+Sileodepiction:https://pozz.cf/repo/sileo/com.michael.appleturboboost.json
 
 Package: com.muirey03.libimagepicker
 Version: 1.0.4
@@ -993,7 +1048,8 @@ Author: Muirey03
 Installed-Size: 324
 Name: libimagepicker
 Tag: role::developer
-Depiction:https://pozz.cf/repo/depictions/?p= com.muirey03.libimagepicker
+Depiction:https://pozz.cf/repo/depictions/?p=com.muirey03.libimagepicker
+Sileodepiction:https://pozz.cf/repo/sileo/com.muirey03.libimagepicker.json
 
 Package: com.opa334.ccsupport
 Version: 1.2.2
@@ -1010,7 +1066,7 @@ SHA256: 0f3393ecbc3b4d0cf95f1a554aff9e113fd9a353006d96b8f8b8c7f55e6ce90f
 Section:D-Tweaks
 Description: Support tweak for CC modules!
 Author: opa334 <opa334@protonmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.opa334.ccsupport
+Depiction:https://pozz.cf/repo/depictions/?p=com.opa334.ccsupport
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccsupportDp
 Installed-Size: 201
 Name: CCSupport
@@ -1018,6 +1074,7 @@ Provides: com.ioscreatix.silo
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, compatible::ios11, compatible::ios12, compatible::ios13
 dev: opa334
+Sileodepiction:https://pozz.cf/repo/sileo/com.opa334.ccsupport.json
 
 Package: com.opa334.choicy
 Version: 1.1.3
@@ -1032,7 +1089,7 @@ SHA256: 8fb46feaf99136620823236c6011182d5d23e847e884741679e89d815a1384d9
 Section:D-Tweaks
 Description: Advanced Tweak Configuration!
 Author: opa334 <opa334@protonmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.opa334.choicy
+Depiction:https://pozz.cf/repo/depictions/?p=com.opa334.choicy
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=choicyDp
 Icon: file:///Library/PreferenceBundles/ChoicyPrefs.bundle/ChoicyIcon@2x.png
 Installed-Size: 731
@@ -1040,6 +1097,7 @@ Name: Choicy
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
 dev: opa334
+Sileodepiction:https://pozz.cf/repo/sileo/com.opa334.choicy.json
 
 Package: com.painclown.beatsaudioeqe
 Version: 1.0
@@ -1054,9 +1112,10 @@ SHA256: 089154d2338d4640b5e0dcf073acc3e225215eabd8f6ec9655f51ec3968f57ba
 Section:D-Tweaks
 Description: 用EQ调出失传的HTC BeatsAudio音效
 Author: PAINCLOWN
-Depiction:https://pozz.cf/repo/depictions/?p= com.painclown.beatsaudioeqe
+Depiction:https://pozz.cf/repo/depictions/?p=com.painclown.beatsaudioeqe
 Name: BeatsAudio™ EQE
 Pre-Depends: com.r333d.eqe, firmware (>= 7)
+Sileodepiction:https://pozz.cf/repo/sileo/com.painclown.beatsaudioeqe.json
 
 Package: com.painclown.repoicons
 Version: 1.2
@@ -1070,10 +1129,11 @@ SHA256: 87d408524067fc384524b190e03c112d0fc6ef2b0c5100e278870d1bf36fe63b
 Section:D-System
 Description: 鐺鐺鐺™源图标 源图标 Cydia Repo Packages Icon
 Author: PAINCLOWN
-Depiction:https://pozz.cf/repo/depictions/?p= com.painclown.repoicons
+Depiction:https://pozz.cf/repo/depictions/?p=com.painclown.repoicons
 Essential: yes
 Icon: file:///Applications/Cydia.app/Sections/D-System.png
 Name: 鐺鐺鐺™源图标
+Sileodepiction:https://pozz.cf/repo/sileo/com.painclown.repoicons.json
 
 Package: com.pixelomer.obsidian
 Version: 1.1
@@ -1090,7 +1150,8 @@ Description: The universal package list exporter This is a tweak that allows you
 Author: PixelOmer
 Installed-Size: 156
 Name: Obsidian
-Depiction:https://pozz.cf/repo/depictions/?p= com.pixelomer.obsidian
+Depiction:https://pozz.cf/repo/depictions/?p=com.pixelomer.obsidian
+Sileodepiction:https://pozz.cf/repo/sileo/com.pixelomer.obsidian.json
 
 Package: com.pulandres.aperturize
 Version: 1.0.5
@@ -1105,9 +1166,10 @@ SHA256: 65be2f9907dc1bbc1bfb1ddc9df1217578b644a48c9ed794e554089de5cfeb9f
 Section:D-Tweaks
 Description: New portrait mode for unsupported devices
 Author: FoxfortMobile
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.aperturize
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.aperturize
 Icon: file:///Library/PreferenceBundles/aperturizesettings.bundle/icon@3x.png
 Name: Aperturize Cracked
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.aperturize.json
 
 Package: com.pulandres.callbarxs
 Version: 2.3-75
@@ -1124,11 +1186,12 @@ SHA256: 921cec3c6ade3974c60afac0cf965ac274580e7488882987cc1e6191a912953e
 Section:D-Tweaks
 Description: Change the style of your UI Calls
 Author: Elias Limneos <limneoselias@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.callbarxs
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.callbarxs
 Icon: file:///Library/PreferenceBundles/CallBarXPreferences.bundle/CallBarXPreferences@3x.png
 Installed-Size: 1356
 Name: CallBar XS (iOS 12/13) Cracked
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=997
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.callbarxs.json
 
 Package: com.pulandres.conditionalwifi4
 Version: 1.0.0
@@ -1143,8 +1206,9 @@ SHA256: 07ba34c2e93cf8d61c238912ff53911dc98b1d50149bf7aa84578f9b9ebff629
 Section:D-Tweaks
 Description: Restrict certain apps from accessing wifi on iOS 11
 Author: ATWiiks
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.conditionalwifi4
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.conditionalwifi4
 Name: ConditionalWiFi4 R
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.conditionalwifi4.json
 
 Package: com.pulandres.cozybadges
 Version: 1.0.3
@@ -1159,10 +1223,11 @@ SHA256: 3657712a63a5a1ef1cfb2087fe5874c8da7c313bc9c019e0d4dca04509b25f55
 Section:D-Tweaks
 Description: Replace notification badges with sleek labels.
 Author: NoisyFlake
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.cozybadges
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.cozybadges
 Installed-Size: 376
 Name: CozyBadges Free
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=992
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.cozybadges.json
 
 Package: com.pulandres.foxforthack
 Version: 0.0.3
@@ -1177,9 +1242,10 @@ SHA256: 4852fbf353ef72b81e602d22ba3c6ad619ea1f4b51d39496c66c1106922519fb
 Section:D-Tweaks
 Description: Hack to Foxfort tweaks
 Author: ReJail <rejail@rejail.ru>
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.foxforthack
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.foxforthack
 Name: FoxfortHack
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=431
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.foxforthack.json
 
 Package: com.pulandres.harpy
 Version: 2.0.1
@@ -1194,12 +1260,13 @@ SHA256: 288ce8ae80175b1bd902286268a9d494490f130e4b1d5351ddde49b4c4613cca
 Section:D-Tweaks
 Description: Control your network with ease.
 Author: midnightchips <midnightchips@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.harpy
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.harpy
 Icon: file:///Applications/harpy.app/AppIcon29x29@2x.png
 Installed-Size: 12848
 Name: Harpy R
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=493
 Tag: compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.harpy.json
 
 Package: com.pulandres.jellyfish
 Version: 1.3.3
@@ -1215,11 +1282,12 @@ SHA256: 5f622f4501501ec16e9d534f371ed811b4b5c6b78b473327ad6b0b0c9e56a37c
 Section:D-Tweaks
 Description: Modern Lockscreen
 Author: Justin Proulx and AppleBetas
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.jellyfish
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.jellyfish
 Icon: https://repo.pulandres.me/CydiaIcon.png
 Installed-Size: 645
 Name: Jellyfish Free
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=877
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.jellyfish.json
 
 Package: com.pulandres.killbackground13
 Version: 1.0.2
@@ -1236,13 +1304,14 @@ SHA256: 433101a98a6bc56d104c67698e59cd8e9e65ba09849d18a094effb7b22810ab6
 Section:D-Tweaks
 Description: Kill background apps with style for iOS 13.
 Author: ichitaso
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.killbackground13
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.killbackground13
 Icon: file:///Library/PreferenceBundles/KillBackgroundSettings.bundle/KB_icon@2x.png
 Installed-Size: 488
 Name: KillBackground13 Cracked
 Pre-Depends: firmware (>= 13.0)
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=899
 Tag: purpose::extension, compatible::ios13
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.killbackground13.json
 
 Package: com.pulandres.tinybanners2
 Version: 1.0.4-1
@@ -1257,10 +1326,11 @@ SHA256: d9d1d2035b8e5a8086ce69e2982f0fdeb91470f2523804fae7d85a16862e6b71
 Section:D-Tweaks
 Description: Unobtrusive yet useful notification banners.
 Author: Don
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.tinybanners2
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.tinybanners2
 Installed-Size: 520
 Name: TinyBanners 2 Free
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=921
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.tinybanners2.json
 
 Package: com.pulandres.viola
 Version: 1.9.1
@@ -1274,9 +1344,10 @@ SHA256: 6a0391dd9cfdc65219746a005fddfbbbf92d11bc262aee966f7c26fa4b6d3db5
 Section:D-Tweaks
 Description: Viola is a beautiful, simple and modern theme for iOS!
 Author: Bousrih <bousrih20@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.viola
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandres.viola
 Name: Viola Theme
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=967
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandres.viola.json
 
 Package: com.pulandresnetworkmanager
 Version: 1.0.2
@@ -1291,10 +1362,11 @@ SHA256: 4d2e07b5157fb820c5a33ac75c57d999517e87e00a2f96dcc454d66c6d8bc83f
 Section:D-Tweaks
 Description: Force 2G/3G/LTE connection
 Author: NoisyFlake
-Depiction:https://pozz.cf/repo/depictions/?p= com.pulandresnetworkmanager
+Depiction:https://pozz.cf/repo/depictions/?p=com.pulandresnetworkmanager
 Installed-Size: 336
 Name: NetworkManager R
 SileoDepiction: https://pulandres.me/repo/sileo.php?pid=338
+Sileodepiction:https://pozz.cf/repo/sileo/com.pulandresnetworkmanager.json
 
 Package: com.pxcex.apppercent
 Version: 2.0.2
@@ -1309,7 +1381,7 @@ SHA256: 3609d87de48a308b00abe39d7b1ee050392b749c9871a04fbdc20380c07dae27
 Section:D-Tweaks
 Description: Apps Installation in Percent (%) and Notification
 Author: pxcex <pxcex@icloud.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.pxcex.apppercent
+Depiction:https://pozz.cf/repo/depictions/?p=com.pxcex.apppercent
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=apppercentDp
 Icon: file:///Library/PreferenceBundles/AppPercent.bundle/AppPercent@2x.png
 Installed-Size: 307
@@ -1318,6 +1390,7 @@ Priority: optional
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, compatible::ios9, compatible::ios10
 dev: pxcex
+Sileodepiction:https://pozz.cf/repo/sileo/com.pxcex.apppercent.json
 
 Package: com.r333d.eqe
 Version: 2.1.1
@@ -1332,7 +1405,7 @@ SHA256: b9aa2c8e3869551602df6b908f419434eb70970a98fcc8115654a2f020bcdd0e
 Section:D-Tweaks
 Description: System-wide parametric equalizer
 Author: Reed Weichler (rweichler) <rweichler+cydia@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.r333d.eqe
+Depiction:https://pozz.cf/repo/depictions/?p=com.r333d.eqe
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=eqe2Dp
 Icon: file:///Library/Activator/Listeners/com.r333d.eqe.popup/icon-small@2x.png
 Installed-Size: 15510
@@ -1340,6 +1413,7 @@ Name: EQE
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
 dev: rweichler
+Sileodepiction:https://pozz.cf/repo/sileo/com.r333d.eqe.json
 
 Package: com.rpetrich.rocketbootstrap
 Version: 1.0.7~beta3
@@ -1354,13 +1428,14 @@ SHA256: 4b7e9c8a0c6d5fc3179e0c5f7fb880239f8c5f30e481979b9d7e4829d58cfb73
 Section:D-Tweaks
 Description: Support library allowing tweaks to communicate with sandboxed processes
 Author: Ryan Petrich <rpetrich+rocketbootstrap@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.rpetrich.rocketbootstrap
+Depiction:https://pozz.cf/repo/depictions/?p=com.rpetrich.rocketbootstrap
 Homepage: https://www.rpetrich.com/cydia/rocketbootstrap/beta/
 Installed-Size: 596
 Name: RocketBootstrap
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, role::developer
 dev: rpetrich
+Sileodepiction:https://pozz.cf/repo/sileo/com.rpetrich.rocketbootstrap.json
 
 Package: com.shiftcmdk.settingscollapse
 Version: 1.1.1
@@ -1375,9 +1450,10 @@ SHA256: 4531037fd793918d5578f908e3ee7f74bde97138f2b1a84c701c6acde69b9f3c
 Section:D-Tweaks
 Description: Expand or hide individual sections in the Settings app.
 Author: shiftcmdk
-Depiction:https://pozz.cf/repo/depictions/?p= com.shiftcmdk.settingscollapse
+Depiction:https://pozz.cf/repo/depictions/?p=com.shiftcmdk.settingscollapse
 Installed-Size: 436
 Name: SettingsCollapse
+Sileodepiction:https://pozz.cf/repo/sileo/com.shiftcmdk.settingscollapse.json
 
 Package: com.spark.crash-reporter
 Version: 1.17.2
@@ -1394,7 +1470,7 @@ SHA256: 9a51331df567d1766da578d3608a5a4de40179686924166bbd68f4bb43f94be5
 Section:D-Tweaks
 Description: Send useful crash info to developers.
 Author: Lance Fetters (ashikase) <support@ashikase.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.crash-reporter
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.crash-reporter
 Homepage: http://github/ashikase/CrashReporter/
 Installed-Size: 1476
 ModernDepiction: https://revulate.dev/depiction/native/com.spark.crash-reporter.json
@@ -1405,6 +1481,7 @@ SileoDepiction: https://revulate.dev/depiction/native/com.spark.crash-reporter.j
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::uikit, role::enduser
 dev: ashikase
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.crash-reporter.json
 
 Package: com.spark.libcrashreport
 Version: 1.1.2
@@ -1421,13 +1498,14 @@ SHA256: 982697fccb0bfcd6848c4beb9af1d893e23657e4a316de3fb234d94b7d0354eb
 Section:D-Tweaks
 Description: Library to parse and symbolicate crash reports.
 Author: Revulate <revulate1@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.libcrashreport
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.libcrashreport
 Homepage: https://revulate.dev
 Icon: https://revulate.dev/assets/com.spark.libcrashreport/icon.png
 ModernDepiction: https://revulate.dev/depiction/native/com.spark.libcrashreport.json
 Name: libcrashreport (SparkDev)
 Provides: jp.ashikase.libcrashreport, cokepokes.jp.ashikase.libcrashreport
 SileoDepiction: https://revulate.dev/depiction/native/com.spark.libcrashreport.json
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.libcrashreport.json
 
 Package: com.spark.libpackageinfo
 Version: 1.1.4
@@ -1444,13 +1522,14 @@ SHA256: 46987c197f686283947be4435b0191722345975f3e38a89bba4e804a34340207
 Section:D-Tweaks
 Description: Library to retrieve package information.
 Author: Revulate <revulate1@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.libpackageinfo
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.libpackageinfo
 Homepage: https://revulate.dev
 Icon: https://revulate.dev/assets/com.spark.libpackageinfo/icon.png
 ModernDepiction: https://revulate.dev/depiction/native/com.spark.libpackageinfo.json
 Name: libpackageinfo (SparkDev)
 Provides: jp.ashikase.libpackageinfo, cokepokes.jp.ashikase.libpackageinfo
 SileoDepiction: https://revulate.dev/depiction/native/com.spark.libpackageinfo.json
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.libpackageinfo.json
 
 Package: com.spark.libsparkapplist
 Version: 1.0.4
@@ -1467,7 +1546,8 @@ Author: Spark
 Installed-Size: 596
 Name: libSparkAppList
 Tag: role::developer
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.libsparkapplist
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.libsparkapplist
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.libsparkapplist.json
 
 Package: com.spark.libsymbolicate
 Version: 1.9.2
@@ -1484,13 +1564,14 @@ SHA256: 9e44402f0cb2b78bb1b228d4e2f46e2e980b4c27d48edca4a315049ad9f06bdc
 Section:D-Tweaks
 Description: Library to symbolicate memory addresses.
 Author: Revulate <revulate1@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.libsymbolicate
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.libsymbolicate
 Homepage: https://revulate.dev
 Icon: https://revulate.dev/assets/com.spark.libsymbolicate/icon.png
 ModernDepiction: https://revulate.dev/depiction/native/com.spark.libsymbolicate.json
 Name: libsymbolicate (SparkDev)
 Provides: jp.ashikase.libsymbolicate, cokepokes.jp.ashikase.libsymbolicate
 SileoDepiction: https://revulate.dev/depiction/native/com.spark.libsymbolicate.json
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.libsymbolicate.json
 
 Package: com.spark.snowboard.effects
 Version: 1.0.33~Beta2
@@ -1507,7 +1588,8 @@ Description: Icon Effects for SnowBoard
 Author: Spark
 Installed-Size: 548
 Name: SnowBoard Icon Effects Extension
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.effects
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.snowboard.effects
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.snowboard.effects.json
 
 Package: com.spark.snowboard.labels
 Version: 1.0.0~Beta1
@@ -1524,7 +1606,8 @@ Description: Labels for SnowBoard
 Author: Spark
 Installed-Size: 400
 Name: SnowBoard Labels Extension
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.labels
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.snowboard.labels
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.snowboard.labels.json
 
 Package: com.spark.snowboard.masks
 Version: 1.0.14~Beta2
@@ -1541,7 +1624,8 @@ Description: Icon masks for SnowBoard
 Author: Spark
 Installed-Size: 532
 Name: SnowBoard Icon Masks Extension
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.masks
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.snowboard.masks
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.snowboard.masks.json
 
 Package: com.spark.snowboard.presetextension
 Version: 1.0.15~Beta1
@@ -1558,7 +1642,8 @@ Description: SnowBoard Presets Extension
 Author: Spark
 Installed-Size: 820
 Name: SnowBoard Preset Extension
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.presetextension
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.snowboard.presetextension
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.snowboard.presetextension.json
 
 Package: com.spark.snowboard.respringextension
 Version: 1.0.1~Beta1
@@ -1575,7 +1660,8 @@ Description: Respring icon extension for SnowBoard
 Author: Spark
 Installed-Size: 516
 Name: SnowBoard Respring Extension
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.respringextension
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.snowboard.respringextension
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.snowboard.respringextension.json
 
 Package: com.spark.snowboard.settingsicons
 Version: 1.0.18~Beta1
@@ -1592,7 +1678,8 @@ Description: Settings Icons for SnowBoard
 Author: Spark
 Installed-Size: 452
 Name: SnowBoard Settings Icons Extension
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.settingsicons
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.snowboard.settingsicons
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.snowboard.settingsicons.json
 
 Package: com.spark.snowboard.statusbar
 Version: 1.0.2~Beta1
@@ -1609,7 +1696,8 @@ Description: StatusBar for SnowBoard
 Author: Spark
 Installed-Size: 452
 Name: SnowBoard StatusBar Extension
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.statusbar
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.snowboard.statusbar
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.snowboard.statusbar.json
 
 Package: com.spark.snowboard
 Version: 1.2.86~Beta2
@@ -1629,7 +1717,8 @@ Author: Spark & Dennis D. Bednarz
 Installed-Size: 4292
 Name: SnowBoard
 Provides: anemoneteam.anemone, com.anemonetheming.anemone, winterboard
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.snowboard
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.snowboard.json
 
 Package: com.spark.techsupport
 Version: 1.5.2
@@ -1646,13 +1735,14 @@ SHA256: 20fed2dd74df30af972bf17ae09433a3eec20695ab72d81fd3d49ead572ac5f7
 Section:D-Tweaks
 Description: Framework to assist in providing feedback to developers.
 Author: Revulate <revulate1@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.spark.techsupport
+Depiction:https://pozz.cf/repo/depictions/?p=com.spark.techsupport
 Homepage: https://revulate.dev
 Icon: https://revulate.dev/assets/com.spark.techsupport/icon.png
 ModernDepiction: https://revulate.dev/depiction/native/com.spark.techsupport.json
 Name: TechSupport Framework (SparkDev)
 Provides: jp.ashikase.techsupport, cokepokes.jp.ashikase.techsupport
 SileoDepiction: https://revulate.dev/depiction/native/com.spark.techsupport.json
+Sileodepiction:https://pozz.cf/repo/sileo/com.spark.techsupport.json
 
 Package: com.tigisoftware.appdatamanager
 Version: 1.4.2
@@ -1667,7 +1757,7 @@ SHA256: adc861eb2ac147d573ff6dc32f244d2f958b5eb295bbacab9dc9363b6e07da48
 Section:D-Tweaks
 Description: tool to WIPE, BACKUP, RESTORE AppData for installed Apps
 Author: TIGI Software <satashi2009@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.tigisoftware.appdatamanager
+Depiction:https://pozz.cf/repo/depictions/?p=com.tigisoftware.appdatamanager
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=appsmanagerDp
 Icon: file:///Applications/ADManager.app/AppIcon60x60@2x.png
 Installed-Size: 9107
@@ -1676,6 +1766,7 @@ Priority: optional
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::uikit, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12
 dev: satashi2009
+Sileodepiction:https://pozz.cf/repo/sileo/com.tigisoftware.appdatamanager.json
 
 Package: com.tigisoftware.filza
 Version: 3.7.2
@@ -1691,7 +1782,7 @@ SHA256: c57599bb5848d7a05f0e18594ce1e259cfcaa3abd4508dd7e2c7557fb8223589
 Section:D-Tweaks
 Description: File Manager for iPhone, iPad, iPod Touch. Supports iOS 7+
 Author: TIGI Software <satashi2009@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= com.tigisoftware.filza
+Depiction:https://pozz.cf/repo/depictions/?p=com.tigisoftware.filza
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=filzafilemanagerDp
 Icon: file:///Applications/Filza.app/AppIcon57x57.png
 Installed-Size: 28112
@@ -1700,6 +1791,7 @@ Priority: optional
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::uikit, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
 dev: satashi2009
+Sileodepiction:https://pozz.cf/repo/sileo/com.tigisoftware.filza.json
 
 Package: Flex3beta
 Version: 1:3~Beta86
@@ -1718,7 +1810,8 @@ Description: Develop your own tweaks and share them on the Flex Community Cloud
 Author: John Coates
 Name: Flex 3 Beta
 Recommended: com.rpetrich.rocketbootstrap
-Depiction:https://pozz.cf/repo/depictions/?p= Flex3beta
+Depiction:https://pozz.cf/repo/depictions/?p=Flex3beta
+Sileodepiction:https://pozz.cf/repo/sileo/Flex3beta.json
 
 Package: jp.akusio.backgrounderaction13
 Version: 0.1.3
@@ -1733,9 +1826,10 @@ SHA256: 92399b9b3837f4f2ea359dfa44d1854870a501e1dca8e05bf54c145dacdd636f
 Section:D-Tweaks
 Description: [iOS13]Add "Toggle Background Mode" action to ControlCenter.
 Author: akusio <akusio-report@neko2.net>
-Depiction:https://pozz.cf/repo/depictions/?p= jp.akusio.backgrounderaction13
+Depiction:https://pozz.cf/repo/depictions/?p=jp.akusio.backgrounderaction13
 Installed-Size: 244
 Name: BackgrounderAction2 for CCSupport
+Sileodepiction:https://pozz.cf/repo/sileo/jp.akusio.backgrounderaction13.json
 
 Package: jp.akusio.milkyway2
 Version: 0.1.0-alpha
@@ -1750,9 +1844,10 @@ SHA256: c787f180cbf6ba91c740a102592d2cea46067e9bbd86880fa581f192322627c1
 Section:D-Tweaks
 Description: multitasking for iOS13.
 Author: akusio <akusio-report@neko2.net>
-Depiction:https://pozz.cf/repo/depictions/?p= jp.akusio.milkyway2
+Depiction:https://pozz.cf/repo/depictions/?p=jp.akusio.milkyway2
 Installed-Size: 112
 Name: MilkyWay2
+Sileodepiction:https://pozz.cf/repo/sileo/jp.akusio.milkyway2.json
 
 Package: kr.xsf1re.flyjb
 Version: 0.2~beta49
@@ -1770,7 +1865,8 @@ Author: XsF1re
 Icon: file:///Library/PreferenceBundles/flyjbprefs.bundle/icon@2x.png
 Installed-Size: 836
 Name: FlyJB
-Depiction:https://pozz.cf/repo/depictions/?p= kr.xsf1re.flyjb
+Depiction:https://pozz.cf/repo/depictions/?p=kr.xsf1re.flyjb
+Sileodepiction:https://pozz.cf/repo/sileo/kr.xsf1re.flyjb.json
 
 Package: libskittycolor
 Version: 1.0
@@ -1787,7 +1883,8 @@ Author: Skitty
 Installed-Size: 228
 Name: libskittycolor
 Tag: role::developer
-Depiction:https://pozz.cf/repo/depictions/?p= libskittycolor
+Depiction:https://pozz.cf/repo/depictions/?p=libskittycolor
+Sileodepiction:https://pozz.cf/repo/sileo/libskittycolor.json
 
 Package: libssl1.1.1
 Version: 1.1.1c-1
@@ -1805,7 +1902,8 @@ Installed-Size: 6600
 Name: OpenSSL 1.1.1 Libraries
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: standard
-Depiction:https://pozz.cf/repo/depictions/?p= libssl1.1.1
+Depiction:https://pozz.cf/repo/depictions/?p=libssl1.1.1
+Sileodepiction:https://pozz.cf/repo/sileo/libssl1.1.1.json
 
 Package: me.midnightchips.snapback
 Version: 2.0.1
@@ -1820,11 +1918,12 @@ SHA256: 0fed981413a057ac6c83083ab92d397ba8d259b0ea85beb6d8816131cdf8fbf9
 Section:D-Tweaks
 Description: iOS Time Machine
 Author: MidnightChips
-Depiction:https://pozz.cf/repo/depictions/?p= me.midnightchips.snapback
+Depiction:https://pozz.cf/repo/depictions/?p=me.midnightchips.snapback
 Icon: https://midnightchips.me/packages/SnapBack/SileoIcon.png
 Installed-Size: 1548
 Name: SnapBack
 SileoDepiction: https://midnightchips.me/sileo/snapback.json
+Sileodepiction:https://pozz.cf/repo/sileo/me.midnightchips.snapback.json
 
 Package: net.limneos.libbulletin
 Version: 0.1-153
@@ -1839,13 +1938,14 @@ SHA256: 5d5fe8d9ac39f1b89626e62cc83a66674bc4aecfa337fc3cfdd48ef5bd49402d
 Section:D-Tweaks
 Description: Simple library that displays bulletins
 Author: Elias Limneos <limneoselias@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= net.limneos.libbulletin
+Depiction:https://pozz.cf/repo/depictions/?p=net.limneos.libbulletin
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libbulletinDp
 Installed-Size: 332
 Name: libbulletin
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: cydia::obsolete, purpose::extension, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
 dev: limneos
+Sileodepiction:https://pozz.cf/repo/sileo/net.limneos.libbulletin.json
 
 Package: net.limneos.simpleactivationactions
 Version: 0.1-1
@@ -1860,13 +1960,14 @@ SHA256: ce6fdc4a8f3edb16b745ca305238c81273e0066e3580cb1b3da1e9ca385cddcd
 Section:D-Tweaks
 Description: Handles StatusBar actions for simple activation events
 Author: Elias Limneos <limneoselias@gmail.com>
-Depiction:https://pozz.cf/repo/depictions/?p= net.limneos.simpleactivationactions
+Depiction:https://pozz.cf/repo/depictions/?p=net.limneos.simpleactivationactions
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=simpleactivationactionsDp
 Installed-Size: 107
 Name: SimpleActivationActions
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, cydia::obsolete, compatible::ios12
 dev: limneos
+Sileodepiction:https://pozz.cf/repo/sileo/net.limneos.simpleactivationactions.json
 
 Package: network-cmds
 Version: 543-1
@@ -1884,7 +1985,8 @@ Installed-Size: 1968
 Name: Network Commands
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: important
-Depiction:https://pozz.cf/repo/depictions/?p= network-cmds
+Depiction:https://pozz.cf/repo/depictions/?p=network-cmds
+Sileodepiction:https://pozz.cf/repo/sileo/network-cmds.json
 
 Package: openssh
 Version: 8.1-1
@@ -1898,11 +2000,12 @@ SHA1: 645d378202cffa8c5725d16306868795096733bb
 SHA256: e31a640ee0f1f85f92d636ba7774d8d9847dff9c73ae8785e2bf4e9ced79ef22
 Section:D-Tweaks
 Description: secure remote access between machines
-Depiction:https://pozz.cf/repo/depictions/?p= openssh
+Depiction:https://pozz.cf/repo/depictions/?p=openssh
 Installed-Size: 9824
 Name: OpenSSH
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: important
+Sileodepiction:https://pozz.cf/repo/sileo/openssh.json
 
 Package: org.thebigboss.libcolorpicker
 Version: 1.6.7
@@ -1918,7 +2021,7 @@ SHA256: fc1fe90f1b542f33c3512c2026b5c5bdc411bfad34326dc947406bff55175c52
 Section:D-Tweaks
 Description: color picker library for developers
 Author: PixelFire <pixelfiredev@helpful.io>
-Depiction:https://pozz.cf/repo/depictions/?p= org.thebigboss.libcolorpicker
+Depiction:https://pozz.cf/repo/depictions/?p=org.thebigboss.libcolorpicker
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=libcolorpickerDp
 Installed-Size: 622
 Name: libcolorpicker
@@ -1927,6 +2030,7 @@ Provides: me.nepeta.libcolorpicker
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::library, role::developer, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13, cydia::obsolete
 dev: pixelfiredev
+Sileodepiction:https://pozz.cf/repo/sileo/org.thebigboss.libcolorpicker.json
 
 Package: p7zip
 Version: 16.02-1
@@ -1944,7 +2048,8 @@ Multi-Arch: foreign
 Name: 7-zip (POSIX)
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: optional
-Depiction:https://pozz.cf/repo/depictions/?p= p7zip
+Depiction:https://pozz.cf/repo/depictions/?p=p7zip
+Sileodepiction:https://pozz.cf/repo/sileo/p7zip.json
 
 Package: repo.feng.carrierizer.cn
 Version: 1.0.2
@@ -1962,7 +2067,8 @@ Icon: file:///Library/PreferenceBundles/Carrierizer.bundle/Carrierizer@2x.png
 Name: Carrierizer 简繁中文包
 Priority: standard
 Sponsor: WEIP.Tech <repo@weiphone.com>
-Depiction:https://pozz.cf/repo/depictions/?p= repo.feng.carrierizer.cn
+Depiction:https://pozz.cf/repo/depictions/?p=repo.feng.carrierizer.cn
+Sileodepiction:https://pozz.cf/repo/sileo/repo.feng.carrierizer.cn.json
 
 Package: repo.feng.conditionalwifi4.cn
 Version: 1.0.0-1
@@ -1978,7 +2084,8 @@ Author: CDSQ <cdsq.deb@gmail.com>
 Name: ConditionalWiFi4 简繁语言包
 Sponsor: WEIP.Tech <repo@weiphone.com>
 Tag: purpose::extension, compatible::ios11, compatible::ios12
-Depiction:https://pozz.cf/repo/depictions/?p= repo.feng.conditionalwifi4.cn
+Depiction:https://pozz.cf/repo/depictions/?p=repo.feng.conditionalwifi4.cn
+Sileodepiction:https://pozz.cf/repo/sileo/repo.feng.conditionalwifi4.cn.json
 
 Package: repo.feng.safeccmodules.cn
 Version: 1.2-13
@@ -1995,7 +2102,8 @@ Author: CDSQ <cdsq.deb@gmail.com>
 Name: CCModules 简体中文包
 Sponsor: WEIP.Tech <repo@weiphone.com>
 Tag: purpose::extension, compatible::ios11
-Depiction:https://pozz.cf/repo/depictions/?p= repo.feng.safeccmodules.cn
+Depiction:https://pozz.cf/repo/depictions/?p=repo.feng.safeccmodules.cn
+Sileodepiction:https://pozz.cf/repo/sileo/repo.feng.safeccmodules.cn.json
 
 Package: rsync
 Version: 3.1.3-2
@@ -2012,7 +2120,8 @@ Homepage: http://www.samba.org/rsync/
 Installed-Size: 1056
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: important
-Depiction:https://pozz.cf/repo/depictions/?p= rsync
+Depiction:https://pozz.cf/repo/depictions/?p=rsync
+Sileodepiction:https://pozz.cf/repo/sileo/rsync.json
 
 Package: ru.rejail.flow
 Version: 1.1.3
@@ -2028,11 +2137,12 @@ SHA256: 53e80f94d9a89061513d7b789256facbc60bb2382e7a160fde5dc8b28b33626f
 Section:D-Tweaks
 Description: Изменение дизайна вашего плеера
 Author: Muirey03
-Depiction:https://pozz.cf/repo/depictions/?p= ru.rejail.flow
+Depiction:https://pozz.cf/repo/depictions/?p=ru.rejail.flow
 Icon: file:///Library/PreferenceBundles/Flow.bundle/Icon-Large.png
 Installed-Size: 933
 Name: Flow Rus
 SileoDepiction: https://rejail.ru/sileo/depiction.php?file=flow
+Sileodepiction:https://pozz.cf/repo/sileo/ru.rejail.flow.json
 
 Package: ru.rejail.shortlook
 Version: 1.0.17k
@@ -2047,10 +2157,11 @@ SHA256: 25e1f58d7aac426155b0d6f285836139552457116d6f8d6c08a8fbb38ce103e5
 Section:D-Tweaks
 Description: Совершенно новый вид уведомлений на экране блокировки
 Author: Dynastic
-Depiction:https://pozz.cf/repo/depictions/?p= ru.rejail.shortlook
+Depiction:https://pozz.cf/repo/depictions/?p=ru.rejail.shortlook
 Installed-Size: 2132
 Name: ShortLook Rus
 SileoDepiction: https://rejail.ru/sileo/depiction.php?file=shortlook
+Sileodepiction:https://pozz.cf/repo/sileo/ru.rejail.shortlook.json
 
 Package: unrar
 Version: 5.6.4-1
@@ -2068,7 +2179,8 @@ Installed-Size: 736
 Multi-Arch: foreign
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: optional
-Depiction:https://pozz.cf/repo/depictions/?p= unrar
+Depiction:https://pozz.cf/repo/depictions/?p=unrar
+Sileodepiction:https://pozz.cf/repo/sileo/unrar.json
 
 Package: unzip
 Version: 6.0+deb9u1-1
@@ -2084,7 +2196,8 @@ Description: de-compesses files in zip format
 Installed-Size: 808
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: important
-Depiction:https://pozz.cf/repo/depictions/?p= unzip
+Depiction:https://pozz.cf/repo/depictions/?p=unzip
+Sileodepiction:https://pozz.cf/repo/sileo/unzip.json
 
 Package: ws.hbang.common
 Version: 1.14
@@ -2099,7 +2212,7 @@ SHA256: be57913670d797137c7c8ef980cc1bfe9bbd2b8b02d3598d63215d83fc42014b
 Section:D-Tweaks
 Description: Support library for tweaks
 Author: HASHBANG Productions <support@hbang.ws>
-Depiction:https://pozz.cf/repo/depictions/?p= ws.hbang.common
+Depiction:https://pozz.cf/repo/depictions/?p=ws.hbang.common
 Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=hashbangcommonDp
 Installed-Size: 1430
 Name: Cephei
@@ -2107,6 +2220,7 @@ Priority: optional
 Sponsor: thebigboss.org <http://thebigboss.org>
 Tag: purpose::extension, role::developer, compatible::ios7, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
 dev: hbang
+Sileodepiction:https://pozz.cf/repo/sileo/ws.hbang.common.json
 
 Package: xyz.skitty.spectrum
 Version: 1.0.1-1
@@ -2121,11 +2235,12 @@ SHA256: eae1900c8d41d7194dd568b197dcb8767af10e219f2138637b7b646b522a0059
 Section:D-Tweaks
 Description: Customize system colors!
 Author: Skitty & EvenDev
-Depiction:https://pozz.cf/repo/depictions/?p= xyz.skitty.spectrum
+Depiction:https://pozz.cf/repo/depictions/?p=xyz.skitty.spectrum
 Icon: https://skitty.xyz/repo/icons/xyz.skitty.spectrum.png
 Installed-Size: 472
 Name: Spectrum
 SileoDepiction: https://skitty.xyz/repo/depictions/?s=xyz.skitty.spectrum
+Sileodepiction:https://pozz.cf/repo/sileo/xyz.skitty.spectrum.json
 
 Package: zip
 Version: 2.32-1
@@ -2142,5 +2257,6 @@ Installed-Size: 728
 Multi-Arch: foreign
 Pre-Depends: dpkg (>= 1.14.25-8)
 Priority: important
-Depiction:https://pozz.cf/repo/depictions/?p= zip
+Depiction:https://pozz.cf/repo/depictions/?p=zip
+Sileodepiction:https://pozz.cf/repo/sileo/zip.json
 
