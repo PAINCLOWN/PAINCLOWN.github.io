@@ -128,7 +128,7 @@ def packagesDictListToJson(packagesDictList):
 
         packageJsonBase ={
         "name": Name,
-        "package": packagesDict['Package'],
+        "package": packagesDict['Package'].replace(' ' ,''),
         "author": Author,
         "version": Version,
         "dependency": Depends,
@@ -156,7 +156,7 @@ def packagesDictListToSileoJson(packagesDictList):
     print('dict to Sileo json ···')
     for packagesDict in packagesDictList:
         try:
-            Depends = packagesDict['Pre-Depends']
+            Depends = packagesDict['Pre-Depends'].replace(' ' ,'')
         except:
             Depends = "无"
         try:
@@ -164,7 +164,7 @@ def packagesDictListToSileoJson(packagesDictList):
         except:
             Author = "PAINCLOWN"
         try:
-            Version = packagesDict['Version']
+            Version = packagesDict['Version'].replace(' ' ,'')
         except:
             Version = "1.0"
         try:
@@ -174,7 +174,7 @@ def packagesDictListToSileoJson(packagesDictList):
         try:
             Name = packagesDict['Name']
         except:
-            Name = packagesDict['Package']
+            Name = packagesDict['Package'].replace(' ' ,'')
 
         packageJsonBase ={
   "class": "DepictionTabView",
@@ -358,7 +358,7 @@ def PackagesCustomDepiction():
         for packagesKey in packagesDict:
             #print(packagesKey)
             #print(packagesDict[packagesKey])
-            lineStr = packagesKey + ':' + packagesDict[packagesKey]+  '\n'
+            lineStr = packagesKey + ':' + packagesDict[packagesKey] +  '\n'
             newPackages.append(lineStr)
         newPackages.append('\n')
     file = open(packagesFile,'w',encoding='utf-8')
