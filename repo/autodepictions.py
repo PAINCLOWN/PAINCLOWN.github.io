@@ -74,10 +74,11 @@ def packagesRe(fileName):
 def packageToDict(packages):
     newPackagesList = []
     tempNewPackages = []
+    print('packages to dict ···')
     #print(packages)
     for pack in packages:
         if pack == '\n':
-            print(tempNewPackages)
+            #print(tempNewPackages)
             tempNewPackagesDict = dict(tempNewPackages)
             newPackagesList.append(tempNewPackagesDict)
             tempNewPackages.clear()
@@ -97,11 +98,12 @@ def packageToDict(packages):
                             tempStr = tempStr +':'+ b
                 temppack = [a,tempStr]
             tempNewPackages.append(temppack)
-    print(newPackagesList)
+    #print(newPackagesList)
     return newPackagesList
 
 #字典转json
 def packagesDictListToJson(packagesDictList):
+    print('dict to json ···')
     for packagesDict in packagesDictList:
         try:
             Depends = packagesDict['Pre-Depends']
@@ -145,7 +147,7 @@ def packagesDictListToJson(packagesDictList):
         "links": {}
         }
         packagesJson = json.dumps(packageJsonBase,ensure_ascii=False)
-        print(packagesJson)
+        #print(packagesJson)
         file = open("depictions\packages\\"+packagesDict['Package']+".json",'w',encoding='utf-8')
         file.writelines(packagesJson)
         file.close
@@ -154,14 +156,14 @@ def PackagesCustomDepiction():
     #初始化字典
     packages = openPackage(packagesFile)
     packagesDictList = packageToDict(packages)
-
+    print('正在生成插件描述页 ···')
     urlHeard = 'https://pozz.cf/repo/depictions/?p='
     newPackages = []
     for packagesDict in packagesDictList:
         packagesDict['Depiction'] = urlHeard + packagesDict['Package']
         for packagesKey in packagesDict:
-            print(packagesKey)
-            print(packagesDict[packagesKey])
+            #print(packagesKey)
+            #print(packagesDict[packagesKey])
             lineStr = packagesKey + ':' + packagesDict[packagesKey]+  '\n'
             newPackages.append(lineStr)
         newPackages.append('\n')
@@ -173,16 +175,19 @@ def PackagesCustomSection():
     #初始化字典
     packages = openPackage(packagesFile)
     packagesDictList = packageToDict(packages)
-    packagesSystemList= ['com.painclown.repoicons']
+
+    print('正在插件自定义插件分类 ···')
+    packagesSystemList = ['com.painclown.repoicons']
     newPackages = []
     for packagesDict in packagesDictList:
-        if packagesDict['Package'] in [packagesSystemList]:
+        if packagesDict['Package'].replace(' ' ,'') in packagesSystemList:
+            print(packagesDict['Package'])
             packagesDict['Section'] = 'D-System'
         else:
             packagesDict['Section'] = 'D-Tweaks'
         for packagesKey in packagesDict:
-            print(packagesKey)
-            print(packagesDict[packagesKey])
+            #print(packagesKey)
+            #print(packagesDict[packagesKey])
             lineStr = packagesKey + ':' + packagesDict[packagesKey]+  '\n'
             newPackages.append(lineStr)
         newPackages.append('\n')
@@ -197,6 +202,7 @@ def run():
     packagesDictListToJson(packagesDictList)
     PackagesCustomDepiction()
     PackagesCustomSection()
+    print('所有操作完成。')
 
 def test():
     packages = openPackage(packagesFile)

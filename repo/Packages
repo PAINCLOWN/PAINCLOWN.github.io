@@ -1067,7 +1067,7 @@ Size: 575950
 MD5sum: 4ef26963ccf0c29975ffee8bf92636e8
 SHA1: e93c37a20219ec1d58967c9159f4312ee10de001
 SHA256: 87d408524067fc384524b190e03c112d0fc6ef2b0c5100e278870d1bf36fe63b
-Section:D-Tweaks
+Section:D-System
 Description: 鐺鐺鐺™源图标 源图标 Cydia Repo Packages Icon
 Author: PAINCLOWN
 Depiction:https://pozz.cf/repo/depictions/?p= com.painclown.repoicons
