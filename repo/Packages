@@ -314,6 +314,27 @@ Tag: purpose::library, cydia::obsolete, compatible::ios10, compatible::ios11, co
 dev: creaturecoding
 Sileodepiction:https://pozz.cf/repo/sileo/ com.creaturesurvive.libcscolorpicker.json
 
+Package: com.cydiabc.ltyjxbzyw85
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Ai-小苹果
+Depends: firmware (>= 11.0),mobilesubstrate
+Filename: debs/com.cydiabc.ltyjxbzyw85_1.0_iphoneos-arm.deb
+Size: 46661374
+MD5sum: 19c8a7e0f4dd451d82c8417bb0974f58
+SHA1: 3b6d91e7be0f008bf7fa0d7cbfc2e358c629b04b
+SHA256: 5345b9e6b25af37cd385705464b6116aeecaa93cfd5484f05fda3c4fd488f444
+Section:D-Tweaks
+Description: 兰亭圆精修版中英文85%，本字体转自公众号：拾陆字
+A12: 1
+Author: 公众号：拾陆字
+Icon: file:///Applications/Cydia.app/Sections/Fonts.png
+Icon2: 3.png
+Name: 兰亭圆精修版中英文85%
+Sponsor: Ai-小苹果™
+Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.ltyjxbzyw85
+Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.ltyjxbzyw85.json
+
 Package: com.cydiabc.nrbdzyw1001
 Version: 2.0
 Architecture: iphoneos-arm
@@ -334,6 +355,29 @@ Name: 牛肉布丁中英文100%
 Sponsor: Ai-小苹果
 Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.nrbdzyw1001
 Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.nrbdzyw1001.json
+
+Package: com.cydiabc.pokegols
+Version: 1.0-9
+Architecture: iphoneos-arm
+Maintainer: ichitaso
+Depends: firmware (>= 8.0), mobilesubstrate, preferenceloader
+Filename: debs/com.cydiabc.pokegols_1.0-9_iphoneos-arm.deb
+Size: 1580772
+MD5sum: 908ca23f8633eecf29229a66014589eb
+SHA1: ec48ff4dc3381f99d6e45cee3123b887a0fa2bc5
+SHA256: d44fa9d5f2a90fb90f4639af37bf5d26b418fc1e4220521e8cce66b4972af4af
+Section:D-Tweaks
+Description: 允许在锁屏动画启用GIF动画壁纸，英文版本暂无汉化接口
+A12: 1
+Author: ichitaso
+Icon: file:///Applications/Cydia.app/Sections/Tweaks.png
+Icon2: 12.png
+Installed-Size: 2040
+Name: PokeGo LS GIF锁屏GIF动图
+Sponsor: Ai-小苹果™
+Tag: purpose::extension, compatible::ios8, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12, compatible::ios13
+Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.pokegols
+Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.pokegols.json
 
 Package: com.cydiabc.reprovision
 Version: 0.5.2~EOL
@@ -754,6 +798,21 @@ Author: 妖刀
 Name: FlyJB 简体中文包
 Depiction:https://pozz.cf/repo/depictions/?p= com.hk.flyjb.cn
 Sileodepiction:https://pozz.cf/repo/sileo/ com.hk.flyjb.cn.json
+
+Package: com.hk.font.opposans13
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: firmware (>= 11.0),mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.hk.font.opposans13_1.0.0_iphoneos-arm.deb
+Size: 39027348
+MD5sum: 2f6dc20ca88130b081164db2f79f07f2
+SHA1: 4e002c459d038b1ec6721237c4d36676e8cdbec1
+SHA256: 6c64867e95267f217eb09dbaa89c1e42c83c6284e24c7632758582ea32637ff6
+Section:D-Tweaks
+Author: 佚名
+Name: OPPO Sans 加粗版(iOS11~13)
+Depiction:https://pozz.cf/repo/depictions/?p= com.hk.font.opposans13
+Sileodepiction:https://pozz.cf/repo/sileo/ com.hk.font.opposans13.json
 
 Package: com.hk.kalm.cn
 Version: 1.2.1
@@ -1383,23 +1442,23 @@ SileoDepiction: https://repo.pulandres.me/sileo.php?pid=877
 Sileodepiction:https://pozz.cf/repo/sileo/ com.pulandres.jellyfish.json
 
 Package: com.pulandres.kalm
-Version: 1.2.1
+Version: 1.2.2
 Architecture: iphoneos-arm
 Maintainer: Pulandres
 Depends: mobilesubstrate, sedfix
-Filename: debs/com.pulandres.kalm_1.2.1_iphoneos-arm.deb
-Size: 186442
-MD5sum: b556fd700ca7fdad349498c74852212d
-SHA1: 3074077fe57ddf233e35c8dd31c8136640f9e291
-SHA256: cea2157fd4ca7ac9f36ffc9bbccc72ee6db6cca0d5b13e24d5a79ac2bd4d5f3e
+Filename: debs/com.pulandres.kalm_1.2.2_iphoneos-arm.deb
+Size: 122926
+MD5sum: 0199bb5727d71443ab71a61201567941
+SHA1: 7255f34e3d67e2f0479d3d0f1ad66eaef5276675
+SHA256: 2aa96952b8a8a3a5c6412a8b6e0354768c0f30ee902690fd7c993babcbb2549b
 Section:D-Tweaks
 Description: Keep Kalm. Simple and Beautiful Lockscreen.
 Author: ubik <ubik@fwdr.org>
 Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.kalm
 Icon: https://repo.packix.com/api/Packages/5e203bc5a35db8001a2dfd57/icon/download?size=medium
-Installed-Size: 668
+Installed-Size: 704
 Name: Kalm Free
-SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1359
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1378
 Sileodepiction:https://pozz.cf/repo/sileo/ com.pulandres.kalm.json
 
 Package: com.pulandres.killbackground13
