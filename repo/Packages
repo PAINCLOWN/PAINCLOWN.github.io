@@ -314,6 +314,51 @@ Tag: purpose::library, cydia::obsolete, compatible::ios10, compatible::ios11, co
 dev: creaturecoding
 Sileodepiction:https://pozz.cf/repo/sileo/ com.creaturesurvive.libcscolorpicker.json
 
+Package: com.cydiabc.colorflow5
+Version: 1.0.1
+Architecture: iphoneos-arm
+Maintainer: David Goldman
+Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5.000), preferenceloader
+Conflicts: org.thebigboss.colorflow, com.golddavid.colorflow2, com.golddavid.colorflow3, com.golddavid.colorflow4
+Replaces: org.thebigboss.colorflow, com.golddavid.colorflow2, com.golddavid.colorflow3, com.golddavid.colorflow4
+Filename: debs/com.cydiabc.colorflow5_1.0.1_iphoneos-arm.deb
+Size: 543424
+MD5sum: 1eb391549563a63a68a1d2b543e7d2d3
+SHA1: 50da0017d7bbf472c24d2da6e7f5251d9dcdb0f5
+SHA256: 2f9d077899da3707f16e5dd85f345db20046387d845c77b7e3a16a8778f7e8b9
+Section:D-Tweaks
+Description: 音乐播发器可以随意着色，调整增强功能。
+A12: 1
+Author: David Goldman
+Icon: file:///Applications/Cydia.app/Sections/Toys.png
+Icon2: 4.png
+Installed-Size: 1424
+Name: ColorFlow 5 (iOS 13)音乐播放器增强
+Sponsor: Ai-小苹果™
+Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.colorflow5
+Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.colorflow5.json
+
+Package: com.cydiabc.fzys5zczyw100
+Version: 2.0
+Architecture: iphoneos-arm
+Maintainer: Ai-小苹果
+Depends: firmware (>= 11.0),mobilesubstrate
+Filename: debs/com.cydiabc.fzys5zczyw100_2.0_iphoneos-arm.deb
+Size: 51497388
+MD5sum: 1b5b98a4cb48db35e743c4310a19514f
+SHA1: 7fadf213b859c94ec352609d267d7027a0201a6c
+SHA256: 1c79be578b79ad37a213429ef108bf37e892c4ebcde5a501a7b4032d08197240
+Section:D-Tweaks
+Description: 方正悠宋5字重中英文100%，字体转自字由心雨公众号
+A12: 1
+Author: 字由心雨
+Icon: file:///Applications/Cydia.app/Sections/Fonts.png
+Icon2: 3.png
+Name: 方正悠宋5字重中英文100%
+Sponsor: Ai-小苹果™
+Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.fzys5zczyw100
+Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.fzys5zczyw100.json
+
 Package: com.cydiabc.ltyjxbzyw85
 Version: 1.0
 Architecture: iphoneos-arm
@@ -2357,6 +2402,27 @@ Installed-Size: 2132
 Name: ShortLook Rus
 SileoDepiction: https://rejail.ru/sileo/depiction.php?file=shortlook
 Sileodepiction:https://pozz.cf/repo/sileo/ ru.rejail.shortlook.json
+
+Package: ru.rj.appstoreplusplus
+Version: 0.9.8-3
+Architecture: iphoneos-arm
+Maintainer: ReJail <rejail@rejail.ru>
+Depends: firmware (>= 11.0), mobilesubstrate
+Conflicts: com.unlimapps.uaupdatetools
+Filename: debs/ru.rj.appstoreplusplus_0.9.8-3_iphoneos-arm.deb
+Size: 765902
+MD5sum: 8cb6b372a219492901bc96f6d57a58c3
+SHA1: a0c9121d83edaa483b1e697f4c6a17ff184ae0d3
+SHA256: b48a20d7041ce5a36e8b12ace2002cada6a869dd15a445e0e68c7ceced115a66
+Section:D-Tweaks
+Description: Понижение версий приложений
+Author: CokePokes
+Depiction:https://pozz.cf/repo/depictions/?p= ru.rj.appstoreplusplus
+Installed-Size: 3788
+Name: AppStore++
+Priority: optional
+SileoDepiction: https://rejail.ru/sileo/depiction.php?file=appstoreplusplus
+Sileodepiction:https://pozz.cf/repo/sileo/ ru.rj.appstoreplusplus.json
 
 Package: unrar
 Version: 5.6.4-1
