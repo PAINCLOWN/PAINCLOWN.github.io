@@ -401,6 +401,27 @@ Sponsor: Ai-小苹果
 Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.nrbdzyw1001
 Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.nrbdzyw1001.json
 
+Package: com.cydiabc.oppogooglezyw100
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Ai-小苹果
+Depends: firmware (>= 11.0),mobilesubstrate
+Filename: debs/com.cydiabc.oppogooglezyw100_1.0_iphoneos-arm.deb
+Size: 44040794
+MD5sum: cd2ab81ab8de9dd73230bb8d85f3ed1c
+SHA1: f29642ae5458c763840619bdcb22d8a191561035
+SHA256: 837c349faa21710b32fe08af56ab8492b4d0e9498b30727dcda127b229a51b8e
+Section:D-Tweaks
+Description: OPPO Sans+Google Sans中英文100%，字体转载自公众号：苏兔
+A12: 1
+Author: 公众号：苏兔
+Icon: file:///Applications/Cydia.app/Sections/Fonts.png
+Icon2: 3.png
+Name: OPPO Sans+Google Sans中英文100%
+Sponsor: Ai-小苹果™
+Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.oppogooglezyw100
+Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.oppogooglezyw100.json
+
 Package: com.cydiabc.pokegols
 Version: 1.0-9
 Architecture: iphoneos-arm
@@ -469,6 +490,28 @@ Name: Vartaman随机壁纸
 Sponsor: Ai-小苹果
 Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.vartaman
 Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.vartaman.json
+
+Package: com.cydiabc.xkfilza
+Version: 0.0.1-23
+Architecture: iphoneos-arm
+Maintainer: xia0z
+Depends: mobilesubstrate
+Filename: debs/com.cydiabc.xkfilza_0.0.1-23_iphoneos-arm.deb
+Size: 3696
+MD5sum: d85a8185cbf27c992ca2bfd3a111661b
+SHA1: 0072cc38edf8ee3947d13d718e6f3b2252f745a5
+SHA256: 9437ee70312a046ccbe62f7664cfee61821fff9edb227beecbb4913785495377
+Section:D-Tweaks
+Description: 功能强大的文件管理软件，此补丁搭配官方正版使用
+A12: 1
+Author: xia0z
+Icon: file:///Applications/Cydia.app/Sections/Utilities.png
+Icon2: 5.png
+Installed-Size: 104
+Name: Filza File 文件管理器【破解补丁】
+Sponsor: Ai-小苹果™
+Depiction:https://pozz.cf/repo/depictions/?p= com.cydiabc.xkfilza
+Sileodepiction:https://pozz.cf/repo/sileo/ com.cydiabc.xkfilza.json
 
 Package: com.cydiageek.carrierizer
 Version: 1.0.5
@@ -609,6 +652,24 @@ Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.comanonymousxdl
 Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=comanonymousxdlgmemorinjected
 Name: DLGMemor Injected
 Sileodepiction:https://pozz.cf/repo/sileo/ com.hackyouriphone.comanonymousxdlgmemorinjected.json
+
+Package: com.hackyouriphone.fastuprepo
+Version: 0.0~beta4
+Architecture: iphoneos-arm
+Maintainer: iLeoLion <repo@hackyouriphone.org>
+Depends: cydia (>> 1.1.27), mobilesubstrate, cy+cpu.arm64
+Filename: debs/com.hackyouriphone.fastuprepo_0.0~beta4_iphoneos-arm.deb
+Size: 7784
+MD5sum: f3c05d49e508d8f1cd88a1b8bbce5b08
+SHA1: c4c3cd37ce8e20f02f1b5c8edcccfb8ba71b6de1
+SHA256: 1fef24fb20e42a480b9cc5d3c6c1dacd0efcbaad7ba5d299bf25d8d1d851810c
+Section:D-Tweaks
+Description: SpeedUp Cydia Update Sources by blocking download translation.
+Author: julioverne <repo@hackyouriphone.org>
+Depiction:https://pozz.cf/repo/depictions/?p= com.hackyouriphone.fastuprepo
+Homepage: http://repo.hackyouriphone.org/depiction/depiction.php?filename=fastuprepo
+Name: fastUpRepo
+Sileodepiction:https://pozz.cf/repo/sileo/ com.hackyouriphone.fastuprepo.json
 
 Package: com.hackyouriphone.goodwifi
 Version: 0.0~beta4
@@ -843,6 +904,22 @@ Author: 妖刀
 Name: FlyJB 简体中文包
 Depiction:https://pozz.cf/repo/depictions/?p= com.hk.flyjb.cn
 Sileodepiction:https://pozz.cf/repo/sileo/ com.hk.flyjb.cn.json
+
+Package: com.hk.font.czth13
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: firmware (>= 11.0),mobilesubstrate (>= 0.9.5000)
+Filename: debs/com.hk.font.czth13_1.0.0_iphoneos-arm.deb
+Size: 42293674
+MD5sum: 57c745804b4ae55eab7d07dcb1b718d3
+SHA1: 9e54949298da37d402049b1869d5d640f01d01b2
+SHA256: 909f03911c7b58c67072006c9dc6889e45e351d2a02b5740be8fb6f0790b0cc9
+Section:D-Tweaks
+Description: 锤子T黑5字重中文(心雨)，Google Sans多字重英文(Alexman)，加入kupord定制的盲文。自动适应iOS11.x~13.x直装版字体，安装前先卸载已安装的直装字体，自动备份原机字体，卸载即可还原。
+Author: 佚名
+Name: 锤子T黑2.0(iOS11~13)
+Depiction:https://pozz.cf/repo/depictions/?p= com.hk.font.czth13
+Sileodepiction:https://pozz.cf/repo/sileo/ com.hk.font.czth13.json
 
 Package: com.hk.font.opposans13
 Version: 1.0.0
@@ -1408,22 +1485,23 @@ Name: ConditionalWiFi4 R
 Sileodepiction:https://pozz.cf/repo/sileo/ com.pulandres.conditionalwifi4.json
 
 Package: com.pulandres.cozybadges
-Version: 1.0.3
+Version: 1.1.0
 Architecture: iphoneos-arm
 Maintainer: Pulandres
 Depends: firmware (>= 12.0), mobilesubstrate, org.thebigboss.libcolorpicker
-Filename: debs/com.pulandres.cozybadges_1.0.3_iphoneos-arm.deb
-Size: 79778
-MD5sum: e0ab5e68b9734b38aeb865b42c6cdfbb
-SHA1: b832759e981d876837576012ea075b2e99636d76
-SHA256: 3657712a63a5a1ef1cfb2087fe5874c8da7c313bc9c019e0d4dca04509b25f55
+Filename: debs/com.pulandres.cozybadges_1.1.0_iphoneos-arm.deb
+Size: 67036
+MD5sum: 3e7d9ac1e7cf6c7ccc6ba10807536d53
+SHA1: b70a9b8cd230ea32aa48d6cb1afe54b88d072e2e
+SHA256: 4da0363e3e8c4c792203ea49b6665ccc050bf5a47a14179f2b57cb5d56238818
 Section:D-Tweaks
 Description: Replace notification badges with sleek labels.
 Author: NoisyFlake
 Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.cozybadges
-Installed-Size: 376
+Icon: https://repo.packix.com/api/Packages/5dd174b8f5b752001ad1efac/icon/download?size=medium
+Installed-Size: 380
 Name: CozyBadges Free
-SileoDepiction: https://repo.pulandres.me/sileo.php?pid=992
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1390
 Sileodepiction:https://pozz.cf/repo/sileo/ com.pulandres.cozybadges.json
 
 Package: com.pulandres.foxforthack
@@ -1531,23 +1609,23 @@ Tag: purpose::extension, compatible::ios13
 Sileodepiction:https://pozz.cf/repo/sileo/ com.pulandres.killbackground13.json
 
 Package: com.pulandres.tinybanners2
-Version: 1.0.4-2
+Version: 1.0.4-3
 Architecture: iphoneos-arm
 Maintainer: Pulandres
 Depends: mobilesubstrate,preferenceloader,applist
-Filename: debs/com.pulandres.tinybanners2_1.0.4-2_iphoneos-arm.deb
-Size: 81120
-MD5sum: 3a2eadb44e531cef74f4512b0fd7689a
-SHA1: 42e54e37981e0f556cec75f72fa0859130bcbdba
-SHA256: c3b6847f798b7c7437a3a319a5d560c2c1519d9bf1bda96c5466c2e327531799
+Filename: debs/com.pulandres.tinybanners2_1.0.4-3_iphoneos-arm.deb
+Size: 126990
+MD5sum: fa3a890dd6e2667ee9f15da5fdc38861
+SHA1: ee9e645ee1ca88f441f82a58d8a96718729e2cc5
+SHA256: e1f5a7864b30bef7318f15642239d124ee4b3f18004bc4c98b19b863c6d6063f
 Section:D-Tweaks
 Description: Unobtrusive yet useful notification banners.
 Author: Don
 Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.tinybanners2
 Icon: https://repo.packix.com/api/Packages/5dd969b72fd49a001a0b5f74/icon/download?size=medium
-Installed-Size: 520
+Installed-Size: 488
 Name: TinyBanners 2 Free
-SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1370
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1400
 Sileodepiction:https://pozz.cf/repo/sileo/ com.pulandres.tinybanners2.json
 
 Package: com.pulandres.viola
@@ -1846,19 +1924,19 @@ Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.masks
 Sileodepiction:https://pozz.cf/repo/sileo/ com.spark.snowboard.masks.json
 
 Package: com.spark.snowboard.presetextension
-Version: 1.0.16~Beta2
+Version: 1.0.17~Beta2
 Architecture: iphoneos-arm
 Maintainer: Spark
 Depends: mobilesubstrate, com.spark.snowboard (>> 1.2.22)
-Filename: debs/com.spark.snowboard.presetextension_1.0.16~Beta2_iphoneos-arm.deb
-Size: 83008
-MD5sum: 7132c41837f23ff70d671c8f244bfc99
-SHA1: 4ecccdbe56c88e47628d6142101b1783fc31ea46
-SHA256: 03442b85b791f9238feae2f58c451df4a3ef0c07063efe788851f8e799c921a4
+Filename: debs/com.spark.snowboard.presetextension_1.0.17~Beta2_iphoneos-arm.deb
+Size: 80658
+MD5sum: 6cdc974af4d0d789079fec158eb50a2b
+SHA1: d2f46448f27094d507a7b5cd84107458eec3da55
+SHA256: d1ea566bb7cbac3a13e47cdf673b823abe6f53e2810c8ea1c5df6f82e955899c
 Section:D-Tweaks
 Description: SnowBoard Presets Extension
 Author: Spark
-Installed-Size: 824
+Installed-Size: 792
 Name: SnowBoard Preset Extension
 Depiction:https://pozz.cf/repo/depictions/?p= com.spark.snowboard.presetextension
 Sileodepiction:https://pozz.cf/repo/sileo/ com.spark.snowboard.presetextension.json
@@ -2068,15 +2146,15 @@ Name: MilkyWay2
 Sileodepiction:https://pozz.cf/repo/sileo/ jp.akusio.milkyway2.json
 
 Package: kr.xsf1re.flyjb
-Version: 0.2~beta49
+Version: 0.2~beta51
 Architecture: iphoneos-arm
 Maintainer: XsF1re
 Depends: mobilesubstrate, applist, preferenceloader, com.rpetrich.rocketbootstrap, ws.hbang.common
-Filename: debs/kr.xsf1re.flyjb_0.2~beta49_iphoneos-arm.deb
-Size: 144356
-MD5sum: 92b85db59cb90ec5dc8c27d3ea523eac
-SHA1: b6d44be379df28e0031a7945311683351d33255f
-SHA256: 5fa00b683fc7d15ec75e0dcf643768119422f7dd0e6716b1ded4933b0217524f
+Filename: debs/kr.xsf1re.flyjb_0.2~beta51_iphoneos-arm.deb
+Size: 145244
+MD5sum: e20bae6176de2a9f58c102bf3ae4126b
+SHA1: bc41d977ae0687807757ba859ccbd1806d823009
+SHA256: 04313d1ff898f32bbf37b26875a15be1e57eb0a48274bf093a415e78029ce405
 Section:D-Tweaks
 Description: You can HIDE Doing jailbreak your iDevice.
 Author: XsF1re
@@ -2404,21 +2482,21 @@ SileoDepiction: https://rejail.ru/sileo/depiction.php?file=shortlook
 Sileodepiction:https://pozz.cf/repo/sileo/ ru.rejail.shortlook.json
 
 Package: ru.rj.appstoreplusplus
-Version: 0.9.8-3
+Version: 0.9.8-4
 Architecture: iphoneos-arm
 Maintainer: ReJail <rejail@rejail.ru>
 Depends: firmware (>= 11.0), mobilesubstrate
 Conflicts: com.unlimapps.uaupdatetools
-Filename: debs/ru.rj.appstoreplusplus_0.9.8-3_iphoneos-arm.deb
-Size: 765902
-MD5sum: 8cb6b372a219492901bc96f6d57a58c3
-SHA1: a0c9121d83edaa483b1e697f4c6a17ff184ae0d3
-SHA256: b48a20d7041ce5a36e8b12ace2002cada6a869dd15a445e0e68c7ceced115a66
+Filename: debs/ru.rj.appstoreplusplus_0.9.8-4_iphoneos-arm.deb
+Size: 775858
+MD5sum: b53f078a71912f2271f86062c8a4d657
+SHA1: 51a3f03da5366773806eeffe84633a5bd2c28bd4
+SHA256: 1233de0e0970b9795aa7db1766c052fa9d397a21a10bc4c4b3b6387acdaac73b
 Section:D-Tweaks
 Description: Понижение версий приложений
 Author: CokePokes
 Depiction:https://pozz.cf/repo/depictions/?p= ru.rj.appstoreplusplus
-Installed-Size: 3788
+Installed-Size: 3791
 Name: AppStore++
 Priority: optional
 SileoDepiction: https://rejail.ru/sileo/depiction.php?file=appstoreplusplus
