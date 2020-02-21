@@ -2040,6 +2040,23 @@ Provides: jp.ashikase.techsupport, cokepokes.jp.ashikase.techsupport
 SileoDepiction: https://revulate.dev/depiction/native/com.spark.techsupport.json
 Sileodepiction:https://pozz.cf/repo/sileo/ com.spark.techsupport.json
 
+Package: com.thomz.pokecenter
+Version: 1.0
+Architecture: iphoneos-arm
+Maintainer: Thomz <thom.laffay@gmail.com>
+Depends: mobilesubstrate
+Filename: debs/com.thomz.pokecenter_1.0_iphoneos-arm.deb
+Size: 225460
+MD5sum: fd8430f4973b3d097a8f035046ff0fe4
+SHA1: 755c77fb25aeecdf8a8ee210738e0b8335e4021e
+SHA256: 465031bc6315f2094b56204ea2f4b22d293642604eb780dc50041fda291dc926
+Section:D-Tweaks
+Description: Replace the charging sound by the Pokemon center healing sound
+Author: Thomz <thom.laffay@gmail.com>
+Name: Pokemon center charging sound
+Depiction:https://pozz.cf/repo/depictions/?p= com.thomz.pokecenter
+Sileodepiction:https://pozz.cf/repo/sileo/ com.thomz.pokecenter.json
+
 Package: com.tigisoftware.appdatamanager
 Version: 1.4.2
 Architecture: iphoneos-arm
@@ -2146,15 +2163,15 @@ Name: MilkyWay2
 Sileodepiction:https://pozz.cf/repo/sileo/ jp.akusio.milkyway2.json
 
 Package: kr.xsf1re.flyjb
-Version: 0.2~beta51
+Version: 0.2~beta52
 Architecture: iphoneos-arm
 Maintainer: XsF1re
 Depends: mobilesubstrate, applist, preferenceloader, com.rpetrich.rocketbootstrap, ws.hbang.common
-Filename: debs/kr.xsf1re.flyjb_0.2~beta51_iphoneos-arm.deb
-Size: 145244
-MD5sum: e20bae6176de2a9f58c102bf3ae4126b
-SHA1: bc41d977ae0687807757ba859ccbd1806d823009
-SHA256: 04313d1ff898f32bbf37b26875a15be1e57eb0a48274bf093a415e78029ce405
+Filename: debs/kr.xsf1re.flyjb_0.2~beta52_iphoneos-arm.deb
+Size: 144878
+MD5sum: 21e77b3a9812c93b2e6ce33f3f5f1dbd
+SHA1: 954f92fe9ad1c2b4b03cee6bfed523e43fccdc27
+SHA256: c7fe1fac1e7f555a662f25a12acd0cb6d44b636fabd1721245d04a67873f157c
 Section:D-Tweaks
 Description: You can HIDE Doing jailbreak your iDevice.
 Author: XsF1re
