@@ -315,17 +315,17 @@ dev: creaturecoding
 Sileodepiction:https://pozz.cf/repo/sileo/ com.creaturesurvive.libcscolorpicker.json
 
 Package: com.cydiabc.colorflow5
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm
 Maintainer: David Goldman
 Depends: firmware (>= 13.0), mobilesubstrate (>= 0.9.5.000), preferenceloader
 Conflicts: org.thebigboss.colorflow, com.golddavid.colorflow2, com.golddavid.colorflow3, com.golddavid.colorflow4
 Replaces: org.thebigboss.colorflow, com.golddavid.colorflow2, com.golddavid.colorflow3, com.golddavid.colorflow4
-Filename: debs/com.cydiabc.colorflow5_1.0.1_iphoneos-arm.deb
-Size: 543424
-MD5sum: 1eb391549563a63a68a1d2b543e7d2d3
-SHA1: 50da0017d7bbf472c24d2da6e7f5251d9dcdb0f5
-SHA256: 2f9d077899da3707f16e5dd85f345db20046387d845c77b7e3a16a8778f7e8b9
+Filename: debs/com.cydiabc.colorflow5_1.0.2_iphoneos-arm.deb
+Size: 543256
+MD5sum: 67c8078783369523b2692a1af1354555
+SHA1: 310f8b4990367314a856ae2fd2cf14efca508b43
+SHA256: ba381fa7fc4c42d6b2330fa0e5f5717f0bb773d4e9e720f2faf3ff8cd6ddec17
 Section:D-Tweaks
 Description: 音乐播发器可以随意着色，调整增强功能。
 A12: 1
@@ -951,6 +951,22 @@ Name: Kalm 简体中文包
 Depiction:https://pozz.cf/repo/depictions/?p= com.hk.kalm.cn
 Sileodepiction:https://pozz.cf/repo/sileo/ com.hk.kalm.cn.json
 
+Package: com.hk.magmaevo.cn
+Version: 1.0.0
+Architecture: iphoneos-arm
+Depends: mobilesubstrate
+Filename: debs/com.hk.magmaevo.cn_1.0.0_iphoneos-arm.deb
+Size: 2966
+MD5sum: 484727aed83f92b8114704485aadaf78
+SHA1: 02b1f8c42c893837403892d0717d6f5daee22f74
+SHA256: 7151fbda587b2fa975ea977afd38a288a1fe4933062790258ebe13ecee63c701
+Section:D-Tweaks
+Description: Magma Evo 简体中文包。
+Author: 妖刀
+Name: Magma Evo 简体中文包
+Depiction:https://pozz.cf/repo/depictions/?p= com.hk.magmaevo.cn
+Sileodepiction:https://pozz.cf/repo/sileo/ com.hk.magmaevo.cn.json
+
 Package: com.hk.otadisabler
 Version: 0.1-7
 Architecture: iphoneos-arm
@@ -1392,15 +1408,15 @@ Name: 鐺鐺鐺™源图标
 Sileodepiction:https://pozz.cf/repo/sileo/ com.painclown.repoicons.json
 
 Package: com.pixelomer.mobilegoose
-Version: 1.0.1
+Version: 1.2
 Architecture: iphoneos-arm
 Maintainer: PixelOmer
 Depends: mobilesubstrate, preferenceloader
-Filename: debs/com.pixelomer.mobilegoose_1.0.1_iphoneos-arm.deb
-Size: 612228
-MD5sum: d697caa85aece8e90489a14fce8fe7a8
-SHA1: ac1d1db0f328215b4515cdcbb87d81bda57d630e
-SHA256: a4f9dd2f8472eee418e531a4469ee6bc5286fcad2e95def18914de441211e6a1
+Filename: debs/com.pixelomer.mobilegoose_1.2_iphoneos-arm.deb
+Size: 624022
+MD5sum: 5fbbfd4848c94c59a771a322a1be1187
+SHA1: 7334c29f720592a471c854949efdc0ba540b5948
+SHA256: e4ca1fbceb58299556378d2e421842fca602db78959975f92eaf26b6854fcf2e
 Section:D-Tweaks
 Description: An annoying goose for your iDevice
 Author: PixelOmer
@@ -1607,6 +1623,26 @@ Pre-Depends: firmware (>= 13.0)
 SileoDepiction: https://repo.pulandres.me/sileo.php?pid=899
 Tag: purpose::extension, compatible::ios13
 Sileodepiction:https://pozz.cf/repo/sileo/ com.pulandres.killbackground13.json
+
+Package: com.pulandres.magmaevo
+Version: 1.1.0
+Architecture: iphoneos-arm
+Maintainer: Pulandres
+Depends: mobilesubstrate, firmware (>= 12.0), preferenceloader (>= 2.2.4~beta1), com.opa334.ccsupport, org.thebigboss.libcolorpicker
+Filename: debs/com.pulandres.magmaevo_1.1.0_iphoneos-arm.deb
+Size: 142766
+MD5sum: fad92e9cc6a1ff9ee933921d45e532e1
+SHA1: 3fe35a03ff3c0bb333f56fca99831d0f9ff98814
+SHA256: 5bf859dfef02f288608609a053234ee5c5d37c00a65f5dbb20e21656c33f1004
+Section:D-Tweaks
+Description: Your Control Center. Redefined.
+Author: NoisyFlake
+Depiction:https://pozz.cf/repo/depictions/?p= com.pulandres.magmaevo
+Icon: https://repo.packix.com/api/Packages/5e1892c51b6d23001c90da72/icon/download?size=medium&hash=2
+Installed-Size: 556
+Name: Magma Evo Free
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1295
+Sileodepiction:https://pozz.cf/repo/sileo/ com.pulandres.magmaevo.json
 
 Package: com.pulandres.tinybanners2
 Version: 1.0.4-3
