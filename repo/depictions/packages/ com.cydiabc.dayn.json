@@ -1,0 +1,1 @@
+{"name": " Dayn通知横幅", "package": "com.cydiabc.dayn", "author": " JannikCrack, Devvix", "version": " 0.1.3-1", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": " 美观的通知横幅，类似iOS9样式，支持亮色和深色消息提醒框", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

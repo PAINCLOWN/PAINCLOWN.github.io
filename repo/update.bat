@@ -1,5 +1,5 @@
 pip install pydpkg
-dpkg-scanpackages.py -o Packages debs
-autoDepictions.py
-PackagesZip.py
+python dpkg-scanpackages.py -o Packages debs
+python autoDepictions.py
+python PackagesZip.py
 pause
