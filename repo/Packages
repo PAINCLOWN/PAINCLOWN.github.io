@@ -2614,21 +2614,21 @@ SileoDepiction: https://rejail.ru/sileo/depiction.php?file=shortlook
 Sileodepiction:https://pozz.cf/repo/sileo/ ru.rejail.shortlook.json
 
 Package: ru.rj.appstoreplusplus
-Version: 0.9.8-7
+Version: 0.9.8-9
 Architecture: iphoneos-arm
 Maintainer: ReJail <rejail@rejail.ru>
 Depends: firmware (>= 11.0), mobilesubstrate
 Conflicts: com.unlimapps.uaupdatetools
-Filename: debs/ru.rj.appstoreplusplus_0.9.8-7_iphoneos-arm.deb
-Size: 774286
-MD5sum: 1eb98b8342ab4ce5af57223f9889233a
-SHA1: f890246d145147a4f9c49b66832da3c9c32635ba
-SHA256: a23804f4c276bbb24bba7434c7e5eea9b270106013df68eb098766024c9b4511
+Filename: debs/ru.rj.appstoreplusplus_0.9.8-9_iphoneos-arm.deb
+Size: 777228
+MD5sum: 9df67ae412044b8cc8b02d5527cd2cf2
+SHA1: 7fb2a550f74978b9dd4682f5b05ea34e3e3fe772
+SHA256: 12006871cc5cc71bd51cd603489dc54e9ba10fb93d750e24bd631c73d315f0d7
 Section:D-Tweaks
 Description: Понижение версий приложений
 Author: CokePokes
 Depiction:https://pozz.cf/repo/depictions/?p= ru.rj.appstoreplusplus
-Installed-Size: 3805
+Installed-Size: 3837
 Name: AppStore++
 Priority: optional
 SileoDepiction: https://rejail.ru/sileo/depiction.php?file=appstoreplusplus
