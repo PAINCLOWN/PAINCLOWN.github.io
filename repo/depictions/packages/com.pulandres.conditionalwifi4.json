@@ -1,0 +1,1 @@
+{"name": " ConditionalWiFi4 R", "package": "com.pulandres.conditionalwifi4", "author": " ATWiiks", "version": " 1.0.0", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": " Restrict certain apps from accessing wifi on iOS 11", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

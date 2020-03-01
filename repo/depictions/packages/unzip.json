@@ -1,0 +1,1 @@
+{"name": "unzip", "package": "unzip", "author": "PAINCLOWN", "version": " 6.0+deb9u1-1", "dependency": " dpkg (>= 1.14.25-8)", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": " de-compesses files in zip format", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

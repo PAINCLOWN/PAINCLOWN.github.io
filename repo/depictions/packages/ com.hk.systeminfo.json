@@ -1,1 +1,0 @@
-{"name": " System Info 系统信息", "package": "com.hk.systeminfo", "author": " ARX8x", "version": " 2.3.2-6+debug", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": " 系统信息查看增强，设置-通用-关于，会看到更多系统信息，英文，无法汉化。", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

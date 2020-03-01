@@ -1,1 +1,0 @@
-{"name": " OpenSSL 1.1.1 Libraries", "package": "libssl1.1.1", "author": "PAINCLOWN", "version": " 1.1.1c-1", "dependency": " dpkg (>= 1.14.25-8)", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": " OpenSSL Libraries for version 1.1.1", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

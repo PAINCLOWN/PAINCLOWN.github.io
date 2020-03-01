@@ -148,7 +148,7 @@ def packagesDictListToJson(packagesDictList):
         }
         packagesJson = json.dumps(packageJsonBase,ensure_ascii=False)
         #print(packagesJson)
-        file = open("depictions\packages\\"+packagesDict['Package']+".json",'w',encoding='utf-8')
+        file = open("depictions\packages\\"+packagesDict['Package'].replace(' ','')+".json",'w',encoding='utf-8')
         file.writelines(packagesJson)
         file.close
 
@@ -337,7 +337,7 @@ def packagesDictListToSileoJson(packagesDictList):
 }
         packagesJson = json.dumps(packageJsonBase,ensure_ascii=False)
         #print(packagesJson)
-        file = open("sileo\\"+packagesDict['Package']+".json",'w',encoding='utf-8')
+        file = open("sileo\\"+packagesDict['Package'].replace(' ','')+".json",'w',encoding='utf-8')
         file.writelines(packagesJson)
         file.close
 
@@ -351,8 +351,8 @@ def PackagesCustomDepiction():
     sileoUrlHeard = 'https://pozz.cf/repo/sileo/'
     newPackages = []
     for packagesDict in packagesDictList:
-        packagesDictDepiction = urlHeard + packagesDict['Package']
-        packagesDictSileodepiction = sileoUrlHeard + packagesDict['Package'] + '.json'
+        packagesDictDepiction = urlHeard + packagesDict['Package'].replace(' ','')
+        packagesDictSileodepiction = sileoUrlHeard + packagesDict['Package'].replace(' ','') + '.json'
         packagesDict.update({'Depiction':packagesDictDepiction,'Sileodepiction':packagesDictSileodepiction})
         #重新组成多行
         for packagesKey in packagesDict:

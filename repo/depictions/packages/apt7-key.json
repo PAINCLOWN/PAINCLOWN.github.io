@@ -1,0 +1,1 @@
+{"name": " APT 0.7 Transitional (apt-key)", "package": "apt7-key", "author": "PAINCLOWN", "version": " 1:0", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": " the advanced packaging library from Debian", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

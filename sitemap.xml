@@ -1,46 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-xmlns:mobile="http://www.baidu.com/schemas/sitemap-mobile/1/">
-<url>
- <loc>http://pozz.cf</loc>
- <mobile:mobile type="pc,mobile" />
- <priority>0.5</priority>
- <lastmod>2019-07-05</lastmod>
- <changefreq>yearly</changefreq>
-</url>
+<urlset
+    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+
 <url>
  <loc>https://painclown.github.io/blog</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-07-05</lastmod>
- <changefreq>yearly</changefreq>
+ <lastmod>2020-2-28</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 <url>
  <loc>https://painclown.github.io/code</loc>
- <mobile:mobile type="pc,mobile" />
  <priority>0.5</priority>
- <lastmod>2019-07-05</lastmod>
- <changefreq>yearly</changefreq>
+ <lastmod>2020-2-28</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 <url>
- <loc>https://twitter.com/pa1ncl0wn/</loc>
- <mobile:mobile type="pc,mobile" />
+ <loc>https://twitter.com/Pa1ncl0wn/</loc>
  <priority>0.5</priority>
- <lastmod>2019-07-05</lastmod>
- <changefreq>yearly</changefreq>
+ <lastmod>2020-2-28</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 <url>
- <loc>http://pozz.cf/repo</loc>
- <mobile:mobile type="pc,mobile" />
+ <loc>https://twitter.com/Pa1ncl0wn</loc>
  <priority>0.5</priority>
- <lastmod>2019-07-05</lastmod>
- <changefreq>yearly</changefreq>
-</url>
-<url>
- <loc>https://twitter.com/pa1ncl0wn</loc>
- <mobile:mobile type="pc,mobile" />
- <priority>0.5</priority>
- <lastmod>2019-07-05</lastmod>
- <changefreq>yearly</changefreq>
+ <lastmod>2020-2-28</lastmod>
+ <changefreq>weekly</changefreq>
 </url>
 </urlset>
