@@ -49,6 +49,7 @@ depictions\screenshots (文件夹)
 
 import json
 import re
+import translate
 packagesFile = 'Packages'
 
 #打开packages文件
@@ -71,7 +72,7 @@ def packagesRe(fileName):
 
 
 #packages文件转字典
-def packageToDict(packages):
+def packageToDict(packages,trans = False):
     newPackagesList = []
     tempNewPackages = []
     print('packages to dict ···')
@@ -84,7 +85,7 @@ def packageToDict(packages):
             tempNewPackages.clear()
         else:
             temppack = pack.replace("\n", "").split(":")
-            #多冒号只用第一个冒号分隔列表，其他列表恢复冒号合并成一个字符串
+            #多个冒号只用第一个冒号分隔列表，其他元素恢复冒号合并成一个字符串
             if len(temppack) > 2:
                 a = temppack[0]
                 tempStr = ''
@@ -97,9 +98,23 @@ def packageToDict(packages):
                         else:
                             tempStr = tempStr +':'+ b
                 temppack = [a,tempStr]
+            if trans == True:
+                #翻译自定义lable的内容
+                lableList = ['Name','Description'] 
+                #print('开始翻译：%s' % lableList)
+                for lable in lableList:
+                    if temppack[0] == lable:
+                        lableAndLang = translate.translate(temppack[1])
+                        #print(lableAndLang)
+                        if lableAndLang[1] in ['zh-CN','zh-TW']:
+                            pass
+                        else:
+                            newLable = lable +'「'+ lableAndLang[0] +'」'
+                            temppack =[temppack[0], newLable]
             tempNewPackages.append(temppack)
     #print(newPackagesList)
     return newPackagesList
+
 
 #字典转json
 def packagesDictListToJson(packagesDictList):
@@ -125,7 +140,6 @@ def packagesDictListToJson(packagesDictList):
             Name = packagesDict['Name']
         except:
             Name = packagesDict['Package'].replace(' ','')
-
         packageJsonBase ={
         "name": Name,
         "package": packagesDict['Package'].replace(' ',''),
@@ -392,7 +406,7 @@ def PackagesCustomSection():
 def run():
     packagesRe(packagesFile)
     packages = openPackage(packagesFile)
-    packagesDictList = packageToDict(packages)
+    packagesDictList = packageToDict(packages,trans=True)
     packagesDictListToJson(packagesDictList)
     packagesDictListToSileoJson(packagesDictList)
     PackagesCustomDepiction()
