@@ -47,7 +47,7 @@ def translate(Str):
             print('被谷歌查水表，小黑屋时间~:%ss' % count)
             time.sleep(count)
     if request.status_code != 200:
-            print('重试依旧异常，return Str，google code：%s' % request.status_code)
+            print('重试依旧异常，返回原字符串，google code：%s' % request.status_code)
             newStr = Str
             lang = 'zh-CN'
 

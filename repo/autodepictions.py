@@ -24,26 +24,7 @@ Name: BeatsAudio™ EQE
 Pre-Depends: com.r333d.eqe, firmware (>= 7)
 
 depictions\packages  (json)
-  {
-	"name": "BeatsAudio™ EQE",
-	"package": "com.painclown.beatsaudioeqe",
-	"author": "painclown",
-	"version": "1.0",
-	"dependency": "N/A",
-	"minOSVersion": "9.0",
-	"maxOSVersion": "13.3",
-	"otheriOS": "untested",
-	"description": "<div>测试包~请勿下载<br><br>~~~~~~~<br><br><strong>需要帮助？</strong> 暂不提供帮助嗷</div>",
-  	"changelog": {
-	    "1.0": [
-	      "无"
-	    ]
-  	},
-	"screenshots": {
-		"test.png": ""
-	},
-	"links": {}
-}
+
 depictions\screenshots (文件夹)
 '''
 
@@ -73,8 +54,14 @@ def packagesRe(fileName):
 
 #packages文件转字典
 def packageToDict(packages,trans = False):
+    '''
+    默认trans = False
+    为True时开始翻译
+    '''
     newPackagesList = []
     tempNewPackages = []
+    #用于重新保存翻译后的package文件
+    newPackages = []
     print('packages to dict ···')
     #print(packages)
     for pack in packages:
@@ -83,6 +70,8 @@ def packageToDict(packages,trans = False):
             tempNewPackagesDict = dict(tempNewPackages)
             newPackagesList.append(tempNewPackagesDict)
             tempNewPackages.clear()
+            #\n分隔每个deb信息
+            newPackages.append('\n')
         else:
             temppack = pack.replace("\n", "").split(":")
             #多个冒号只用第一个冒号分隔列表，其他元素恢复冒号合并成一个字符串
@@ -105,15 +94,25 @@ def packageToDict(packages,trans = False):
                 for lable in lableList:
                     if temppack[0] == lable:
                         lableAndLang = translate.translate(temppack[1])
-                        #print(lableAndLang)
+                        print(lableAndLang)
                         if lableAndLang[1] in ['zh-CN','zh-TW']:
                             pass
                         else:
-                            newLable = lable +'「'+ lableAndLang[0] +'」'
+                            newLable = temppack[1] +'「'+ lableAndLang[0] +'」'
                             temppack =[temppack[0], newLable]
+            lineStr = temppack[0] + ':' + temppack[1] +  '\n'
+            #保存每行内容用于生成packages文件
+            newPackages.append(lineStr)
+            #保存每行内容成用于后续转换
             tempNewPackages.append(temppack)
-    #print(newPackagesList)
+    #生成packages 文件
+    file = open(packagesFile,'w',encoding='utf-8')
+    file.writelines(newPackages)
+    file.close()
+    #返回newPackagesList用于后续转换
+    print(newPackagesList)
     return newPackagesList
+
 
 
 #字典转json
@@ -140,26 +139,8 @@ def packagesDictListToJson(packagesDictList):
             Name = packagesDict['Name']
         except:
             Name = packagesDict['Package'].replace(' ','')
-        packageJsonBase ={
-        "name": Name,
-        "package": packagesDict['Package'].replace(' ',''),
-        "author": Author,
-        "version": Version,
-        "dependency": Depends,
-        "minOSVersion": "9.0",
-        "maxOSVersion": "13.3.1",
-        "otheriOS": "untested",
-        "description": Description,
-        "changelog": {
-            "1.0": [
-            "暂无"
-            ]
-        },
-        "screenshots": {
-            "test.png": ""
-        },
-        "links": {}
-        }
+        #json已压缩
+        packageJsonBase ={"name":Name,"package":packagesDict['Package'].replace(' ',''),"author":Author,"version":Version,"dependency":Depends,"minOSVersion":"9.0","maxOSVersion":"13.3.1","otheriOS":"untested","description":Description,"changelog":{"1.0":["暂无"]},"screenshots":{"test.png":""},"links":{}}
         packagesJson = json.dumps(packageJsonBase,ensure_ascii=False)
         #print(packagesJson)
         file = open("depictions\packages\\"+packagesDict['Package'].replace(' ','')+".json",'w',encoding='utf-8')
@@ -189,176 +170,16 @@ def packagesDictListToSileoJson(packagesDictList):
             Name = packagesDict['Name']
         except:
             Name = packagesDict['Package'].replace(' ' ,'')
-
-        packageJsonBase ={
-  "class": "DepictionTabView",
-  "headerImage": "https://pozz.cf/repo/sileo/src/header.png",
-  "minVersion": "0.3",
-  "tabs": [
-    {
-      "class": "DepictionStackView",
-      "tabname": "Details",
-      "tintColor": "#a2b9c9",
-      "views": [
-        {
-          "class": "DepictionSubheaderView",
-          "title": "描述",
-          "useBoldText": True,
-          "useBottomMargin": False
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "markdown": Description,
-          "useRawFormat": True
-        },
-        {
-          "class": "DepictionSeparatorView"
-        },
-        {
-          "class": "DepictionSubheaderView",
-          "title": "截图",
-          "useBoldText": True,
-          "useBottomMargin": False
-        },
-        {
-          "class": "DepictionScreenshotsView",
-          "itemCornerRadius": 8,
-          "itemSize": "{330, 596.385543}",
-          "screenshots": [
-            {
-              "accessibilityText": "Screenshot",
-              "url": ""
-            }
-          ]
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 16
-        },
-        {
-          "class": "DepictionSeparatorView"
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 16
-        },
-        {
-          "class": "DepictionHeaderView",
-          "title": "详情",
-          "useBoldText": True,
-          "useBottomMargin": False
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 8
-        },
-        {
-          "class": "DepictionTableTextView",
-          "text": Author,
-          "title": "作者"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "text": Version,
-          "title": "版本"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "text": "iOS9 - 13.3.0",
-          "title": "兼容性"
-        },
-        {
-          "class": "DepictionTableTextView",
-          "text": Depends,
-          "title": "依赖"
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 16
-        },
-        {
-          "class": "DepictionSeparatorView"
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 16
-        },
-        {
-          "action": "https://twitter.com/Pa1ncl0wn",
-          "class": "DepictionTableButtonView",
-          "title": "推特上找我",
-          "openExternal": True
-        },
-        {
-          "action": "mailto:vip.qq.com",
-          "class": "DepictionTableButtonView",
-          "title": "古老的邮箱联系"
-        },
-        {
-          "action": "https://qr.alipay.com/tsx06936chkivwaljc8bb41",
-          "class": "DepictionTableButtonView", 
-          "title": "给我整一杯牛🍺 致富饱"
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 40
-        },
-        {
-          "URL": "https://pozz.cf/repo/CydiaIcon.png",
-          "alignment": 1,
-          "class": "DepictionImageView",
-          "cornerRadius": 0,
-          "height": 45,
-          "width": 45
-        },
-        {
-          "class": "DepictionSpacerView",
-          "spacing": 16
-        }
-      ]
-    },
-    {
-      "class": "DepictionStackView",
-      "tabname": "Changelog",
-      "tintColor": "#a2b9c9",
-      "views": [
-        {
-          "class": "DepictionSubheaderView",
-          "title": "1.0-1",
-          "useBoldText": True,
-          "useBottomMargin": False
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "markdown": "<ul>\n<li>Fixed something</li>\n<li>Fixed another something</li>\n</ul>",
-          "useRawFormat": True
-        },
-        {
-          "class": "DepictionSubheaderView",
-          "title": "1.0",
-          "useBoldText": True,
-          "useBottomMargin": False
-        },
-        {
-          "class": "DepictionMarkdownView",
-          "markdown": "<ul>\n<li>Initial release</li>\n</ul>",
-          "useRawFormat": True
-        }
-      ]
-    }
-  ],
-  "tintColor": "#a2b9c9"
-}
+        #json已压缩
+        packageJsonBase ={"class":"DepictionTabView","headerImage":"https://pozz.cf/repo/sileo/src/header.png","minVersion":"0.3","tabs":[{"class":"DepictionStackView","tabname":"Details","tintColor":"#a2b9c9","views":[{"class":"DepictionSubheaderView","title":"描述","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":Description,"useRawFormat":True},{"class":"DepictionSeparatorView"},{"class":"DepictionSubheaderView","title":"截图","useBoldText":True,"useBottomMargin":False},{"class":"DepictionScreenshotsView","itemCornerRadius":8,"itemSize":"{330, 596.385543}","screenshots":[{"accessibilityText":"Screenshot","url":""}]},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionSeparatorView"},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionHeaderView","title":"详情","useBoldText":True,"useBottomMargin":False},{"class":"DepictionSpacerView","spacing":8},{"class":"DepictionTableTextView","text":Author,"title":"作者"},{"class":"DepictionTableTextView","text":Version,"title":"版本"},{"class":"DepictionTableTextView","text":"iOS9 - 13.3.0","title":"兼容性"},{"class":"DepictionTableTextView","text":Depends,"title":"依赖"},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionSeparatorView"},{"class":"DepictionSpacerView","spacing":16},{"action":"https://twitter.com/Pa1ncl0wn","class":"DepictionTableButtonView","title":"推特上找我","openExternal":True},{"action":"mailto:vip.qq.com","class":"DepictionTableButtonView","title":"古老的邮箱联系"},{"action":"https://qr.alipay.com/tsx06936chkivwaljc8bb41","class":"DepictionTableButtonView","title":"给我整一杯牛🍺 致富饱"},{"class":"DepictionSpacerView","spacing":40},{"URL":"https://pozz.cf/repo/CydiaIcon.png","alignment":1,"class":"DepictionImageView","cornerRadius":0,"height":45,"width":45},{"class":"DepictionSpacerView","spacing":16}]},{"class":"DepictionStackView","tabname":"Changelog","tintColor":"#a2b9c9","views":[{"class":"DepictionSubheaderView","title":"1.0-1","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":"<ul>\n<li>Fixed something</li>\n<li>Fixed another something</li>\n</ul>","useRawFormat":True},{"class":"DepictionSubheaderView","title":"1.0","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":"<ul>\n<li>Initial release</li>\n</ul>","useRawFormat":True}]}],"tintColor":"#a2b9c9"}
         packagesJson = json.dumps(packageJsonBase,ensure_ascii=False)
         #print(packagesJson)
         file = open("sileo\\"+packagesDict['Package'].replace(' ','')+".json",'w',encoding='utf-8')
         file.writelines(packagesJson)
         file.close
 
-def PackagesCustomDepiction():
-    #初始化字典
-    packages = openPackage(packagesFile)
-    packagesDictList = packageToDict(packages)
+#自定义描述页网址
+def PackagesCustomDepiction(packagesDictList):
 
     print('正在生成插件描述页和sileo描述 ···')
     urlHeard = 'https://pozz.cf/repo/depictions/?p='
@@ -379,11 +200,8 @@ def PackagesCustomDepiction():
     file.writelines(newPackages)
     file.close()
 
-def PackagesCustomSection():
-    #初始化字典
-    packages = openPackage(packagesFile)
-    packagesDictList = packageToDict(packages)
-
+#自定义分类名称
+def PackagesCustomSection(packagesDictList):
     print('正在插件自定义插件分类 ···')
     packagesSystemList = ['com.painclown.repoicons']
     newPackages = []
@@ -406,11 +224,13 @@ def PackagesCustomSection():
 def run():
     packagesRe(packagesFile)
     packages = openPackage(packagesFile)
-    packagesDictList = packageToDict(packages,trans=True)
+    #packagesDictList = packageToDict(packages)
+    packagesDictList = packageToDict(packages,True)
     packagesDictListToJson(packagesDictList)
     packagesDictListToSileoJson(packagesDictList)
-    PackagesCustomDepiction()
-    PackagesCustomSection()
+    #自定义部分
+    PackagesCustomDepiction(packagesDictList)
+    PackagesCustomSection(packagesDictList)
     print('所有操作完成。')
 
 def test():
