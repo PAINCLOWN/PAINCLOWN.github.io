@@ -88,18 +88,21 @@ def packageToDict(packages,trans = False):
                             tempStr = tempStr +':'+ b
                 temppack = [a,tempStr]
             if trans == True:
-                #翻译自定义lable的内容
-                lableList = ['Name','Description'] 
-                #print('开始翻译：%s' % lableList)
-                for lable in lableList:
-                    if temppack[0] == lable:
-                        lableAndLang = translate.translate(temppack[1])
-                        print(lableAndLang)
-                        if lableAndLang[1] in ['zh-CN','zh-TW']:
+                #翻译自定义label的内容
+                labelList = ['Name','Description'] 
+                #print('开始翻译：%s' % labelList)
+                for label in labelList:
+                    if temppack[0] == label:
+                        labelAndLang = translate.translate(temppack[1])
+                        print(labelAndLang)
+                        if labelAndLang[1] in ['zh-CN','zh-TW']:
                             pass
                         else:
-                            newLable = temppack[1] +'「'+ lableAndLang[0] +'」'
-                            temppack =[temppack[0], newLable]
+                            if label == 'Name':
+                                newlabel = temppack[1] +'「'+ labelAndLang[0] +'」'
+                            else:
+                                newlabel ='「'+ labelAndLang[0] +'」'+ temppack[1] 
+                            temppack =[temppack[0], newlabel]
             lineStr = temppack[0] + ': ' + temppack[1] +  '\n'
             #保存每行内容用于生成packages文件
             newPackages.append(lineStr)
