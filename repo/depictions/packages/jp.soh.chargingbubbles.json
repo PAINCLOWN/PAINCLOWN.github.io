@@ -1,0 +1,1 @@
+{"name": "ChargingBubbles「充电气泡」", "package": "jp.soh.chargingbubbles", "author": "Soh Satoh", "version": "1.3", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「充电时在LS上显示气泡」Show bubbles on LS while charging", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

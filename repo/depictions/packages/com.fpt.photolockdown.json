@@ -1,0 +1,1 @@
+{"name": "PhotoLockdown「相片锁定」", "package": "com.fpt.photolockdown", "author": "Frozen Penguin", "version": "1.0.1", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「停止人们滑动到下一张照片。」Stop people swiping to the next photo.", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

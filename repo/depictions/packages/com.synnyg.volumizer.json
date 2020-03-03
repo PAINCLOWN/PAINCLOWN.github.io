@@ -1,0 +1,1 @@
+{"name": "Volumizer「音量调节器」", "package": "com.synnyg.volumizer", "author": "SynnyG <synnyg.devjb@gmail.com>", "version": "1.1", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「自定义与音量相关的所有内容！」Customize everything volume related!", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

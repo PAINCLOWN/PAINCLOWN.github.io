@@ -1,0 +1,1 @@
+{"name": "Complications「并发症」", "package": "com.bengiannis.complications", "author": "Ben Giannis", "version": "2.1.1", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「锁定屏幕上的watchOS小部件」watchOS widgets on your lock screen", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

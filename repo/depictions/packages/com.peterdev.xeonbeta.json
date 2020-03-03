@@ -1,0 +1,1 @@
+{"name": "Xeon (Beta)「至强（测试版）」", "package": "com.peterdev.xeonbeta", "author": "Soongyu Kwon <soongyu.kwon@kakao.com>", "version": "1.2~beta8", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「增压状态栏！」Supercharge status bar!", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

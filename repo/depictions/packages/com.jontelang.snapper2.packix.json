@@ -1,0 +1,1 @@
+{"name": "Snapper 2「鲷鱼2」", "package": "com.jontelang.snapper2.packix", "author": "Jonathan Winger-lang", "version": "2.2.4", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「将屏幕截图固定在屏幕上。」Pin screenshots on the screen.", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

@@ -1,0 +1,1 @@
+{"name": "Dots「点」", "package": "com.ladshyam.dots", "author": "Shyam Lad <shyamladdev@gmail.com>", "version": "1.2.7", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「在您的OLED屏幕上添加通知点！」Add notification dots to your OLED screen!", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

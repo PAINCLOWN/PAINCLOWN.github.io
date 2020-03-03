@@ -1,0 +1,1 @@
+{"name": "Shader「着色器」", "package": "com.machport.shader", "author": "machport", "version": "2.5", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「为正在播放UI和Music App歌词的封面上色」Colors The Coversheet Now Playing UI And The Music App Lyrics", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

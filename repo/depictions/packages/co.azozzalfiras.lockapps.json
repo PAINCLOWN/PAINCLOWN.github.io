@@ -1,0 +1,1 @@
+{"name": "LockApps「锁应用」", "package": "co.azozzalfiras.lockapps", "author": "Azozz ALFiras", "version": "1.1", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「通过Face ID锁定应用」Lock Apps by Face id & Touch id!", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

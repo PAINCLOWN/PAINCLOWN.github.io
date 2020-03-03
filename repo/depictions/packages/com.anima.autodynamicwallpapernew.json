@@ -1,0 +1,1 @@
+{"name": "AutoPlay「自动播放」", "package": "com.anima.autodynamicwallpapernew", "author": "Anima", "version": "2.0.0-6", "dependency": "firmware (>= 9.0)", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「自动播放动态实时照片。」Auto play dynamic live photo.", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

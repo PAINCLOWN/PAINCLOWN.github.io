@@ -1,0 +1,1 @@
+{"name": "SwitchShades「开关阴影」", "package": "com.anthopak.switchshades", "author": "AnthoPak", "version": "1.1.2", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「根据应用程序图标为应用程序切换器增色」Bring color to your app switcher based on app icon", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

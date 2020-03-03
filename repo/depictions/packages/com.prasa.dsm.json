@@ -1,0 +1,1 @@
+{"name": "DontStopMyCall「不要停止我的电话」", "package": "com.prasa.dsm", "author": "Prasa", "version": "1.1.6", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「当我按下睡眠/锁定/电源按钮时，请勿挂断电话！」Don't hang up my call when I press sleep/lock/power button!", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

@@ -1,0 +1,1 @@
+{"name": "MusicArtwork「音乐作品」", "package": "com.cc.musicartwork", "author": "cole cabral", "version": "1.6", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「将“正在播放的应用程序”图标替换为当前正在播放的应用程序。」Replace now playing apps icon with currently now playing.", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

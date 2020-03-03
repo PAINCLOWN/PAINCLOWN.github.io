@@ -1,0 +1,1 @@
+{"name": "BetterCCXI (Weather Addon)「BetterCCXI（天气插件）」", "package": "com.atwiiks.betterccxiweather", "author": "ATWiiks", "version": "1.0.3", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「更好的CCXI气象模块」Weather Module for BetterCCXI", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

@@ -1,0 +1,1 @@
+{"name": "iCamerax「摄影机」", "package": "com.packix.icamerax", "author": "Victor Tim <victor1m@gmail.com>", "version": "0.2-1+debug", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「向相机应用程序添加属性」Add properties to the camera application", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

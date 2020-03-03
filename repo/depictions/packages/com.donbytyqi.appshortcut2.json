@@ -1,0 +1,1 @@
+{"name": "AppShortcut 2「App快捷方式2」", "package": "com.donbytyqi.appshortcut2", "author": "Don", "version": "1.0", "dependency": "firmware (>= 10.0)", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「快速访问您喜欢的应用程序！」Quickly access your favorite apps!", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}
