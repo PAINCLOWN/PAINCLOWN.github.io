@@ -73,7 +73,7 @@ def packageToDict(packages,trans = False):
             #\n分隔每个deb信息
             newPackages.append('\n')
         else:
-            temppack = pack.replace("\n", "").split(":")
+            temppack = pack.replace("\n", "").split(": ")
             #多个冒号只用第一个冒号分隔列表，其他元素恢复冒号合并成一个字符串
             if len(temppack) > 2:
                 a = temppack[0]
@@ -100,7 +100,7 @@ def packageToDict(packages,trans = False):
                         else:
                             newLable = temppack[1] +'「'+ lableAndLang[0] +'」'
                             temppack =[temppack[0], newLable]
-            lineStr = temppack[0] + ':' + temppack[1] +  '\n'
+            lineStr = temppack[0] + ': ' + temppack[1] +  '\n'
             #保存每行内容用于生成packages文件
             newPackages.append(lineStr)
             #保存每行内容成用于后续转换
@@ -171,7 +171,7 @@ def packagesDictListToSileoJson(packagesDictList):
         except:
             Name = packagesDict['Package'].replace(' ' ,'')
         #json已压缩
-        packageJsonBase ={"class":"DepictionTabView","headerImage":"https://pozz.cf/repo/sileo/src/header.png","minVersion":"0.3","tabs":[{"class":"DepictionStackView","tabname":"Details","tintColor":"#a2b9c9","views":[{"class":"DepictionSubheaderView","title":"描述","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":Description,"useRawFormat":True},{"class":"DepictionSeparatorView"},{"class":"DepictionSubheaderView","title":"截图","useBoldText":True,"useBottomMargin":False},{"class":"DepictionScreenshotsView","itemCornerRadius":8,"itemSize":"{330, 596.385543}","screenshots":[{"accessibilityText":"Screenshot","url":""}]},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionSeparatorView"},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionHeaderView","title":"详情","useBoldText":True,"useBottomMargin":False},{"class":"DepictionSpacerView","spacing":8},{"class":"DepictionTableTextView","text":Author,"title":"作者"},{"class":"DepictionTableTextView","text":Version,"title":"版本"},{"class":"DepictionTableTextView","text":"iOS9 - 13.3.0","title":"兼容性"},{"class":"DepictionTableTextView","text":Depends,"title":"依赖"},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionSeparatorView"},{"class":"DepictionSpacerView","spacing":16},{"action":"https://twitter.com/Pa1ncl0wn","class":"DepictionTableButtonView","title":"推特上找我","openExternal":True},{"action":"mailto:vip.qq.com","class":"DepictionTableButtonView","title":"古老的邮箱联系"},{"action":"https://qr.alipay.com/tsx06936chkivwaljc8bb41","class":"DepictionTableButtonView","title":"给我整一杯牛🍺 致富饱"},{"class":"DepictionSpacerView","spacing":40},{"URL":"https://pozz.cf/repo/CydiaIcon.png","alignment":1,"class":"DepictionImageView","cornerRadius":0,"height":45,"width":45},{"class":"DepictionSpacerView","spacing":16}]},{"class":"DepictionStackView","tabname":"Changelog","tintColor":"#a2b9c9","views":[{"class":"DepictionSubheaderView","title":"1.0-1","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":"<ul>\n<li>Fixed something</li>\n<li>Fixed another something</li>\n</ul>","useRawFormat":True},{"class":"DepictionSubheaderView","title":"1.0","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":"<ul>\n<li>Initial release</li>\n</ul>","useRawFormat":True}]}],"tintColor":"#a2b9c9"}
+        packageJsonBase ={"class":"DepictionTabView","headerImage":"https://pozz.cf/repo/sileo/src/header.png","minVersion":"0.3","tabs":[{"class":"DepictionStackView","tabname":"Details","tintColor":"#a2b9c9","views":[{"class":"DepictionSubheaderView","title":"描述","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":Description,"useRawFormat":True},{"class":"DepictionSeparatorView"},{"class":"DepictionSubheaderView","title":"截图","useBoldText":True,"useBottomMargin":False},{"class":"DepictionScreenshotsView","itemCornerRadius":8,"itemSize":"{330, 596.385543}","screenshots":[{"accessibilityText":"Screenshot","url":"https://pozz.cf/repo/sileo/src/header.png"}]},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionSeparatorView"},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionHeaderView","title":"详情","useBoldText":True,"useBottomMargin":False},{"class":"DepictionSpacerView","spacing":8},{"class":"DepictionTableTextView","text":Author,"title":"作者"},{"class":"DepictionTableTextView","text":Version,"title":"版本"},{"class":"DepictionTableTextView","text":"iOS9 - 13.3.0","title":"兼容性"},{"class":"DepictionTableTextView","text":Depends,"title":"依赖"},{"class":"DepictionSpacerView","spacing":16},{"class":"DepictionSeparatorView"},{"class":"DepictionSpacerView","spacing":16},{"action":"https://twitter.com/Pa1ncl0wn","class":"DepictionTableButtonView","title":"推特上找我","openExternal":True},{"action":"mailto:vip.qq.com","class":"DepictionTableButtonView","title":"古老的邮箱联系"},{"action":"https://qr.alipay.com/tsx06936chkivwaljc8bb41","class":"DepictionTableButtonView","title":"给我整一杯牛🍺 致富饱"},{"class":"DepictionSpacerView","spacing":40},{"URL":"https://pozz.cf/repo/CydiaIcon.png","alignment":1,"class":"DepictionImageView","cornerRadius":0,"height":45,"width":45},{"class":"DepictionSpacerView","spacing":16}]},{"class":"DepictionStackView","tabname":"Changelog","tintColor":"#a2b9c9","views":[{"class":"DepictionSubheaderView","title":"1.0-1","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":"<ul>\n<li>Fixed something</li>\n<li>Fixed another something</li>\n</ul>","useRawFormat":True},{"class":"DepictionSubheaderView","title":"1.0","useBoldText":True,"useBottomMargin":False},{"class":"DepictionMarkdownView","markdown":"<ul>\n<li>Initial release</li>\n</ul>","useRawFormat":True}]}],"tintColor":"#a2b9c9"}
         packagesJson = json.dumps(packageJsonBase,ensure_ascii=False)
         #print(packagesJson)
         file = open("sileo\\"+packagesDict['Package'].replace(' ','')+".json",'w',encoding='utf-8')
@@ -193,7 +193,7 @@ def PackagesCustomDepiction(packagesDictList):
         for packagesKey in packagesDict:
             #print(packagesKey)
             #print(packagesDict[packagesKey])
-            lineStr = packagesKey + ':' + packagesDict[packagesKey] +  '\n'
+            lineStr = packagesKey + ': ' + packagesDict[packagesKey] +  '\n'
             newPackages.append(lineStr)
         newPackages.append('\n')
     file = open(packagesFile,'w',encoding='utf-8')
@@ -202,7 +202,7 @@ def PackagesCustomDepiction(packagesDictList):
 
 #自定义分类名称
 def PackagesCustomSection(packagesDictList):
-    print('正在插件自定义插件分类 ···')
+    print('正在插件自定义插件分类、图标 ···')
     packagesSystemList = ['com.painclown.repoicons']
     newPackages = []
     for packagesDict in packagesDictList:
@@ -211,11 +211,14 @@ def PackagesCustomSection(packagesDictList):
             packagesDict['Section'] = 'D-System'
         else:
             packagesDict['Section'] = 'D-Tweaks'
+        iconUrl = 'https://pozz.cf/repo/depictions/sectionIcons/'+packagesDict['Section']+'.png'
+        packagesDict.update({'Icon':iconUrl})
         for packagesKey in packagesDict:
             #print(packagesKey)
             #print(packagesDict[packagesKey])
-            lineStr = packagesKey + ':' + packagesDict[packagesKey]+  '\n'
+            lineStr = packagesKey + ': ' + packagesDict[packagesKey]+  '\n'
             newPackages.append(lineStr)
+            
         newPackages.append('\n')
     file = open(packagesFile,'w',encoding='utf-8')
     file.writelines(newPackages)
