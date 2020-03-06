@@ -55,16 +55,54 @@ Sponsor: Acreson <342080124@qq.com>
 Depiction: https://pozz.cf/repo/depictions/?p=acreson.cj.alipayforestun
 Sileodepiction: https://pozz.cf/repo/sileo/acreson.cj.alipayforestun.json
 
-Package: acreson.game.chaojishiju4
-Version: 1.1
+Package: acreson.game.chaojishiju15
+Version: 1.2
 Architecture: iphoneos-arm
 Maintainer: Smoking & Acreson
 Depends: mobilesubstrate
-Filename: debs/acreson.game.chaojishiju4_1.1_iphoneos-arm.deb
+Filename: debs/acreson.game.chaojishiju15_1.2_iphoneos-arm.deb
 Size: 442572
-MD5sum: e25635238986d7f6d3dbbcd5b2a33697
-SHA1: fe6c836f21515837921aa837e8377b16d0ba6a5e
-SHA256: be4cb7f631a53393de142207dcc8d789d8f2fc06bf70100b8befdc24db75dcec
+MD5sum: 7ad269f075a26931f116c6e6b9e78dce
+SHA1: a12315b291f993a2e2066e0addbea2005b1c0fc5
+SHA256: 2aa1db0c808500d93fc2bd500df99640c35abec5a5aee5340868f60d97a6f6dd
+Section: D-Tweaks
+Description: 使用前确保做好游戏的屏蔽越狱！解锁功能：①1.5倍视距
+Author: Smoking & Acreson
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Name: Honor of Kings Stadia 1.5X(Official + Best)「外挂」
+Sponsor: Acreson <342080124@qq.com>
+Depiction: https://pozz.cf/repo/depictions/?p=acreson.game.chaojishiju15
+Sileodepiction: https://pozz.cf/repo/sileo/acreson.game.chaojishiju15.json
+
+Package: acreson.game.chaojishiju2
+Version: 1.4
+Architecture: iphoneos-arm
+Maintainer: Smoking & Acreson
+Depends: mobilesubstrate
+Filename: debs/acreson.game.chaojishiju2_1.4_iphoneos-arm.deb
+Size: 442554
+MD5sum: 5ee6fc012cc2e17e1bf0edb1c81d3783
+SHA1: db9e407262e90698bd8b3f378070506b863c7aeb
+SHA256: 52e6dfc800468649e364fa4d7a89135aae4f6b695c303f035c8d7eacab9da7fb
+Section: D-Tweaks
+Description: 使用前确保做好游戏的屏蔽越狱！解锁功能：①2倍视距
+Author: Smoking & Acreson
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Name: Honor of Kings Stadia 2.33X(Official + Best)「外挂」
+Sponsor: Acreson
+Depiction: https://pozz.cf/repo/depictions/?p=acreson.game.chaojishiju2
+Sileodepiction: https://pozz.cf/repo/sileo/acreson.game.chaojishiju2.json
+
+Package: acreson.game.chaojishiju4
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: Smoking & Acreson
+Depends: mobilesubstrate
+Filename: debs/acreson.game.chaojishiju4_1.2_iphoneos-arm.deb
+Size: 442572
+MD5sum: 4173755de3b7a24654e2f5e391a176e6
+SHA1: b92d04a2fd571fdd2bd17e394c6cf32b2f9cbb74
+SHA256: f0aec57331785c966aff675edba7ac65b09b027ef71d1df6990d3efcb48c97c5
 Section: D-Tweaks
 Description: 使用前确保做好游戏的屏蔽越狱！解锁功能：①4倍视距
 Author: Smoking & Acreson
@@ -109,7 +147,7 @@ Description: 「允许扩展程序读取已安装应用程序的列表」Allow e
 Author: Ryan Petrich <rpetrich@gmail.com>
 Depiction: https://pozz.cf/repo/depictions/?p=applist
 Installed-Size: 780
-Name: AppList「APPLIST」
+Name: AppList「应用清单」
 Website: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=AppListDp
 dev: rpetrich
 Sileodepiction: https://pozz.cf/repo/sileo/applist.json
@@ -802,7 +840,7 @@ MD5sum: fcc7b25266607589b8251df5eb63821c
 SHA1: b3945948edb05946baaa0e412061953ae1b2a521
 SHA256: 1b732ecbba91b762c419f5bbd7f623c0fc1ddb882f33c0bd4367ecf833db1057
 Section: D-Tweaks
-Description: 「将“正在播放的应用程序”图标替换为当前正在播放的应用程序。」Replace now playing apps icon with currently now playing.
+Description: 「将“正在播放的应用”图标替换为当前正在播放的图标。」Replace now playing apps icon with currently now playing.
 Author: cole cabral
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 Installed-Size: 536
@@ -1158,6 +1196,28 @@ Provides: com.matchstic.Extender-Installer
 Sponsor: Ai-小苹果™
 Depiction: https://pozz.cf/repo/depictions/?p=com.cydiabc.reprovision
 Sileodepiction: https://pozz.cf/repo/sileo/com.cydiabc.reprovision.json
+
+Package: com.cydiabc.storeswitcher2
+Version: 1.0.3
+Architecture: iphoneos-arm
+Maintainer: Ai-小苹果
+Depends: firmware (>= 11), mobilesubstrate
+Filename: debs/com.cydiabc.storeswitcher2_1.0.3_iphoneos-arm.deb
+Size: 45932
+MD5sum: 2b69d2d931b31fe328a34e769eccf5d0
+SHA1: 7d8982ae014dd1ecebb9f9000352b567a46e31a6
+SHA256: d770ed80243529da2d230b0b8e7f515c597576e8c2cccc9a72b6eb0b4c1280df
+Section: D-Tweaks
+Description: App Store快速切换登录过的账号
+A12: 1
+Author: subdiox
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Icon2: 12.png
+Installed-Size: 276
+Name: StoreSwitcher 2账号切换
+Sponsor: Ai-小苹果
+Depiction: https://pozz.cf/repo/depictions/?p=com.cydiabc.storeswitcher2
+Sileodepiction: https://pozz.cf/repo/sileo/com.cydiabc.storeswitcher2.json
 
 Package: com.cydiabc.vartaman
 Version: 1.2.3
@@ -1550,7 +1610,7 @@ Description: 「单相机人像模式」Single camera portrait mode
 Author: FoxfortMobile
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 Installed-Size: 15968
-Name: PortraitXI「PortraitXI」
+Name: PortraitXI「肖像XI」
 Depiction: https://pozz.cf/repo/depictions/?p=com.foxfort.portraitxi
 Sileodepiction: https://pozz.cf/repo/sileo/com.foxfort.portraitxi.json
 
@@ -2143,14 +2203,14 @@ Sileodepiction: https://pozz.cf/repo/sileo/com.hk.flow.cn.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 
 Package: com.hk.flyjb.cn
-Version: 0.2~beta48
+Version: 0.2.1~beta2
 Architecture: iphoneos-arm
 Depends: mobilesubstrate
-Filename: debs/com.hk.flyjb.cn_0.2~beta48_iphoneos-arm.deb
-Size: 1980
-MD5sum: e69b6051930eed2fe1114c092e548f07
-SHA1: f061ea87d1c96c17d446e70692e5846f12785157
-SHA256: 0a6693cd45c816703452d56c54fb3250733269e053d0b428af05e743f1ec25e3
+Filename: debs/com.hk.flyjb.cn_0.2.1~beta2_iphoneos-arm.deb
+Size: 2142
+MD5sum: 27f10b00aa1fb0a35b2d216129d3cafa
+SHA1: a02e4bf8a778c65f3ee3d50b77c1d3b1511cdb23
+SHA256: 0fc606fb9dcf06d0bb28c932ab56bc10f87175e92980003faffc894bbc9d7989
 Section: D-Tweaks
 Author: 妖刀
 Name: FlyJB 简体中文包
@@ -4282,6 +4342,43 @@ Name: DontStopMyCall「不要停止我的电话」
 Depiction: https://pozz.cf/repo/depictions/?p=com.prasa.dsm
 Sileodepiction: https://pozz.cf/repo/sileo/com.prasa.dsm.json
 
+Package: com.pul.gushicc
+Version: 1.2
+Architecture: iphoneos-arm
+Maintainer: Pulandres
+Depends: com.pul.prysm | com.laughingquoll.prysm, com.julioverne.flipconvert
+Filename: debs/com.pul.gushicc_1.2_iphoneos-arm.deb
+Size: 438670
+MD5sum: 537491b36368193ef44803802a362f9d
+SHA1: f933fea0bf0e84b8873052fd0f8ac7ec1f481b25
+SHA256: 3fc30de7ae34804c785299daa18e333231ee89ea1e272490908571e6237d5785
+Section: D-Tweaks
+Description: 「古石的CC涂料主题。」A dope CC theme by GuShi.
+Author: GuShi <Qq1336171546@gmail.com>
+Depiction: https://pozz.cf/repo/depictions/?p=com.pul.gushicc
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Name: Gushi CC Theme「固始CC主题」
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1574
+Sileodepiction: https://pozz.cf/repo/sileo/com.pul.gushicc.json
+
+Package: com.pul.gushixstatusbar
+Version: 1.7-1
+Architecture: iphoneos-arm
+Maintainer: Pulandres
+Filename: debs/com.pul.gushixstatusbar_1.7-1_iphoneos-arm.deb
+Size: 2074170
+MD5sum: ed9fa56dec1dfd679c3e6244b0ee143e
+SHA1: 286ff1b1f3c6d8e949415a9683a8609e6815b2b3
+SHA256: f07b63226c827da2d574d462b7d91f135af6cf0195a58bbf1c0929361a3e1b69
+Section: D-Tweaks
+Description: 「Gushi一个简单的StatusBar。」A simple StatusBar by Gushi.
+Author: Gushi
+Depiction: https://pozz.cf/repo/depictions/?p=com.pul.gushixstatusbar
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Name: Gushi X StatusBar Theme「Gushi X StatusBar主题」
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1568
+Sileodepiction: https://pozz.cf/repo/sileo/com.pul.gushixstatusbar.json
+
 Package: com.pulandres.aperturize
 Version: 1.0.5
 Architecture: iphoneos-arm
@@ -4466,16 +4563,16 @@ Tag: purpose::extension, compatible::ios13
 Sileodepiction: https://pozz.cf/repo/sileo/com.pulandres.killbackground13.json
 
 Package: com.pulandres.killx
-Version: 2.1.2
+Version: 2.1.2-1
 Architecture: iphoneos-arm
 Maintainer: Pulandres
 Depends: mobilesubstrate, applist, ws.hbang.common (>= 1.13), firmware (>= 11.0)
 Conflicts: com.cemck.killx
-Filename: debs/com.pulandres.killx_2.1.2_iphoneos-arm.deb
-Size: 256682
-MD5sum: 09db978ec42ae28ce28c4ca4da6169d5
-SHA1: f5568e79f655c976e534bc4a9f3c59be338f702c
-SHA256: dfba5603e6aed51eaf0e12fbcbde94bdcd29ca6ecda8922c53d731db8e94636a
+Filename: debs/com.pulandres.killx_2.1.2-1_iphoneos-arm.deb
+Size: 256358
+MD5sum: 63c0618e3039df0d2f6e0058f2db5233
+SHA1: b3176e3afd40dfc1151c126381a494af02ecf3fb
+SHA256: 5fe300860c4396020d26bdacab27623a2e8a836bf84143947c273cbcbf542ec1
 Section: D-Tweaks
 Description: 「滑动一次即可杀死所有应用程序，向下滑动应用程序切换卡可杀死所有应用程序。」One swipe to kill them all, Swipe down app switcher cards, to kill all apps.
 Author: cemck
@@ -4483,7 +4580,7 @@ Depiction: https://pozz.cf/repo/depictions/?p=com.pulandres.killx
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 Installed-Size: 848
 Name: KillX Pro Cracked「KillX Pro破解」
-SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1468
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1588
 Sileodepiction: https://pozz.cf/repo/sileo/com.pulandres.killx.json
 
 Package: com.pulandres.magmaevo
@@ -4527,22 +4624,22 @@ SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1400
 Sileodepiction: https://pozz.cf/repo/sileo/com.pulandres.tinybanners2.json
 
 Package: com.pulandres.viola
-Version: 1.9.1
+Version: 1.9.3-1
 Architecture: iphoneos-arm
 Maintainer: Pulandres
-Filename: debs/com.pulandres.viola_1.9.1_iphoneos-arm.deb
-Size: 33453998
-MD5sum: b74668432efdb623dae8c603648457a7
-SHA1: 1c9d3eedf14473562f0deffb89933e90af5b8540
-SHA256: 6a0391dd9cfdc65219746a005fddfbbbf92d11bc262aee966f7c26fa4b6d3db5
+Filename: debs/com.pulandres.viola_1.9.3-1_iphoneos-arm.deb
+Size: 46669924
+MD5sum: 85b3b8dc831b69b71dcee5c68c8760d6
+SHA1: 9e665ea8fe9b33ea2b741914233ba4c05df086fe
+SHA256: 25e86b61ef5e123d8f64ca15ea76f652181ee02b7875e7f23f7475c00be3cf8b
 Section: D-Tweaks
 Description: 「Viola是iOS的美丽，简单和现代主题！」Viola is a beautiful, simple and modern theme for iOS!
 Author: Bousrih <bousrih20@gmail.com>
 Depiction: https://pozz.cf/repo/depictions/?p=com.pulandres.viola
-Name: Viola Theme「中提琴主题」
-SileoDepiction: https://repo.pulandres.me/sileo.php?pid=967
-Sileodepiction: https://pozz.cf/repo/sileo/com.pulandres.viola.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Name: Viola Theme「中提琴主题」
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1589
+Sileodepiction: https://pozz.cf/repo/sileo/com.pulandres.viola.json
 
 Package: com.pulandresnetworkmanager
 Version: 1.0.2
@@ -4599,7 +4696,7 @@ MD5sum: 145fe1e9d903655aecd8d0be6361d1f4
 SHA1: 0365f3c9c10509543525035c8a504400df09f66f
 SHA256: 537aac803ab5cde0d988858ac295967807e129b455bb0da31cf4a207becbade1
 Section: D-Tweaks
-Description: 「我们想要在iOS通知中心或“锁屏横幅”中进行的许多操作之一，但是不能包括将文本从“通知”复制到剪贴板并将其粘贴到我们喜欢的任何位置的功能。」One of the many things we want to do in the iOS Notification Center or Lockscreen Banner but cannot include the ability to copy text from Notifications to Clipboard and paste them anywhere we like. This tweak solves this annoyance by allowing users to simply copy the text from a notification or lockscreen banner no matter which app it belongs to simply long pressing on the notification.
+Description: 「我们想要在iOS通知中心或“锁屏横幅”中执行的许多操作之一，但是不能包括将文本从“通知”复制到剪贴板并将其粘贴到我们喜欢的任何位置的功能。」One of the many things we want to do in the iOS Notification Center or Lockscreen Banner but cannot include the ability to copy text from Notifications to Clipboard and paste them anywhere we like. This tweak solves this annoyance by allowing users to simply copy the text from a notification or lockscreen banner no matter which app it belongs to simply long pressing on the notification.
 Author: pxcex
 Installed-Size: 252
 Name: CopiedBanner12「复制横幅12」
@@ -6122,15 +6219,15 @@ Sileodepiction: https://pozz.cf/repo/sileo/jp.soh.iconresizerforios11.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 
 Package: kr.xsf1re.flyjb
-Version: 0.2.1~beta2
+Version: 0.2.2~beta2
 Architecture: iphoneos-arm
 Maintainer: XsF1re
 Depends: mobilesubstrate, applist, preferenceloader, com.rpetrich.rocketbootstrap, ws.hbang.common
-Filename: debs/kr.xsf1re.flyjb_0.2.1~beta2_iphoneos-arm.deb
-Size: 145120
-MD5sum: 36d36027eb7779f2847b59617c1e073b
-SHA1: 5f929bd386db34b9803117f1bdc0fe36e257c1c1
-SHA256: a32d31fbee49f6d20e5489501eda4caf17249434c94d1ba101a0ee6ed1e2557f
+Filename: debs/kr.xsf1re.flyjb_0.2.2~beta2_iphoneos-arm.deb
+Size: 146318
+MD5sum: bbf71e4b8786ca936226ff3b44124f2c
+SHA1: c87ac174ccd35aab04abb0eba7a2284d646bee0a
+SHA256: 24aa003354231bd1a336ddc57d4ad85ad4b58d4ab396dff6faa2bbc20f43e372
 Section: D-Tweaks
 Description: 「您可以将iDevice越狱。」You can HIDE Doing jailbreak your iDevice.
 Author: XsF1re
@@ -6237,15 +6334,15 @@ Depiction: https://pozz.cf/repo/depictions/?p=me.ahmedbafkir.dleasy
 Sileodepiction: https://pozz.cf/repo/sileo/me.ahmedbafkir.dleasy.json
 
 Package: me.apptapp.installer
-Version: 5.0.2.2
+Version: 5.0.2.3
 Architecture: iphoneos-arm
 Maintainer: AppTapp <support@apptapp.me>
 Depends: firmware (>= 10.0)
-Filename: debs/me.apptapp.installer_5.0.2.2_iphoneos-arm.deb
-Size: 28384594
-MD5sum: 4678185d34acd68ad0843fd46085616c
-SHA1: a972a0705f46c3dcbab0fa741ed9ae6300c95b3b
-SHA256: f5c70f585da5c863e0bd3adba873543f5b63171cdc3e3650d68b74103dc55a17
+Filename: debs/me.apptapp.installer_5.0.2.3_iphoneos-arm.deb
+Size: 23778996
+MD5sum: 60031b5dc034e7534567e384f02c799f
+SHA1: ecf6944cf940542016c3ba277c724624e9e8f7d4
+SHA256: ceec0d007e84e86669b25fc88b49af3060948f6fabc4d55e54e1c9013c0f3924
 Section: D-Tweaks
 Description: 「专为iOS打造的最快的软件包管理器！」The fastest package manager built specifically for iOS!
 Author: AppTapp <support@apptapp.me>
@@ -7229,6 +7326,25 @@ Installed-Size: 472
 Name: Spectrum「光谱」
 SileoDepiction: https://skitty.xyz/repo/depictions/?s=xyz.skitty.spectrum
 Sileodepiction: https://pozz.cf/repo/sileo/xyz.skitty.spectrum.json
+
+Package: xyz.willy.zebra
+Version: 1.0.7
+Architecture: iphoneos-arm
+Maintainer: Wilson Styres <wilson@styres.me>
+Depends: dpkg, uikittools, firmware (>= 9.0)
+Filename: debs/xyz.willy.zebra_1.0.7_iphoneos-arm.deb
+Size: 13011798
+MD5sum: 4f1f1f923435fc5de24f5e8de3399679
+SHA1: 2c765ff7210842b5ad473db53ebbbc3add8061cb
+SHA256: 172fa2f80e6111adab736d2de4787a93d191f13243c042cb9706b84eea504940
+Section: D-Tweaks
+Description: 「有用的软件包管理器」A Useful Package Manager
+Author: Wilson Styres <wilson@styres.me>
+Depiction: https://pozz.cf/repo/depictions/?p=xyz.willy.zebra
+Installed-Size: 48572
+Name: Zebra「斑马」
+Sileodepiction: https://pozz.cf/repo/sileo/xyz.willy.zebra.json
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 
 Package: zip
 Version: 2.32-1
