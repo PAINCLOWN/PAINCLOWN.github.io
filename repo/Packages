@@ -249,7 +249,7 @@ MD5sum: 0ea730b95cc076e9005aa533f5918480
 SHA1: 7e5888ea2a3be2179d0a11ef597cba14a345b0f9
 SHA256: 627d066305829dee737bbdfd803201c83e6aafa289a381a86ed54265c2459d0d
 Section: D-Tweaks
-Description: 「通过Face ID锁定应用」Lock Apps by Face id & Touch id!
+Description: 「通过面部识别码锁定应用」Lock Apps by Face id & Touch id!
 Author: Azozz ALFiras
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 Installed-Size: 504
@@ -621,6 +621,30 @@ Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 Name: SettingsCollapse 简体中文包
 Depiction: https://pozz.cf/repo/depictions/?p=com.ball.settingscillapse.cn
 Sileodepiction: https://pozz.cf/repo/sileo/com.ball.settingscillapse.cn.json
+
+Package: com.bandarhl.flexible
+Version: 1.0-1
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: mobilesubstrate, firmware (>= 7.0), com.opa334.ccsupport
+Filename: debs/com.bandarhl.flexible_1.0-1_iphoneos-arm.deb
+Size: 734418
+MD5sum: 201dc1b010ce61febad40368f937674c
+SHA1: 6408c825545309bb08dd76d22083a4219266435e
+SHA256: bb21e00562025fb1db70fb8f9c9750bfbcc5f8487cb3d131596e66b77d893546
+Section: D-Tweaks
+Description: 「从控制中心启用FLEX」enable FLEX from Control Center
+Author: bandarhelal <bandarhelal190@gmail.com>
+Depiction: https://pozz.cf/repo/depictions/?p=com.bandarhl.flexible
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=ccflexibleDp
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Installed-Size: 4860
+Name: CCFLEXible「CCFLEXible」
+Priority: optional
+Sponsor: thebigboss.org <http://thebigboss.org>
+Tag: purpose::extension, compatible::ios11, compatible::ios12
+dev: bandarhl
+Sileodepiction: https://pozz.cf/repo/sileo/com.bandarhl.flexible.json
 
 Package: com.bengiannis.complications
 Version: 2.1.1
@@ -2119,6 +2143,22 @@ Depiction: https://pozz.cf/repo/depictions/?p=com.hk.appstoreplusplus
 Sileodepiction: https://pozz.cf/repo/sileo/com.hk.appstoreplusplus.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 
+Package: com.hk.badgebar.cn
+Version: 1.1.7.1
+Architecture: iphoneos-arm
+Depends: mobilesubstrate
+Filename: debs/com.hk.badgebar.cn_1.1.7.1_iphoneos-arm.deb
+Size: 2524
+MD5sum: 4bf2a1b8eb8ed1b0579b1dfa7bbdbb54
+SHA1: dc1f5510959f3b7eef555a2c0fb7ee2a0631b841
+SHA256: 6debbf8d2841532f9bdfa22f52533ff00ad9133eebce77fa8869de2c41c5f101
+Section: D-Tweaks
+Author: 妖刀
+Name: BadgeBar 简体中文包
+Depiction: https://pozz.cf/repo/depictions/?p=com.hk.badgebar.cn
+Sileodepiction: https://pozz.cf/repo/sileo/com.hk.badgebar.cn.json
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+
 Package: com.hk.ball.lightline
 Version: 1.1
 Architecture: iphoneos-arm
@@ -2299,6 +2339,22 @@ Author: 妖刀
 Name: Magma Evo 简体中文包
 Depiction: https://pozz.cf/repo/depictions/?p=com.hk.magmaevo.cn
 Sileodepiction: https://pozz.cf/repo/sileo/com.hk.magmaevo.cn.json
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+
+Package: com.hk.nothanks.cn
+Version: 2.0
+Architecture: iphoneos-arm
+Depends: mobilesubstrate
+Filename: debs/com.hk.nothanks.cn_2.0_iphoneos-arm.deb
+Size: 1426
+MD5sum: d36ebc8a1e2f2db38e72a95a65b3ed4f
+SHA1: dd761f5443e3b4c49c0b23ea613ba3a60d91ae85
+SHA256: 4e57b97d5847f61b4d17d4e16a5228630f81fdd69c30cf8bdcd7a9554de919d9
+Section: D-Tweaks
+Author: 妖刀
+Name: BoardBanner13(iOS12~13) 简体中文包
+Depiction: https://pozz.cf/repo/depictions/?p=com.hk.nothanks.cn
+Sileodepiction: https://pozz.cf/repo/sileo/com.hk.nothanks.cn.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 
 Package: com.hk.otadisabler
@@ -4342,6 +4398,27 @@ Name: DontStopMyCall「不要停止我的电话」
 Depiction: https://pozz.cf/repo/depictions/?p=com.prasa.dsm
 Sileodepiction: https://pozz.cf/repo/sileo/com.prasa.dsm.json
 
+Package: com.pul.boardbanners
+Version: 2.0
+Architecture: iphoneos-arm
+Maintainer: Pulandres
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11), firmware (>= 12.0), cy+cpu.arm64
+Replaces: com.pulandres.boardbanner12
+Filename: debs/com.pul.boardbanners_2.0_iphoneos-arm.deb
+Size: 65668
+MD5sum: c456d87d7d20a95324ce6a1295df3b99
+SHA1: 51850ef7d7184522f864c82890ac05168ddd8fea
+SHA256: 34ec67d2ee0249fc65672bad5a4d2859723bfe8ee463ab1bd56a6763b962df91
+Section: D-Tweaks
+Description: 「调整Notch设备的通知标题。」Notification banner tweak for Notch devices.
+Author: Soongyu Kwon
+Depiction: https://pozz.cf/repo/depictions/?p=com.pul.boardbanners
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Installed-Size: 328
+Name: BoardBanner13 (iOS 12~13) Cracked「BoardBanner13（iOS 12〜13）破解」
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1537
+Sileodepiction: https://pozz.cf/repo/sileo/com.pul.boardbanners.json
+
 Package: com.pul.gushicc
 Version: 1.2
 Architecture: iphoneos-arm
@@ -4396,6 +4473,27 @@ Depiction: https://pozz.cf/repo/depictions/?p=com.pulandres.aperturize
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 Name: Aperturize Cracked「开裂破裂」
 Sileodepiction: https://pozz.cf/repo/sileo/com.pulandres.aperturize.json
+
+Package: com.pulandres.badgebar
+Version: 1.1.7.1
+Architecture: iphoneos-arm
+Maintainer: Pulandres
+Depends: mobilesubstrate, ws.hbang.common (>= 1.14), org.thebigboss.libcolorpicker
+Filename: debs/com.pulandres.badgebar_1.1.7.1_iphoneos-arm.deb
+Size: 407730
+MD5sum: 67aa94b5795dcccdfec80d0cf18d36fb
+SHA1: f18e30e00c83ff521d5a7ef283f901e0be8cd77d
+SHA256: f19bcc5b39bc81244dc5d29de7f1cfb8f905ed73eca0974d922872619f1d906d
+Section: D-Tweaks
+Description: 「更改您的丑陋徽章通知！」Change your ugly badge notification!
+Author: JannikCrack <jannikcrack@aol.com>
+Depiction: https://pozz.cf/repo/depictions/?p=com.pulandres.badgebar
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Installed-Size: 680
+Name: BadgeBar Free「BadgeBar免费」
+SileoDepiction: https://repo.pulandres.me/sileo.php?pid=1573
+Tag: purpose::extension, compatible_min::ios12.2, compatible_max::ios13.3
+Sileodepiction: https://pozz.cf/repo/sileo/com.pulandres.badgebar.json
 
 Package: com.pulandres.callbarxs
 Version: 2.3-75
@@ -5148,6 +5246,28 @@ Installed-Size: 436
 Name: SettingsCollapse「设置折叠」
 Sileodepiction: https://pozz.cf/repo/sileo/com.shiftcmdk.settingscollapse.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+
+Package: com.shmoopillc.flexible
+Version: 2.1.0
+Architecture: iphoneos-arm
+Maintainer: BigBoss <bigboss@thebigboss.org>
+Depends: firmware(>= 8.0), mobilesubstrate, preferenceloader, applist
+Filename: debs/com.shmoopillc.flexible_2.1.0_iphoneos-arm.deb
+Size: 704978
+MD5sum: 6405f2da1a3f8d8babc130583213e2cb
+SHA1: a69671aa10dc0f40a9feb96f2e78b6d75b301c69
+SHA256: 7f501009cab9bc2b338c4e750166386ad1ff1add4a54c8590675ebef974c1a1f
+Section: D-Tweaks
+Description: Tweak to enable FLEX debugging tool
+Author: Shmoopi <shmoopillc@gmail.com>
+Depiction: https://pozz.cf/repo/depictions/?p=com.shmoopillc.flexible
+Homepage: http://moreinfo.thebigboss.org/moreinfo/depiction.php?file=flexibleDp
+Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
+Installed-Size: 4920
+Name: FLEXible「灵活」
+Tag: purpose::extension, compatible::ios9, compatible::ios10, compatible::ios11, compatible::ios12
+dev: shmoopi
+Sileodepiction: https://pozz.cf/repo/sileo/com.shmoopillc.flexible.json
 
 Package: com.smokin1337.3dtools
 Version: 1.0.5
@@ -6078,20 +6198,20 @@ Sileodepiction: https://pozz.cf/repo/sileo/jp.akusio.backgrounderaction13.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 
 Package: jp.akusio.milkyway2
-Version: 0.1.1-alpha
+Version: 0.2.0-alpha
 Architecture: iphoneos-arm
 Maintainer: akusio <akusio-report@neko2.net>
-Depends: mobilesubstrate, jp.akusio.backgrounderaction13
-Filename: debs/jp.akusio.milkyway2_0.1.1-alpha_iphoneos-arm.deb
-Size: 34978
-MD5sum: 1d0488c6af4fe18e45a9d2a986a73ee6
-SHA1: 8f6c7c8dfc998abaa4b9c45d9d301836e8c50be1
-SHA256: a1229ecfc32e00798ac4a8bf25f13c63fa7e94664ca6282e0b8bad18c483e28e
+Depends: mobilesubstrate, jp.akusio.backgrounderaction13, applist, preferenceloader
+Filename: debs/jp.akusio.milkyway2_0.2.0-alpha_iphoneos-arm.deb
+Size: 44822
+MD5sum: 45aff19ea7b0327a72e50c4a87d68cd8
+SHA1: a779498db20097cef4783e6d817796d640bd6372
+SHA256: 9c1aa016b720ecfaa6f3176cd88454ec8767f1832306b69cda85e3ed734165e3
 Section: D-Tweaks
 Description: 「适用于iOS的多任务处理13。」multitasking for iOS13.
 Author: akusio <akusio-report@neko2.net>
 Depiction: https://pozz.cf/repo/depictions/?p=jp.akusio.milkyway2
-Installed-Size: 208
+Installed-Size: 376
 Name: MilkyWay2「银河系2」
 Sileodepiction: https://pozz.cf/repo/sileo/jp.akusio.milkyway2.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
@@ -6219,20 +6339,20 @@ Sileodepiction: https://pozz.cf/repo/sileo/jp.soh.iconresizerforios11.json
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
 
 Package: kr.xsf1re.flyjb
-Version: 0.2.2~beta2
+Version: 0.2.3~beta3
 Architecture: iphoneos-arm
 Maintainer: XsF1re
-Depends: mobilesubstrate, applist, preferenceloader, com.rpetrich.rocketbootstrap, ws.hbang.common
-Filename: debs/kr.xsf1re.flyjb_0.2.2~beta2_iphoneos-arm.deb
-Size: 146318
-MD5sum: bbf71e4b8786ca936226ff3b44124f2c
-SHA1: c87ac174ccd35aab04abb0eba7a2284d646bee0a
-SHA256: 24aa003354231bd1a336ddc57d4ad85ad4b58d4ab396dff6faa2bbc20f43e372
+Depends: mobilesubstrate, applist, preferenceloader
+Filename: debs/kr.xsf1re.flyjb_0.2.3~beta3_iphoneos-arm.deb
+Size: 412312
+MD5sum: 3c95eebc3f44ecadf518e54821561079
+SHA1: 5b0a7ef6432e87b44cc1200d5c0211c1bba6903b
+SHA256: c6ec3cef30164f6b7ab965074fb0594771ee7ae7e0280bcd90028120f3dc88ae
 Section: D-Tweaks
 Description: 「您可以将iDevice越狱。」You can HIDE Doing jailbreak your iDevice.
 Author: XsF1re
 Icon: https://pozz.cf/repo/depictions/sectionIcons/D-Tweaks.png
-Installed-Size: 836
+Installed-Size: 1060
 Name: FlyJB「FlyJB」
 Depiction: https://pozz.cf/repo/depictions/?p=kr.xsf1re.flyjb
 Sileodepiction: https://pozz.cf/repo/sileo/kr.xsf1re.flyjb.json
