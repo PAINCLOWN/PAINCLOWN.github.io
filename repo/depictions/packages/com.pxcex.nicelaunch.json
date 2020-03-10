@@ -1,1 +1,0 @@
-{"name": "NiceLaunch「尼斯启动」", "package": "com.pxcex.nicelaunch", "author": "pxcex", "version": "0.0.2", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「在应用启动时消失启动画面，漂亮的动画」go away splashscreen in app launch, nice animation & faster animation.", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

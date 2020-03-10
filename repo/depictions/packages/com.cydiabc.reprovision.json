@@ -1,1 +1,0 @@
-{"name": "ReProvision新版续签", "package": "com.cydiabc.reprovision", "author": "Matt Clarke", "version": "0.5.2~EOL", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "在您的设备上重新签名应用程序，解决7天App签名失效 导致闪退问题 ，启动弹窗请点击忽略，享受吧", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

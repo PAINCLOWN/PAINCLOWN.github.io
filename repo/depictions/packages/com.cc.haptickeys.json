@@ -1,1 +1,0 @@
-{"name": "HapticKeys「触键」", "package": "com.cc.haptickeys", "author": "colecabral", "version": "4.0", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「键盘触摸的触觉反馈。」Haptic feedback for keyboard touches.", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

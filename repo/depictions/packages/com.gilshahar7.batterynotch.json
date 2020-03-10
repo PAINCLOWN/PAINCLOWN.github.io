@@ -1,1 +1,0 @@
-{"name": "BatteryNotch「电池缺口」", "package": "com.gilshahar7.batterynotch", "author": "gilshahar7", "version": "1.5.3", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「代表缺口附近的电池」Represent battery around the notch", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

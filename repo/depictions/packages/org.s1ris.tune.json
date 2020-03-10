@@ -1,1 +1,0 @@
-{"name": "Tune「调」", "package": "org.s1ris.tune", "author": "s1ris", "version": "1.1", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「自定义锁定屏幕媒体控件。」Custom lock screen media controls.", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

@@ -1,1 +1,0 @@
-{"name": "Pusher「推杆」", "package": "com.noahsaso.pusher", "author": "Noah Saso <noahsaso@gmail.com>", "version": "1.1", "dependency": "无", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「将通知推送到其他设备」Push notifications to other devices", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

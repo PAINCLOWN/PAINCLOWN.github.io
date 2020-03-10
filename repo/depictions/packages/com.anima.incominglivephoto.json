@@ -1,1 +1,0 @@
-{"name": "IncomingLivePhoto「传入LivePhoto」", "package": "com.anima.incominglivephoto", "author": "anima", "version": "1.1.1-1", "dependency": "firmware (>= 10.0)", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「来电LivePhoto」Incoming Call LivePhoto", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}

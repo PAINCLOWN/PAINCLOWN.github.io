@@ -1,1 +1,0 @@
-{"name": "7-zip (POSIX)「7-zip（POSIX）」", "package": "p7zip", "author": "PAINCLOWN", "version": "16.02-1", "dependency": "dpkg (>= 1.14.25-8)", "minOSVersion": "9.0", "maxOSVersion": "13.3.1", "otheriOS": "untested", "description": "「自称是好的压缩机」claims to be a good compressor", "changelog": {"1.0": ["暂无"]}, "screenshots": {"test.png": ""}, "links": {}}
