@@ -4,7 +4,7 @@
 
 # PAINCLOWN.github.io
 
-访问顶级域名 POZZ.CF 也是可以的。
+访问顶级域名 POXX.ML 也是可以的。
 
 ## 1·直接访问域名是首页
 
