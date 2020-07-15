@@ -836,7 +836,7 @@
                         customBackend: {
                             "localhost:25500 本地版": "http://localhost:25500/sub?",
                             "gfwsb.114514.best(subconverter作者提供1)": "https://gfwsb.114514.best/sub?",
-                            "poxx.ml:25500(POXX本站提供)": "https://poxx.ml:25500/sub?",
+                            "home.poxx.ml:25500(POXX本站提供)": "https://home.poxx.ml:25500/sub?",
                             "api.wcc.best(sub-web作者提供)": "https://api.wcc.best/sub?"
                         },
                         backendOptions: [{
