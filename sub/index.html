@@ -95,7 +95,7 @@
                         </el-popover>
                       </el-row>
                     </el-form-item>
-                    <el-form-item label="后端地址" v-if="window.location.href.startsWith('file')">
+                    <el-form-item label="后端地址" v-if="1">
                       <el-input ref="backend" v-model="form.customBackend" placeholder="动动小手，可自行搭建后端服务" name="backend" autocomplete="on">
                         <!--<el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>-->
                       </el-input>
@@ -371,13 +371,13 @@
         if (url.searchParams.has("target")) {
           this.form.clientType = url.searchParams.get("target");
         }
-        if (window.location.href.startsWith("file")) {
+        if (1) {
           this.form.customBackend = defaultBackend = "";
           this.form.advanced = "2";
         }
         else
         {
-          this.form.customBackend = defaultBackend = window.location.origin + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('index-2.html') + 1)
+          this.form.customBackend = defaultBackend = window.location.origin + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('index.html') + 1)
           axios
           .get(defaultBackend + 'version')
           .then(response => (this.backendVersion = "with " + response.data))
