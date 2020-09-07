@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from subcon.py6.pw/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Sep 2020 06:15:51 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Subscription Converter</title>
+    <meta name="description" content="Utility to convert between various subscription format" />
+    <meta property="og:title" content="Subscription Converter" />
+    <meta property="og:description" content="Utility to convert between various subscription format" />
+    <link rel="icon" href="favicon.html">
+    <script src="npm/vue/dist/vue.min.js"></script>
+    <script src="npm/element-ui/lib/index.js"></script>
+    <script src="npm/axios/dist/axios.min.js"></script>
+    <script src="npm/vue-clipboard2/dist/vue-clipboard.min.js"></script>
+    <script src="npm/js-base64/base64.min.js"></script>
+    <link rel="stylesheet" href="npm/element-ui/lib/theme-chalk/index.css">
+    <link rel="stylesheet" href="4.8.95/css/materialdesignicons.min.css">
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but sub-web doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+      <el-row style="margin-top: 8px">
+        <el-col>
+          <el-card>
+            <div slot="header">Subscription Converter<div style="font-style: normal; font-size: 80%; text-align: right; margin-top: 5px">{{backendVersion}}</div></div>
+            <el-container>
+              <el-form :model="form" label-width="80px" label-position="left" style="width: 100%">
+                <el-form-item label="模式设置">
+                  <el-radio v-model="form.advanced" label="1">基础模式</el-radio>
+                  <el-radio v-model="form.advanced" label="2">进阶模式</el-radio>
+                </el-form-item>
+                <el-form-item label="订阅链接">
+                  <el-input v-model="form.sourceSubUrl" type="textarea" rows="5" placeholder="支持订阅或 SS/SSR/VMess 单链接，多个链接请每行一个或用 | 分隔" name="sub" autocomplete="on" />
+                </el-form-item>
+                <el-form-item label="生成类型">
+                  <el-select v-model="form.clientType" style="width: 100%">
+                    <el-option v-for="(v, k) in options.clientTypes" :key="k" :label="k" :value="v"></el-option>
+                  </el-select>
+                </el-form-item>
+
+                <el-collapse-transition>
+                  <div v-if="form.advanced === '2'">
+                    <el-form-item label-width="0px">
+                      <el-row type="flex">
+                        <el-col>
+                          <el-checkbox v-model="form.nodeList" label="输出为 Node List" style="margin-right: 5px"></el-checkbox>
+                          <el-checkbox v-model="form.emoji" label="Emoji" style="margin-left: 0px"></el-checkbox>
+                        </el-col>
+                        <el-popover v-model="form.extraset">
+                          <br />
+                          <el-row type="flex">
+                            <el-col>
+                              <el-checkbox v-model="form.sort" @change="handleCheckbox"><label style="font-size: 15px">排序节点</label></el-checkbox>
+                            </el-col>
+                            <el-col>
+                              <el-checkbox v-model="form.scv" @change="handleCheckbox"><label style="font-size: 15px">跳过证书验证</label></el-checkbox>
+                            </el-col>
+                          </el-row>
+                          <br />
+                          <el-row type="flex">
+                            <el-col>
+                              <el-checkbox v-model="form.udp" @change="handleCheckbox"><label style="font-size: 15px">启用 UDP</label></el-checkbox>
+                            </el-col>
+                            <el-col>
+                              <el-checkbox v-model="form.tfo" @change="handleCheckbox"><label style="font-size: 15px">启用 TFO</label></el-checkbox>
+                            </el-col>
+                          </el-row>
+                          <br />
+                          <el-row type="flex">
+                            <el-col>
+                              <el-checkbox v-model="form.appendType" @change="handleCheckbox"><label style="font-size: 15px">插入节点类型</label></el-checkbox>
+                            </el-col>
+                            <el-col>
+                              <el-checkbox v-model="form.fdn" @change="handleCheckbox"><label style="font-size: 15px">忽略不支持节点</label></el-checkbox>
+                            </el-col>
+                          </el-row>
+                          <br />
+                          <el-row type="flex">
+                            <el-col>
+                              <el-checkbox v-model="form.newname" @change="handleCheckbox"><label style="font-size: 15px">Clash 新字段名</label></el-checkbox>
+                            </el-col>
+                          </el-row>
+                          <br />
+                          <el-row>
+                            <el-form-item label="自定义组名" label-width="85px">
+                              <el-input v-model="form.customGroup" placeholder="仅适用于 SSR/SSD/SIP002" name="exclude" autocomplete="on"/>
+                            </el-form-item>
+                           </el-row>
+                          <el-button slot="reference">更多选项</el-button>
+                        </el-popover>
+                      </el-row>
+                    </el-form-item>
+                    <el-form-item label="后端地址" v-if="window.location.href.startsWith('file')">
+                      <el-input ref="backend" v-model="form.customBackend" placeholder="动动小手，可自行搭建后端服务" name="backend" autocomplete="on">
+                        <!--<el-button slot="append" @click="gotoGayhub" icon="el-icon-link">前往项目仓库</el-button>-->
+                      </el-input>
+                    </el-form-item>
+                    <el-form-item label="远程配置">
+                      <el-select v-model="form.remoteConfig" allow-create filterable placeholder="可选" style="width: 100%">
+                        <el-option-group v-for="group in options.remoteConfig" :key="group.label" :label="group.label">
+                          <el-option v-for="item in group.options" :key="item.value" :label="item.label" :value="item.value"></el-option>
+                        </el-option-group>
+                        <el-button slot="append" @click="gotoRemoteConfig" icon="el-icon-link">配置示例</el-button>
+                      </el-select>
+                    </el-form-item>
+                    <el-form-item label-width="0px">
+                      <el-collapse>
+                        <el-collapse-item name="1">
+                        <template slot="title"><label style="font-size: 13.5px">过滤节点</label></template>
+                        <br />
+                        <el-form-item label="包含节点">
+                          <el-input v-model="form.includeRemarks" placeholder="节点包含的关键字，支持正则" name="include" autocomplete="on"/>
+                        </el-form-item>
+                        <br />
+                        <el-form-item label="排除节点">
+                          <el-input v-model="form.excludeRemarks" placeholder="节点不包含的关键字，支持正则" name="exclude" autocomplete="on"/>
+                        </el-form-item>
+                        </el-collapse-item>
+                      </el-collapse>
+                    </el-form-item>
+                  </div>
+                </el-collapse-transition>
+
+                <el-divider content-position="center">
+                  <i class="el-icon-magic-stick"></i>
+                </el-divider>
+
+                <el-collapse-transition>
+                  <el-form-item label="定制订阅" v-if="customSubUrl.length">
+                    <el-input class="copy-content" disabled v-model="customSubUrl">
+                      <el-button slot="append" :disabled="!customSubUrl.length" v-clipboard:copy="customSubUrl" v-clipboard:success="onCopy" ref="copy-btn" icon="el-icon-document-copy">复制</el-button>
+                    </el-input>
+                  </el-form-item>
+                </el-collapse-transition>
+                <el-form-item label-width="0px" style="margin-top: 40px; text-align: center; margin-bottom: 5px">
+                  <el-button style="width: auto" :disabled="customSubUrl.length" @click="makeUrl" icon="el-icon-check" type="primary">生成订阅链接</el-button>
+                  <el-button style="width: auto" type="danger" @click="resetStorage"><i class="el-icon-close"></i> 重置所有设置</el-button>
+                </el-form-item>
+                <el-form-item label-width="0px" style="margin-top: 5px; text-align: center; margin-bottom: 5px">
+                  <el-button v-if="form.clientType.startsWith('clash')&&!form.nodeList" :disabled="!customSubUrl.length" style="width: auto" type="primary" @click="install('clash')"><i class="mdi mdi-cat"></i> 一键导入 Clash</el-button>
+                  <el-button v-if="form.clientType.startsWith('surge')&&!form.nodeList" :disabled="!customSubUrl.length" style="width: auto" type="primary" @click="install('surge')"><i class="mdi mdi-meteor"></i> 一键导入 Surge</el-button>
+                  <!--
+                  <el-button v-if="form.advanced==='2'&&form.clientType==='quan'" :disabled="!customSubUrl.length||!form.nodeList" style="width: auto" type="primary" @click="install('quan')"><i class="mdi mdi-transition-masked"></i> 一键导入 Quantumult</el-button>
+                  <el-button v-if="form.advanced==='2'&&form.clientType==='quanx'" :disabled="!customSubUrl.length||!form.nodeList" style="width: auto" type="primary" @click="install('quanx')"><i class="mdi mdi-transition-masked"></i> 一键导入 Quantumult X</el-button>
+                  -->
+                  <el-button v-if="form.clientType==='loon'&&!form.nodeList" :disabled="!customSubUrl.length" style="width: auto" type="primary" @click="install('loon')"><i class="mdi mdi-airballoon"></i> 一键导入 Loon</el-button>
+                </el-form-item>
+              </el-form>
+            </el-container>
+          </el-card>
+          <el-card style="text-align: center">
+            <el-link href="external.html?link=https://github.com/tindy2013/subconverter" target="_blank" icon="el-icon-link" style="font-size: 16px">API 后端项目地址</el-link>
+            <el-link href="external.html?link=https://t.me/tindyx" target="_blank" style="font-size: 16px" icon="el-icon-s-promotion">By @XTindy</el-link>
+            <el-link href="external.html?link=https://github.com/CareyWang" target="_blank" style="font-size: 16px" icon="el-icon-edit">UI Design By @CareyWang</el-link>
+          </el-card>
+        </el-col>
+      </el-row>
+    </div>
+    <script>
+    const remoteConfigSample = "external.html?link=https://raw.githubusercontent.com/tindy2013/subconverter/master/base/example_external_config.ini";
+    const gayhubRelease = "external.html?link=https://github.com/tindy2013/subconverter/releases";
+    let defaultBackend = window.location + "sub?";
+    const shortUrlBackend = "";
+
+    let app = new Vue({
+    el: "#app",
+      data() {
+        return {
+          options: {
+            clientTypes: {
+              Clash: "clash",
+              ClashR: "clashr",
+              "Surge 2": "surge&ver=2",
+              "Surge 3": "surge&ver=3",
+              "Surge 4": "surge&ver=4",
+              Quantumult: "quan",
+              "Quantumult X": "quanx",
+              Loon: "loon",
+              Surfboard: "surfboard",
+              Mellow: "mellow",
+              SIP002: "ss",
+              "Shadowsocks Android": "sssub",
+              ShadowsocksR: "ssr",
+              ShadowsocksD: "ssd",
+              v2rayN: "v2ray",
+              Trojan: "trojan"
+            },
+            remoteConfig: [
+              {
+                label: "通用",
+                options: [
+                  {
+                    label: "默认",
+                    value: ""
+                  },
+                  {
+                    label: "默认（附带用于 Clash 的 AdGuard DNS）",
+                    value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/default_with_clash_adg.yml"
+                  },
+                  {
+                    label: "无 Urltest",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/no_urltest.ini"
+                  },
+                  {
+                    label: "带 Urltest",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/urltest.ini"
+                  },
+                  {
+                    label: "ConnersHua 神机规则 Basic",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/connershua_basic.ini"
+                  },
+                  {
+                    label: "ConnersHua 神机规则 Pro",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/connershua_pro.ini"
+                  },
+                  {
+                    label: "ConnersHua 神机规则 BacktoCN 回国专用",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/connershua_backtocn.ini"
+                  },
+                  {
+                    label: "lhie1 洞主规则（使用 Clash 分组规则）",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/lhie1_clash.ini"
+                  },
+                  {
+                    label: "lhie1 洞主规则完整版",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/lhie1_dler.ini"
+                  },
+                  {
+                    label: "ACL4SSR 规则标准版",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/acl4ssr_standard.ini"
+                  },
+                  {
+                    label: "ACL4SSR 规则 GFWList 版",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/acl4ssr_gfwlist.ini"
+                  },
+                  {
+                    label: "eHpo1 规则",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/ehpo1_main.ini"
+                  },
+                  {
+                    label: "nzw9314 规则",
+                    value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/nzw9314_custom.ini"
+                  },
+                  {
+                    label: "maicoo-l 规则",
+                    value: "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/maicoo-l_custom.ini"
+                  },
+                  {
+                    label: "rixCloud 官方规则",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/rixcloud_custom.ini"
+                  }
+                ]
+              },
+              {
+                label: "定制",
+                options: [
+                  {
+                    label: "Maying",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/maying_optimized.ini"
+                  },
+                  {
+                    label: "Nexitally",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/nexitally_optimized.ini"
+                  },
+                  {
+                    label: "贼船",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/zeichuan_optimized.ini"
+                  },
+                  {
+                    label: "N3RO",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/n3ro_optimized.ini"
+                  },
+                  {
+                    label: "Scholar",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/scholar_optimized.ini"
+                  },
+                  {
+                    label: "YToo",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/ytoo_optimized.ini"
+                  },
+                  {
+                    label: "DlerCloud Platinum 李哥定制规则",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/dlercloud_lige_platinum.ini"
+                  },
+                  {
+                    label: "DlerCloud Gold 李哥定制规则",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/dlercloud_lige_gold.ini"
+                  },
+                  {
+                    label: "DlerCloud Silver 李哥定制规则",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/dlercloud_lige_silver.ini"
+                  }
+                ]
+              },
+              {
+                label: "特殊",
+                options: [
+                  {
+                    label: "网易云解锁（仅规则分组）",
+                    value:
+                      "https://gist.githubusercontent.com/tindy2013/1fa08640a9088ac8652dbd40c5d2715b/raw/netease.ini"
+                  }
+                ]
+              }
+            ]
+          },
+          form: {
+            advanced: "1",
+            extraset: false,
+            filterset: false,
+            sourceSubUrl: "",
+            clientType: "",
+            emoji: true,
+            appendType: false,
+            nodeList: false,
+            sort: false,
+            udp: false,
+            tfo: false,
+            scv: false,
+            fdn: true,
+            newname: true,
+            customBackend: "",
+            remoteConfig: "",
+            excludeRemarks: "",
+            includeRemarks: "",
+            customGroup: ""
+          },
+
+          loading: false,
+          customSubUrl: "",
+          backendVersion: ""
+        };
+      },
+      created() {
+        document.title = "Subscription Converter";
+        var prevform = localStorage.getItem("form");
+        if(prevform !== null)
+          Object.assign(this.form, JSON.parse(prevform));
+        this.form.sourceSubUrl = '';
+        this.form.extraset = false;
+        var url = new URL(window.html);
+        if (url.searchParams.has("config")) {
+          this.form.remoteConfig = url.searchParams.get("config");
+          this.form.advanced = "2";
+        }
+        if (url.searchParams.has("target")) {
+          this.form.clientType = url.searchParams.get("target");
+        }
+        if (window.location.href.startsWith("file")) {
+          this.form.customBackend = defaultBackend = "";
+          this.form.advanced = "2";
+        }
+        else
+        {
+          this.form.customBackend = defaultBackend = window.location.origin + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('index-2.html') + 1)
+          axios
+          .get(defaultBackend + 'version')
+          .then(response => (this.backendVersion = "with " + response.data))
+          .catch(error => console.log(error))
+        }
+      },
+      mounted() {
+        if(!this.form.clientType.length)
+          this.form.clientType = "clash";
+      },
+      watch: {
+        form:{
+          handler: function(nowVal, oldVal){
+            this.customSubUrl = "";
+            localStorage.setItem("form", JSON.stringify(this.form));
+          },
+          deep:true
+        }
+      },
+      methods: {
+        onFormChanged() {
+          this.customSubUrl = '';
+          return true;
+        },
+        handleCheckbox: function(value, event) {
+          console.log(value);
+          console.log(event);
+          // TODO: Add indeterminate state
+          let ev = event;
+          if (value == false)
+          {
+            ev.path[2].__vue__.indeterminate = true;
+          }
+          else
+          {
+            if (ev.path[2].__vue__.indeterminate)
+            {
+              ev.path[2].__vue__.indeterminate = false;
+              ev.path[2].__vue__.checked = false;
+            }
+          }
+        },
+        onCopy() {
+          this.$message.success("已复制！");
+        },
+        gotoGayhub() {
+          window.open(gayhubRelease);
+        },
+        gotoRemoteConfig() {
+          window.open(remoteConfigSample);
+        },
+        resetStorage() {
+          localStorage.removeItem('form');
+          window.location.reload();
+        },
+        install(target) {
+          if (this.customSubUrl === "") {
+            //this.$message.error("请先填写必填项，生成订阅链接");
+            return false;
+          }
+          
+          var url = "", data = {};
+          
+          switch(target) {
+          case "clash":
+            url = "clash://install-config?url=" + encodeURIComponent(this.customSubUrl);
+            if(this.form.customGroup !== "") {
+              url += "&name=" + encodeURIComponent(this.form.customGroup);
+            }
+            window.open(url);
+            break;
+          case "surge":
+            url = "surge://install-config?url=";
+            window.open(url + this.customSubUrl);
+            break;
+          case "quan":
+            url = "quantumult://configuration?server=";
+            window.open(url + Base64.encodeURI(this.customSubUrl));
+            break;
+          case "quanx":
+            url = "quantumult-x:///update-configuration?remote-resource=";
+            data["server_remote"] = [];
+            data["server_remote"][0] = this.customSubUrl;
+            if(this.form.customGroup.length)
+              data["server_remote"][0] += ", tag=" + this.form.customGroup;
+            window.open(url + encodeURI(JSON.stringify(data)));
+            break;
+          case "loon":
+            url = "loon://import?sub=";
+            window.open(url + encodeURIComponent(this.customSubUrl));
+            break;
+          default:
+            return false;
+          }
+          return true;
+        },
+        makeUrl() {
+          if (!this.form.sourceSubUrl.length || !this.form.clientType.length || !this.form.customBackend.length) {
+            //this.$message.error("订阅链接，客户端与后端地址为必填项");
+            console.log("订阅链接，客户端与后端地址为必填项");
+            return false;
+          }
+
+          let sourceSub = this.form.sourceSubUrl;
+          sourceSub = sourceSub.replace(/[\n|\r|\r\n]/g, "|");
+
+          this.customSubUrl = this.form.customBackend + "sub?target=" + this.form.clientType + "&url=" + encodeURIComponent(sourceSub);
+
+          if (this.form.advanced === "2") {
+            if (this.form.remoteConfig !== "") {
+              this.customSubUrl +=
+                "&config=" + encodeURIComponent(this.form.remoteConfig);
+            }
+            this.customSubUrl += "&emoji=" + this.form.emoji.toString() + "&list=" + this.form.nodeList.toString() + "&sort=" + this.form.sort.toString();
+            this.customSubUrl += "&udp=" + this.form.udp.toString() + "&tfo=" + this.form.tfo.toString() + "&scv=" + this.form.scv.toString();
+            this.customSubUrl += "&append_type=" + this.form.appendType.toString() + "&fdn=" + this.form.fdn.toString() + "&new_name=" + this.form.newname.toString();
+            if (this.form.excludeRemarks !== "") {
+              this.customSubUrl +=
+                "&exclude=" + encodeURIComponent(this.form.excludeRemarks);
+            }
+            if (this.form.includeRemarks !== "") {
+              this.customSubUrl +=
+                "&include=" + encodeURIComponent(this.form.includeRemarks);
+            }
+            if (this.form.customGroup !== "") {
+              this.customSubUrl +=
+                "&group=" + encodeURIComponent(this.form.customGroup) + "&filename=" + encodeURIComponent(this.form.customGroup);
+            }
+          }
+
+          this.$copyText(this.customSubUrl);
+          //this.$message.success("定制订阅已复制到剪切板");
+          console.log("定制订阅已复制到剪切板");
+        }
+      }
+    });
+    </script>
+  </body>
+
+<!-- Mirrored from subcon.py6.pw/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Sep 2020 06:15:56 GMT -->
+</html>
