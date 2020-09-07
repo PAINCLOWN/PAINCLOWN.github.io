@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   
-<!-- Mirrored from subcon.py6.pw/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Sep 2020 06:15:51 GMT -->
+<!-- Mirrored from subcon.py6.pw/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Sep 2020 07:39:21 GMT -->
 <!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
@@ -12,13 +12,13 @@
     <meta property="og:title" content="Subscription Converter" />
     <meta property="og:description" content="Utility to convert between various subscription format" />
     <link rel="icon" href="favicon.html">
-    <script src="npm/vue/dist/vue.min.js"></script>
-    <script src="npm/element-ui/lib/index.js"></script>
-    <script src="npm/axios/dist/axios.min.js"></script>
-    <script src="npm/vue-clipboard2/dist/vue-clipboard.min.js"></script>
-    <script src="npm/js-base64/base64.min.js"></script>
-    <link rel="stylesheet" href="npm/element-ui/lib/theme-chalk/index.css">
-    <link rel="stylesheet" href="4.8.95/css/materialdesignicons.min.css">
+    <script src="js/vue.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/axios.min.js"></script>
+    <script src="js/vue-clipboard.min.js"></script>
+    <script src="js/base64.min.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/materialdesignicons.min.css">
   </head>
   <body>
     <noscript>
@@ -155,16 +155,16 @@
             </el-container>
           </el-card>
           <el-card style="text-align: center">
-            <el-link href="external.html?link=https://github.com/tindy2013/subconverter" target="_blank" icon="el-icon-link" style="font-size: 16px">API 后端项目地址</el-link>
-            <el-link href="external.html?link=https://t.me/tindyx" target="_blank" style="font-size: 16px" icon="el-icon-s-promotion">By @XTindy</el-link>
-            <el-link href="external.html?link=https://github.com/CareyWang" target="_blank" style="font-size: 16px" icon="el-icon-edit">UI Design By @CareyWang</el-link>
+            <el-link href="../external.html?link=https://github.com/tindy2013/subconverter" target="_blank" icon="el-icon-link" style="font-size: 16px">API 后端项目地址</el-link>
+            <el-link href="../external.html?link=https://t.me/tindyx" target="_blank" style="font-size: 16px" icon="el-icon-s-promotion">By @XTindy</el-link>
+            <el-link href="../external.html?link=https://github.com/CareyWang" target="_blank" style="font-size: 16px" icon="el-icon-edit">UI Design By @CareyWang</el-link>
           </el-card>
         </el-col>
       </el-row>
     </div>
     <script>
-    const remoteConfigSample = "external.html?link=https://raw.githubusercontent.com/tindy2013/subconverter/master/base/example_external_config.ini";
-    const gayhubRelease = "external.html?link=https://github.com/tindy2013/subconverter/releases";
+    const remoteConfigSample = "../external.html?link=https://raw.githubusercontent.com/tindy2013/subconverter/master/base/example_external_config.ini";
+    const gayhubRelease = "../external.html?link=https://github.com/tindy2013/subconverter/releases";
     let defaultBackend = window.location + "sub?";
     const shortUrlBackend = "";
 
@@ -378,7 +378,7 @@
         }
         else
         {
-          this.form.customBackend = defaultBackend = window.location.origin + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('index-2.html') + 1)
+          this.form.customBackend = defaultBackend = window.location.origin + window.location.pathname.substr(0, window.location.pathname.lastIndexOf('index.html') + 1)
           axios
           .get(defaultBackend + 'version')
           .then(response => (this.backendVersion = "with " + response.data))
@@ -518,5 +518,5 @@
     </script>
   </body>
 
-<!-- Mirrored from subcon.py6.pw/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Sep 2020 06:15:56 GMT -->
+<!-- Mirrored from subcon.py6.pw/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 07 Sep 2020 07:39:29 GMT -->
 </html>
